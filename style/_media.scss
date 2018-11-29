@@ -1,0 +1,47 @@
+@media(min-width: $breakS){
+
+}
+
+@media(min-width: $breakM){
+	html {font-size: 20px;}
+}
+
+@media(min-width: $breakL){
+	header{
+		height: $navHDesktop;
+		.container{
+			position: relative;
+			height: 100%;
+			h1{
+				font-size: $fontSize4;
+			    line-height: 35px;
+			    width: 180px;
+			    padding: 2px;
+			}
+			nav{
+				top: 0;
+				right: $space2;
+				left: auto;
+				border: none;
+				ol {
+					> li{
+						line-height: 75px;
+						position: relative;
+						display: inline;
+						font-size: $fontSize2;
+						margin-left: $space2;
+					}
+				}
+				ul{
+					position: absolute;
+					border: 1px solid;
+					left: 0;
+					width: 280px;
+					> li{
+						font-size: $fontSize1;
+					}
+				}
+			}
+		}
+	}
+}

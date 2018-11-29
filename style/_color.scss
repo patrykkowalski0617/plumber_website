@@ -1,0 +1,36 @@
+@import 'variables';
+
+body{
+	background: $white3;
+	color: $gray3;
+}
+a{
+	color: inherit;
+}
+header{
+	background: $white3;
+	color: $gray1;
+	border-color: $gray5;
+	nav{
+		background: $white3;
+		border-color: $gray5;
+		ul{
+			border-color: $gray5;
+			li{
+				color: $gray2;
+			}					
+		}
+	}
+}
+
+@media(min-width: $breakL){
+	header{
+		.container{
+			nav{
+				ul{
+					border-color: $gray5;				
+				}
+			}
+		}
+	}
+}
