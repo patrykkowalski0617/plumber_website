@@ -7,10 +7,11 @@ body{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 400;
 }
-.collapse{
-	&:not(.show){
-		display: none;
-	}
+.collapser-content{
+	display: none;
+}
+.collapser-content.show{
+	display: block;
 }
 .before-collapsing{
 	position: absolute;

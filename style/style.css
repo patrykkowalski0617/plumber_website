@@ -300,8 +300,11 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 400; }
 
-.collapse:not(.show) {
+.collapser-content {
   display: none; }
+
+.collapser-content.show {
+  display: block; }
 
 .before-collapsing {
   position: absolute;
