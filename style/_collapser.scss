@@ -1,0 +1,22 @@
+@import 'variables';
+
+*[class^="coll-wrapper-"], *[class^="acc-wrapper-"] { position: relative;}
+*[class="nav-btn"], *[class^="coll-btn-"], *[class^="acc-btn-"] { cursor: pointer;}
+*[class="nav-content"], *[class^="coll-content-"], *[class^="acc-content-"]{
+	display: none;
+}
+*[class^="nav-content"].displayed, *[class^="coll-content-"].displayed, *[class^="acc-content-"].displayed{
+	display: block;
+}
+*[class^="nav-content"].before-collapsing, *[class^="coll-content-"].before-collapsing, *[class^="acc-content-"].before-collapsing{
+	position: absolute;
+	visibility: hidden;
+	display: block;
+}
+*[class^="nav-content"].collapsing, *[class^="coll-content-"].collapsing, *[class^="acc-content-"].collapsing{
+	position: static;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    transition: $transitionMaster;
+}

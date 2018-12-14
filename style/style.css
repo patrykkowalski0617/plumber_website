@@ -300,25 +300,6 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 400; }
 
-.collapser-content {
-  display: none; }
-
-.collapser-content.show {
-  display: block; }
-
-.before-collapsing {
-  position: absolute;
-  visibility: hidden;
-  display: block; }
-
-.collapsing {
-  position: static;
-  height: 0;
-  overflow: hidden;
-  display: block;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease; }
-
 a {
   text-decoration: none;
   cursor: pointer; }
@@ -338,6 +319,13 @@ header {
     font-weight: 800;
     line-height: 30px;
     width: 150px; }
+  header #burger {
+    width: 40px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
   header nav {
     font-size: 0.8rem;
     font-weight: 700;
@@ -347,6 +335,8 @@ header {
     top: 62px;
     left: 0;
     right: 0; }
+    header nav.nav-content.collapsing {
+      position: absolute; }
     header nav ol, header nav ul {
       list-style-type: none; }
     header nav ul {
@@ -354,6 +344,8 @@ header {
       border-bottom: 1px solid; }
     header nav li {
       line-height: 40px; }
+    header nav a {
+      display: block; }
 
 @media (min-width: 768px) {
   html {
@@ -361,6 +353,13 @@ header {
 @media (min-width: 1024px) {
   header {
     height: 77px; }
+    header *[class^="nav-content"].collapsing {
+      position: absolute; }
+    header nav.before-collapsing {
+      visibility: visible; }
+    header nav.nav-content.collapsing {
+      height: auto;
+      overflow: unset; }
     header .container {
       position: relative;
       height: 100%; }
@@ -369,15 +368,18 @@ header {
         line-height: 35px;
         width: 180px;
         padding: 2px; }
+      header .container #burger {
+        display: none; }
       header .container nav {
         top: 0;
         right: 0.7rem;
         left: auto;
-        border: none; }
+        border: none;
+        display: block; }
         header .container nav ol > li {
           line-height: 75px;
           position: relative;
-          display: inline;
+          display: inline-block;
           font-size: 1rem;
           margin-left: 0.7rem; }
         header .container nav ul {
@@ -409,3 +411,27 @@ header {
 @media (min-width: 1024px) {
   header .container nav ul {
     border-color: #ccc; } }
+*[class^="coll-wrapper-"], *[class^="acc-wrapper-"] {
+  position: relative; }
+
+*[class="nav-btn"], *[class^="coll-btn-"], *[class^="acc-btn-"] {
+  cursor: pointer; }
+
+*[class="nav-content"], *[class^="coll-content-"], *[class^="acc-content-"] {
+  display: none; }
+
+*[class^="nav-content"].displayed, *[class^="coll-content-"].displayed, *[class^="acc-content-"].displayed {
+  display: block; }
+
+*[class^="nav-content"].before-collapsing, *[class^="coll-content-"].before-collapsing, *[class^="acc-content-"].before-collapsing {
+  position: absolute;
+  visibility: hidden;
+  display: block; }
+
+*[class^="nav-content"].collapsing, *[class^="coll-content-"].collapsing, *[class^="acc-content-"].collapsing {
+  position: static;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease; }
