@@ -1,3 +1,5 @@
+@import 'variables';
+
 @media(min-width: $breakS){
 
 }
@@ -7,18 +9,9 @@
 }
 
 @media(min-width: $breakL){
+	body{ margin-top: $navHDesktop }
 	header{
 		height: $navHDesktop;
-		*[class^="nav-content"].collapsing{
-	    	position: absolute;
-	    }
-	    nav.before-collapsing{
-	    	visibility: visible;
-	    }
-	   	nav.nav-content.collapsing{
-	    	height: auto;
-	    	overflow: unset;
-	    }
 		.container{
 			position: relative;
 			height: 100%;
@@ -28,28 +21,14 @@
 			    width: 180px;
 			    padding: 2px;
 			}
-			#burger{
-				display: none;
-			}
 			nav{
-				top: 0;
 				right: $space2;
-				left: auto;
-				border: none;
-				display: block;
 				ol {
 					> li{
-						line-height: 75px;
-						position: relative;
-						display: inline-block;
 						font-size: $fontSize2;
-						margin-left: $space2;
 					}
 				}
 				ul{
-					position: absolute;
-					border: 1px solid;
-					left: 0;
 					width: 280px;
 					> li{
 						font-size: $fontSize1;

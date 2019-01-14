@@ -5,7 +5,7 @@ body{
 	color: $gray3;
 }
 a{
-	color: inherit;
+	&:link,	&:visited, &:active, &:hover {color: inherit}
 }
 header{
 	background: $white3;

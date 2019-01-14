@@ -1,193 +1,388 @@
-class CollapserMaster{
-	constructor(btn, content){
-		const tt = this;
+// Babel copiler
+"use strict";
 
-		tt.qA = function(selector, origin = document){ return origin.querySelectorAll(selector) };
-		tt.q = function(selector, origin = document){ return origin.querySelector(selector) };
-		tt.btn = tt.qA(btn);
-		tt.content = content;
-		tt.findContent = function(sibling){
-			return tt.q(content, sibling.parentNode)
-		};
-		tt.findWrapper = function(children){
-			let wrappers = []
-			for (var i = 0; i < children.length; i++) {
-				wrappers.push(children[i].parentNode)
-			}
-			return wrappers;
-		};
-		tt.addListener = function(el, eventType, f){
-			for (var i = 0; i < el.length; i++) {
-				el[i].addEventListener(eventType, f)
-			}
-		};
-		tt.getElProperty = {
-			height(el, elIsHidden = true){
-				if (elIsHidden) { el.classList.add('before-collapsing'); }
-				const elementHeight = el.offsetHeight;
-				if (elIsHidden) { el.classList.remove('before-collapsing'); }
-				return elementHeight;
-			},
-			transitionTime(el){
-				const st = window.getComputedStyle(el, null);
-				return parseFloat(st.getPropertyValue('transition-duration')) * 1000;
-			}
-		},
-		tt.collapsing = {
-			timeout1: null,
-			timeout2: null,
-			step2(el, method){
-				const time = tt.getElProperty.transitionTime(el);
-				this.timeout2 = setTimeout(function(){
-					el.classList.remove('collapsing')
-					el.classList[method]('displayed')
-					el.style.height = ''
-				}, time);
-			},
-			step1and2(el, height, method){
-				el.classList.add('collapsing')
-				this.timeout1 = setTimeout(function(){
-					el.style.height = height + 'px';
-				}, 0);
-				
-				this.step2(el, method)
-			}
-		};
-		tt.elConstHeight = [];
-	}
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError(
+      "this hasn't been initialised - super() hasn't been called"
+    );
+  }
+  return call && (typeof call === "object" || typeof call === "function")
+    ? call
+    : self;
 }
 
-class Collapser extends CollapserMaster{
-	constructor(btn, content){
-		super(btn, content);
-
-		const tt = this;
-
-		tt.display = function(t){
-			const content = tt.findContent(t);
-			if(!content.classList.contains('displayed')){
-				if (!content.classList.contains('collapsing')) {
-					tt.elConstHeight = []
-					tt.elConstHeight.push(tt.getElProperty.height(content));
-					tt.collapsing.step1and2(content, tt.elConstHeight[0], 'add');
-				}
-				else{
-					clearTimeout(tt.collapsing.timeout2)
-					tt.collapsing.step1and2(content, tt.elConstHeight[0], 'add');
-				}
-			}
-		};
-		tt.findDisplayedNastedConted = function(t){
-			return tt.q('.coll-nasted .displayed', t.parentNode)
-		};
-		tt.contentIsDisplayed = function(t){
-			return t.querySelector('.displayed')
-		}
-		tt.hide = function(t, content, toggle = false){
-			const height = tt.getElProperty.height(content, false);
-
-			if (!tt.contentIsDisplayed(t) && !toggle) {
-				clearTimeout(tt.collapsing.timeout2);
-			}
-			
-			content.style.height = height + 'px';
-			tt.collapsing.step1and2(content, 0, 'remove');
-		};
-		tt.toggle = function(t){
-			const content = tt.findContent(t);
-			if(!content.classList.contains('displayed') && !content.classList.contains('collapsing')) {
-				tt.display(t)
-			}
-			else if(!content.classList.contains('collapsing')){
-				
-				const contentIsDisplayed = tt.findDisplayedNastedConted(t);
-
-				if(contentIsDisplayed){
-					tt.hide(t, contentIsDisplayed, true)
-				}
-				
-				setTimeout(function(){
-					tt.hide(t, tt.findContent(t), true)
-				}, 0)
-			}
-		};
-	}
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError(
+      "Super expression must either be null or a function, not " +
+        typeof superClass
+    );
+  }
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass)
+    Object.setPrototypeOf
+      ? Object.setPrototypeOf(subClass, superClass)
+      : (subClass.__proto__ = superClass);
 }
 
-class Navigation extends Collapser{
-	constructor(btn, content){
-		super(btn, content);
-
-		const tt = this,
-		pageWidth = function(){return window.innerWidth},
-		breakPoint = 1024;
-
-		tt.addListener(tt.btn, 'mouseenter', function(){
-			if(pageWidth() >= breakPoint){
-				tt.display(this);
-			}
-		});
-		tt.addListener(tt.findWrapper(tt.btn), 'mouseleave', function(){
-			if(pageWidth() >= breakPoint){
-				tt.hide(this, tt.findContent(this));
-			}
-		});
-		tt.addListener(tt.btn, 'click', function(e){
-			e.preventDefault() // it prevents fire mouseenter
-			if(pageWidth() < breakPoint){
-				tt.toggle(this);
-			}
-		});
-	}
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
 }
 
-class CollapserHover extends Collapser{
-	constructor(btn, content){
-		super(btn, content);
+var Collapser = function Collapser(btn) {
+  _classCallCheck(this, Collapser);
 
-		const tt = this,
-		pageWidth = function(){return window.innerWidth},
-		breakPoint = 1024;
+  var tt = this;
 
-		tt.addListener(tt.btn, 'mouseenter', function(){
-				tt.display(this);
-		});
-		tt.addListener(tt.findWrapper(tt.btn), 'mouseleave', function(){
-				tt.hide(this, tt.findContent(this));
-		});
-		tt.addListener(tt.btn, 'touch', function(e){
-			e.preventDefault() // it prevents fire mouseenter
-				tt.toggle(this);
-		});
-	}
-}
+  tt.qA = function(selector) {
+    var origin =
+      arguments.length > 1 && arguments[1] !== undefined
+        ? arguments[1]
+        : document;
+    return origin.querySelectorAll(selector);
+  };
+  tt.q = function(selector) {
+    var origin =
+      arguments.length > 1 && arguments[1] !== undefined
+        ? arguments[1]
+        : document;
+    return origin.querySelector(selector);
+  };
+  tt.btn = tt.qA(btn);
+  tt.findCollContentFromThis = function(el) {
+    var contentClass = ".coll-content-wrapper",
+      wrapper = function wrapper() {
+        return el.classList.contains("coll-wrapper");
+      },
+      btn = function btn() {
+        var classL = el.classList;
+        for (var i = 0; i < classL.length; i++) {
+          if (
+            classL.item(i).includes("coll-btn") ||
+            classL.item(i).includes("acc-btn") ||
+            classL.item(i).includes("nav-btn")
+          ) {
+            return el;
+          }
+        }
+      };
 
-class CollapserClick extends Collapser{
-	constructor(btn, content){
-		super(btn, content);
-		
-		const tt = this;
+    if (wrapper()) {
+      return tt.q(contentClass, el);
+    } else if (btn()) {
+      return tt.q(contentClass, el.parentElement);
+    }
+  };
+  tt.wrappers = function() {
+    var children = tt.btn;
+    var wrappers = [];
+    for (var i = 0; i < children.length; i++) {
+      wrappers.push(children[i].parentElement);
+    }
+    return wrappers;
+  };
+  tt.addListener = function(el, eventType, f) {
+    for (var i = 0; i < el.length; i++) {
+      el[i].addEventListener(eventType, f);
+    }
+  };
+  (tt.getElProperty = {
+    height: function height(el) {
+      var getAbsoluteH =
+        arguments.length > 1 && arguments[1] !== undefined
+          ? arguments[1]
+          : true;
 
-		tt.addListener(tt.btn, 'click', function(){
-			tt.toggle(this);
-		});
-	}
-}
+      if (getAbsoluteH) {
+        el.classList.add("before-collapsing");
+      }
+      var elementHeight = el.offsetHeight;
+      if (getAbsoluteH) {
+        el.classList.remove("before-collapsing");
+      }
+      return elementHeight;
+    },
+    transitionTime: function transitionTime(el) {
+      var st = window.getComputedStyle(el, null);
+      return parseFloat(st.getPropertyValue("transition-duration")) * 1000;
+    }
+  }),
+    (tt.collapsing = {
+      timeoutAddHeight: null,
+      timeoutRemoveHeight: null,
+      removeCollapsing: function removeCollapsing(el, method) {
+        var time = tt.getElProperty.transitionTime(el);
+        this.timeoutRemoveHeight = setTimeout(function() {
+          el.classList.remove("collapsing");
+          el.classList[method]("displayed");
+          el.style.height = "";
+        }, time);
+      },
+      addCollapsing: function addCollapsing(el, height, method) {
+        el.classList.add("collapsing");
+        this.timeoutAddHeight = setTimeout(function() {
+          el.style.height = height + "px";
+        }, 0);
 
-class AccordionHover extends CollapserMaster{
-	constructor(btn, content){
-		super(btn, content)
-	}
-}
+        this.removeCollapsing(el, method);
+      }
+    });
+  tt.elConstHeight = [];
+  tt.display = function(t) {
+    var content = tt.findCollContentFromThis(t),
+      fromHiddenState = function fromHiddenState() {
+        tt.elConstHeight = [];
+        tt.elConstHeight.push(tt.getElProperty.height(content));
+        tt.collapsing.addCollapsing(content, tt.elConstHeight[0], "add");
+      },
+      fromCollapsingState = function fromCollapsingState() {
+        clearTimeout(tt.collapsing.timeoutRemoveHeight);
+        tt.collapsing.addCollapsing(content, tt.elConstHeight[0], "add");
+      };
+    if (!content.classList.contains("displayed")) {
+      if (!content.classList.contains("collapsing")) {
+        fromHiddenState();
+      } else {
+        fromCollapsingState();
+      }
+    } else {
+      // dbl check / prevent lags with removing class displayed
+      var _t = void 0;
+      clearTimeout(_t);
+      _t = setTimeout(function() {
+        if (!content.classList.contains("displayed")) {
+          fromHiddenState();
+        }
+      }, 400);
+    }
+  };
+  tt.hide = {
+    specifiedContent: function specifiedContent(t, onDisplayedOnly, content) {
+      var height = tt.getElProperty.height(content, false);
+      if (!onDisplayedOnly && !tt.q(".displayed", t)) {
+        clearTimeout(tt.collapsing.timeoutRemoveHeight);
+      }
+      content.style.height = height + "px";
+      tt.collapsing.addCollapsing(content, 0, "remove");
+    },
+    currentContent: function currentContent(t) {
+      var onDisplayedOnly =
+        arguments.length > 1 && arguments[1] !== undefined
+          ? arguments[1]
+          : false;
 
-class AccordionClick extends CollapserMaster{
-	constructor(btn, content){
-		super(btn, content)
-	}
-}
+      var content = tt.findCollContentFromThis(t);
+      this.specifiedContent(t, onDisplayedOnly, content);
+    },
+    nastedContent: function nastedContent(t) {
+      var onDisplayedOnly =
+        arguments.length > 1 && arguments[1] !== undefined
+          ? arguments[1]
+          : false;
 
-const navigation = new Navigation('.nav-btn', '.nav-content');
-const collapserHover = new CollapserHover('.coll-btn-hover', '.coll-content-hover');
-const collapserClick = new CollapserClick('.coll-btn-click', '.coll-content-click');
-const accordionHover = new AccordionHover('.coll-btn-hover', '.coll-content-hover');
-const accordionClick = new AccordionClick('.coll-btn-click', '.coll-content-click');
+      var content = tt.q(".coll-nasted .displayed", t.parentElement);
+      if (content) {
+        this.specifiedContent(t, onDisplayedOnly, content);
+      }
+    }
+  };
+  tt.toggle = function(t) {
+    var content = tt.findCollContentFromThis(t);
+    if (
+      !content.classList.contains("displayed") &&
+      !content.classList.contains("collapsing")
+    ) {
+      tt.display(t);
+    } else if (!content.classList.contains("collapsing")) {
+      tt.hide.nastedContent(t, true);
+
+      setTimeout(function() {
+        tt.hide.currentContent(t, true);
+      }, 0);
+    }
+  };
+};
+
+var CollapserHover = (function(_Collapser) {
+  _inherits(CollapserHover, _Collapser);
+
+  function CollapserHover(btn) {
+    _classCallCheck(this, CollapserHover);
+
+    var _this = _possibleConstructorReturn(
+      this,
+      (CollapserHover.__proto__ || Object.getPrototypeOf(CollapserHover)).call(
+        this,
+        btn
+      )
+    );
+
+    var tt = _this;
+
+    tt.addListener(tt.btn, "mouseenter", function() {
+      tt.display(this);
+    });
+    tt.addListener(tt.wrappers(), "mouseleave", function() {
+      tt.hide.currentContent(this);
+    });
+    tt.addListener(tt.btn, "touchend", function() {
+      tt.toggle(this);
+    });
+    return _this;
+  }
+
+  return CollapserHover;
+})(Collapser);
+
+var CollapserClick = (function(_Collapser2) {
+  _inherits(CollapserClick, _Collapser2);
+
+  function CollapserClick(btn) {
+    _classCallCheck(this, CollapserClick);
+
+    var _this2 = _possibleConstructorReturn(
+      this,
+      (CollapserClick.__proto__ || Object.getPrototypeOf(CollapserClick)).call(
+        this,
+        btn
+      )
+    );
+
+    var tt = _this2;
+
+    tt.addListener(tt.btn, "click", function() {
+      tt.toggle(this);
+    });
+    return _this2;
+  }
+
+  return CollapserClick;
+})(Collapser);
+
+var AccordionHover = (function(_Collapser3) {
+  _inherits(AccordionHover, _Collapser3);
+
+  function AccordionHover(btn) {
+    _classCallCheck(this, AccordionHover);
+
+    var _this3 = _possibleConstructorReturn(
+      this,
+      (AccordionHover.__proto__ || Object.getPrototypeOf(AccordionHover)).call(
+        this,
+        btn
+      )
+    );
+
+    var tt = _this3;
+
+    tt.addListener(tt.btn, "mouseenter", function() {
+      var content = tt.findCollContentFromThis(this);
+      if (
+        !content.classList.contains("displayed") &&
+        !content.classList.contains("collapsing")
+      ) {
+        var _content = tt.q(".displayed", this.parentElement.parentElement),
+          collapsingContent = Array.from(
+            tt.qA(".collapsing", this.parentElement.parentElement)
+          );
+
+        if (!collapsingContent.length) {
+          tt.display(this);
+        }
+
+        tt.hide.specifiedContent(this, true, _content);
+      }
+    });
+
+    return _this3;
+  }
+
+  return AccordionHover;
+})(Collapser);
+
+var AccordionClick = (function(_Collapser4) {
+  _inherits(AccordionClick, _Collapser4);
+
+  function AccordionClick(btn) {
+    _classCallCheck(this, AccordionClick);
+
+    var _this4 = _possibleConstructorReturn(
+      this,
+      (AccordionClick.__proto__ || Object.getPrototypeOf(AccordionClick)).call(
+        this,
+        btn
+      )
+    );
+
+    var tt = _this4;
+
+    tt.addListener(tt.btn, "click", function() {
+      var contentDisplayed = tt.q(
+        ".displayed",
+        this.parentElement.parentElement
+      );
+      tt.hide.specifiedContent(this, true, contentDisplayed);
+      tt.display(this);
+    });
+    return _this4;
+  }
+
+  return AccordionClick;
+})(Collapser);
+
+var Navigation = (function(_Collapser5) {
+  _inherits(Navigation, _Collapser5);
+
+  function Navigation(btn) {
+    _classCallCheck(this, Navigation);
+
+    var _this5 = _possibleConstructorReturn(
+      this,
+      (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(
+        this,
+        btn
+      )
+    );
+
+    var tt = _this5,
+      pageWidth = function pageWidth() {
+        return window.innerWidth;
+      },
+      breakPoint = 1024;
+
+    tt.addListener(tt.btn, "mouseenter", function() {
+      if (pageWidth() >= breakPoint) {
+        tt.display(this);
+      }
+    });
+    tt.addListener(tt.wrappers(), "mouseleave", function() {
+      if (pageWidth() >= breakPoint) {
+        tt.hide.currentContent(this);
+      }
+    });
+    tt.addListener(tt.btn, "click", function() {
+      if (pageWidth() < breakPoint) {
+        tt.toggle(this);
+      }
+    });
+    return _this5;
+  }
+
+  return Navigation;
+})(Collapser);
+
+var collapserHover = new CollapserHover(".coll-btn-hover"),
+  collapserClick = new CollapserClick(".coll-btn-click"),
+  accordionHover = new AccordionHover(".acc-btn-hover"),
+  accordionClick = new AccordionClick(".acc-btn-click"),
+  navigation = new Navigation(".nav-btn");

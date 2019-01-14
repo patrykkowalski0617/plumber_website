@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'collapser';
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 18px;
+}
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 400;
+}
+h1{
+	font-weight: 800;
+	float: left;
+	font-size: $fontSize3;
+	width: 150px;
+	line-height: 30px;
+}
+h2{
+	font-size: $fontSize3;
+	font-weight: 700;
+	color: $gray1;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 100%;
+	margin-top: $space3;
+	margin-bottom: $space4;
+}
+h3{
+	font-size: $fontSize2;
+	font-weight: 700;
+	line-height: 100%;
+	color: $gray2;
+	text-transform: uppercase;
+	margin-top: $space2;
+}
+h4{
+	font-size: $fontSize2;
+	font-weight: 700;
+	line-height: 100%;
+	margin-top: $space1;
+	text-transform: lowercase;
+	&:hover{color: $orange1}
+}
+p{
+	margin-top: $space3;
+	&.important{
+		margin-top: 0;
+		font-size: $fontSize3;
+		font-weight: 700;
+		text-align: center;
+		span{color: $orange1}
+	}
+}
+a{
+	text-decoration: none;
+	&:link,
+	&:visited {color: $orange1}
+	&:active,
+	&:hover {color: $orange2}
+}
+header{
+	    font-family: 'Open Sans', sans-serif;
+	    text-transform: uppercase;
+	    border-bottom: 2px solid;
+	    height: $navHMobile;
+	nav{
+		font-size: $fontSize1;
+		font-weight: 700;
+	}
+}
+
+@import 'main_grid';
+@import 'main_media';
+@import 'main_color';
+@import 'main_animation';
