@@ -3,3 +3,8 @@
   background-size: cover;
   background-position: left top;
   height: 70vh; }
+
+#wykonamy h4 {
+  margin-bottom: 0; }
+#wykonamy p {
+  margin: 0.2rem 0; }

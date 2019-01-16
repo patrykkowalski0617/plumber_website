@@ -5,7 +5,9 @@
 
 section, article {padding: $space3 0 $space6 0}
 
-*[class^="col-"]{ display: block; float: left; background: #99ccFF; }
+.row{ margin: $space3 (-$space2); padding: 0; overflow: hidden;}
+
+*[class^="col-"]{ display: block; float: left; padding: 0 $space2;}
 
 .col-1{ width: 8.33% }
 .col-2{ width: 16.66% }

@@ -1,7 +1,20 @@
+@import '../variables';
+
 // WELCOME SECTION
 #welcome-section{
 	background: url(img/hero.jpg) no-repeat;
     background-size: cover;
     background-position: left top;
     height: 70vh;
+}
+// JAK PRACUJEMY
+
+// WYKONAMY
+#wykonamy{
+	h4{
+		margin-bottom: 0;
+	}
+	p{
+		margin: $space1 0;
+	}
 }

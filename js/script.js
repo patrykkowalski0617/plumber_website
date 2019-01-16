@@ -198,6 +198,7 @@ var Collapser = function Collapser(btn) {
   };
   tt.toggle = function(t) {
     var content = tt.findCollContentFromThis(t);
+
     if (
       !content.classList.contains("displayed") &&
       !content.classList.contains("collapsing")
@@ -269,13 +270,50 @@ var CollapserClick = (function(_Collapser2) {
   return CollapserClick;
 })(Collapser);
 
-var AccordionHover = (function(_Collapser3) {
-  _inherits(AccordionHover, _Collapser3);
+var Accordion = (function(_Collapser3) {
+  _inherits(Accordion, _Collapser3);
+
+  function Accordion(btn) {
+    _classCallCheck(this, Accordion);
+
+    var _this3 = _possibleConstructorReturn(
+      this,
+      (Accordion.__proto__ || Object.getPrototypeOf(Accordion)).call(this, btn)
+    );
+
+    var tt = _this3;
+
+    tt.displayOne = function(t) {
+      var content = tt.findCollContentFromThis(t);
+      if (
+        !content.classList.contains("displayed") &&
+        !content.classList.contains("collapsing")
+      ) {
+        var _content = tt.q(".displayed", t.parentElement.parentElement),
+          collapsingContent = Array.from(
+            tt.qA(".collapsing", t.parentElement.parentElement)
+          );
+
+        if (!collapsingContent.length) {
+          tt.display(t);
+        }
+
+        tt.hide.specifiedContent(t, true, _content);
+      }
+    };
+    return _this3;
+  }
+
+  return Accordion;
+})(Collapser);
+
+var AccordionHover = (function(_Accordion) {
+  _inherits(AccordionHover, _Accordion);
 
   function AccordionHover(btn) {
     _classCallCheck(this, AccordionHover);
 
-    var _this3 = _possibleConstructorReturn(
+    var _this4 = _possibleConstructorReturn(
       this,
       (AccordionHover.__proto__ || Object.getPrototypeOf(AccordionHover)).call(
         this,
@@ -283,40 +321,25 @@ var AccordionHover = (function(_Collapser3) {
       )
     );
 
-    var tt = _this3;
+    var tt = _this4;
 
     tt.addListener(tt.btn, "mouseenter", function() {
-      var content = tt.findCollContentFromThis(this);
-      if (
-        !content.classList.contains("displayed") &&
-        !content.classList.contains("collapsing")
-      ) {
-        var _content = tt.q(".displayed", this.parentElement.parentElement),
-          collapsingContent = Array.from(
-            tt.qA(".collapsing", this.parentElement.parentElement)
-          );
-
-        if (!collapsingContent.length) {
-          tt.display(this);
-        }
-
-        tt.hide.specifiedContent(this, true, _content);
-      }
+      tt.displayOne(this);
     });
 
-    return _this3;
+    return _this4;
   }
 
   return AccordionHover;
-})(Collapser);
+})(Accordion);
 
-var AccordionClick = (function(_Collapser4) {
-  _inherits(AccordionClick, _Collapser4);
+var AccordionClick = (function(_Accordion2) {
+  _inherits(AccordionClick, _Accordion2);
 
   function AccordionClick(btn) {
     _classCallCheck(this, AccordionClick);
 
-    var _this4 = _possibleConstructorReturn(
+    var _this5 = _possibleConstructorReturn(
       this,
       (AccordionClick.__proto__ || Object.getPrototypeOf(AccordionClick)).call(
         this,
@@ -324,29 +347,24 @@ var AccordionClick = (function(_Collapser4) {
       )
     );
 
-    var tt = _this4;
+    var tt = _this5;
 
     tt.addListener(tt.btn, "click", function() {
-      var contentDisplayed = tt.q(
-        ".displayed",
-        this.parentElement.parentElement
-      );
-      tt.hide.specifiedContent(this, true, contentDisplayed);
-      tt.display(this);
+      tt.displayOne(this);
     });
-    return _this4;
+    return _this5;
   }
 
   return AccordionClick;
-})(Collapser);
+})(Accordion);
 
-var Navigation = (function(_Collapser5) {
-  _inherits(Navigation, _Collapser5);
+var Navigation = (function(_Collapser4) {
+  _inherits(Navigation, _Collapser4);
 
   function Navigation(btn) {
     _classCallCheck(this, Navigation);
 
-    var _this5 = _possibleConstructorReturn(
+    var _this6 = _possibleConstructorReturn(
       this,
       (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(
         this,
@@ -354,7 +372,7 @@ var Navigation = (function(_Collapser5) {
       )
     );
 
-    var tt = _this5,
+    var tt = _this6,
       pageWidth = function pageWidth() {
         return window.innerWidth;
       },
@@ -375,7 +393,7 @@ var Navigation = (function(_Collapser5) {
         tt.toggle(this);
       }
     });
-    return _this5;
+    return _this6;
   }
 
   return Navigation;

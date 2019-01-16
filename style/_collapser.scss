@@ -1,5 +1,6 @@
 *[class*="coll-wrapper"] { position: relative;}
-*[class*="coll-btn"], *[class*="acc-btn"], *[class*="nav-btn"] { cursor: pointer;}
+*[class*="coll-btn-click"], *[class*="acc-btn"], *[class*="nav-btn"] { cursor: pointer;}
+.acc-btn-click, .acc-btn-hover{padding: 1px 0;}
 *[class*="coll-content-wrapper"]{
 	display: none;
 }
@@ -91,7 +92,7 @@ header{
 				display: block;
 				ol {
 					> li{
-						line-height: $navHDesktop;
+						line-height: $navHDesktop - 1px;
 						position: relative;
 						display: inline-block;
 						margin-left: $space2;

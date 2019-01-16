@@ -27,7 +27,7 @@ h2{
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 100%;
-	margin-top: $space3;
+	margin: $space3 0;
 	margin-bottom: $space4;
 }
 h3{
@@ -36,18 +36,18 @@ h3{
 	line-height: 100%;
 	color: $gray2;
 	text-transform: uppercase;
-	margin-top: $space2;
+	margin: $space2 0;
 }
 h4{
 	font-size: $fontSize2;
 	font-weight: 700;
 	line-height: 100%;
-	margin-top: $space1;
+	margin: $space1 0;
 	text-transform: lowercase;
 	&:hover{color: $orange1}
 }
 p{
-	margin-top: $space3;
+	margin: $space2 0;
 	&.important{
 		margin-top: 0;
 		font-size: $fontSize3;
