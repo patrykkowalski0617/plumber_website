@@ -384,7 +384,7 @@ var Navigation = (function(_Collapser4) {
       }
     });
     tt.addListener(tt.wrappers(), "mouseleave", function() {
-      if (pageWidth() >= breakPoint) {
+      if (pageWidth() >= breakPoint && this.classList.contains('coll-nasted')) {
         tt.hide.currentContent(this);
       }
     });
