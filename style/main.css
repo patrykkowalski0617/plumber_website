@@ -37,13 +37,6 @@ header {
   left: 0;
   height: 62px;
   border-bottom: 2px solid; }
-  header #burger {
-    width: 40px;
-    height: 40px;
-    background: black;
-    position: absolute;
-    top: 10px;
-    right: 10px; }
   header nav {
     text-align: center;
     border-bottom: 2px solid;
@@ -155,8 +148,32 @@ a {
 header {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  border-bottom: 2px solid;
-  height: 62px; }
+  border-bottom: 2px solid; }
+  header #burger {
+    float: right; }
+    header #burger .burger-item {
+      float: left;
+      line-height: 62px;
+      height: 62px;
+      margin-left: 10px; }
+    header #burger .burger-description {
+      font-size: 0.8rem;
+      margin: 0; }
+    header #burger .burger-bars {
+      position: relative;
+      width: 40px; }
+      header #burger .burger-bars .burger-bar {
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 4px;
+        background-color: #333;
+        border-radius: 2px;
+        -webkit-box-shadow: 0px 10px, 0px -10px;
+                box-shadow: 0px 10px, 0px -10px;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%); }
   header nav {
     font-size: 0.8rem;
     font-weight: 700; }
