@@ -8,7 +8,10 @@
     height: 70vh;
 }
 // JAK PRACUJEMY
-
+#jak-pracujemy{
+	background: url(img/bg-glowna1m.svg) no-repeat;
+	padding-top: 10%
+}
 // WYKONAMY
 #wykonamy{
 	h4{
@@ -17,4 +20,22 @@
 	p{
 		margin: $space1 0;
 	}
+}
+
+// KONTAKT
+#kontakt{
+	background: url(img/bg-glowna2m.svg) no-repeat bottom;
+	padding-bottom: 30%
+}
+// LOKALIZACJE
+#lokalizacje{
+	background: url(img/bg-glowna3m.svg) no-repeat;
+	padding-top: 10%
+}
+// PORADY
+
+// OPINIE
+#opinie{
+	background: url(img/bg-glowna4m.svg) no-repeat;
+	padding-top: 10%
 }

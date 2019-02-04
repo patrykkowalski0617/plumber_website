@@ -4,7 +4,23 @@
   background-position: left top;
   height: 70vh; }
 
+#jak-pracujemy {
+  background: url(img/bg-glowna1m.svg) no-repeat;
+  padding-top: 10%; }
+
 #wykonamy h4 {
   margin-bottom: 0; }
 #wykonamy p {
   margin: 0.2rem 0; }
+
+#kontakt {
+  background: url(img/bg-glowna2m.svg) no-repeat bottom;
+  padding-bottom: 30%; }
+
+#lokalizacje {
+  background: url(img/bg-glowna3m.svg) no-repeat;
+  padding-top: 10%; }
+
+#opinie {
+  background: url(img/bg-glowna4m.svg) no-repeat;
+  padding-top: 10%; }

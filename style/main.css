@@ -170,11 +170,11 @@ a {
   a:active, a:hover {
     color: #f98c46; }
 
-header {
+#header {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   border-bottom: 2px solid; }
-  header nav {
+  #header nav {
     font-size: 0.8rem;
     font-weight: 700; }
 
@@ -510,19 +510,27 @@ body {
 a:link, a:visited, a:active, a:hover {
   color: inherit; }
 
-header {
+#header {
   background: #fff;
   color: #333;
   border-color: #ccc; }
-  header nav {
+  #header nav {
     background: #fff;
     border-color: #ccc; }
-    header nav ul {
+    #header nav ul {
       border-color: #ccc;
       background: #fff; }
-      header nav ul li {
+      #header nav ul li {
         color: #666; }
 
+#footer #main-footer {
+  background: #666; }
+  #footer #main-footer * {
+    color: #fff; }
+
+section.bg-color {
+  background: #f6f0ca; }
+
 @media (min-width: 1024px) {
-  header .container nav ul {
+  #header .container nav ul {
     border-color: #ccc; } }
