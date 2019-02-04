@@ -4,12 +4,15 @@
 		scrollPosition: function(){
 			return window.pageYOffset;
 		},
-		transform: function(speed){
-			return this.scrollPosition() / speed;
-		},
 		transformCss: function(speed, element){
-			const css = function(){return 'translateY(' + parallax.transform(speed) + 'px)'}
-			element.style.transform = css(speed);
+			const transformValue = function(speed){
+				return parallax.scrollPosition() / speed;
+			},
+			setCss = function(speed){
+				return 'translateY(' + transformValue(speed) + 'px)'
+			};
+
+			element.style.transform = setCss(speed);
 		},
 		create: function(speed, element){
 			parallax.transformCss(speed, element);
