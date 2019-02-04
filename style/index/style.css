@@ -24,3 +24,10 @@
 #opinie {
   background: url(img/bg-glowna4m.svg) no-repeat;
   padding-top: 10%; }
+
+#welcome-section {
+  position: relative;
+  z-index: -100; }
+
+#jak-pracujemy {
+  background-color: #fff; }

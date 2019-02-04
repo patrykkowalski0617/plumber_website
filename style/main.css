@@ -529,7 +529,7 @@ a:link, a:visited, a:active, a:hover {
     color: #fff; }
 
 section.bg-color {
-  background: #f6f0ca; }
+  background-color: #f6f0ca !important; }
 
 @media (min-width: 1024px) {
   #header .container nav ul {

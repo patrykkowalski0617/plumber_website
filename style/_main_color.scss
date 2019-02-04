@@ -29,8 +29,10 @@ a{
 		*{color: $white3;}
 	}
 }
-section.bg-color{
-	background: $white1;
+section{
+	&.bg-color{
+		background-color: $white1 !important;
+	}
 }
 
 @media(min-width: $breakL){
