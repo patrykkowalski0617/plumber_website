@@ -7,10 +7,14 @@
 		transform: function(speed){
 			return this.scrollPosition() / speed;
 		},
-		transformCss: function(speed){return 'translateY(' + this.transform(speed) + 'px)'},
+		transformCss: function(speed, element){
+			const css = function(){return 'translateY(' + parallax.transform(speed) + 'px)'}
+			element.style.transform = css(speed);
+		},
 		create: function(speed, element){
+			parallax.transformCss(speed, element);
 			window.addEventListener('scroll', function(){
-				element.style.transform = parallax.transformCss(speed);
+				parallax.transformCss(speed, element);
 			})
 		}
 	};
