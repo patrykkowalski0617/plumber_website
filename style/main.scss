@@ -67,34 +67,6 @@ header{
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	border-bottom: 2px solid;
-	#burger{
-		float: right;
-		.burger-item{
-			float: left;
-			line-height: $navHMobile;
-			height: $navHMobile;
-			margin-left: 10px;
-		}
-		.burger-description{
-			font-size: $fontSize1;
-		    margin: 0;
-		}
-		.burger-bars{
-			position: relative;
-			width: 40px;
-			.burger-bar{
-				position: absolute;
-				right: 0;
-				left: 0;
-				height: 4px;
-				background-color: $gray1;
-				border-radius: 2px;
-				box-shadow: 0px 10px, 0px -10px;
-				top: 50%;
-				transform: translate(0, -50%);
-			}
-		}
-	}
 	nav{
 		font-size: $fontSize1;
 		font-weight: 700;
