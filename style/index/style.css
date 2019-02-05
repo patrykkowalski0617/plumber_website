@@ -5,8 +5,31 @@
   height: 70vh; }
 
 #jak-pracujemy {
-  background: url(img/bg-glowna1m.svg) no-repeat;
+  background-image: url(img/bg-glowna1m.svg);
+  background-repeat: no-repeat;
   padding-top: 10%; }
+  #jak-pracujemy h3 {
+    text-align: left;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto; }
+    #jak-pracujemy h3::before {
+      content: '';
+      display: inline-block;
+      height: 1.3rem;
+      width: 1.3rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      line-height: normal;
+      vertical-align: middle; }
+    #jak-pracujemy h3:nth-of-type(1)::before {
+      background-image: url(img/nr1.svg); }
+    #jak-pracujemy h3:nth-of-type(2)::before {
+      background-image: url(img/nr2.svg); }
+    #jak-pracujemy h3:nth-of-type(3)::before {
+      background-image: url(img/nr3.svg); }
+    #jak-pracujemy h3:nth-of-type(4)::before {
+      background-image: url(img/nr4.svg); }
 
 #wykonamy h4 {
   margin-bottom: 0; }
@@ -28,6 +51,3 @@
 #welcome-section {
   position: relative;
   z-index: -100; }
-
-#jak-pracujemy {
-  background-color: #fff; }

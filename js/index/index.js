@@ -5,10 +5,10 @@
 			return window.pageYOffset;
 		},
 		transformCss: function(speed, element){
-			const transformValue = function(speed){
+			const transformValue = function(){
 				return parallax.scrollPosition() / speed;
 			},
-			setCss = function(speed){
+			setCss = function(){
 				return 'translateY(' + transformValue(speed) + 'px)'
 			};
 

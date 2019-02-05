@@ -3,7 +3,7 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 .container{ max-width: 1100px; margin: 0 auto; padding: 0 $space2;}
 
-section, article {padding: $space3 0 $space6 0}
+section, article, footer {padding: $space3 0 $space6 0}
 
 .row{ margin: $space3 (-$space2); padding: 0; overflow: hidden;}
 

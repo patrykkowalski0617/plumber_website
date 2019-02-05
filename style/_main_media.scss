@@ -10,7 +10,7 @@
 
 @media(min-width: $breakL){
 	body{ margin-top: $navHDesktop }
-	header{
+	#header{
 		height: $navHDesktop;
 		.container{
 			position: relative;
@@ -30,6 +30,7 @@
 				}
 				ul{
 					width: 280px;
+					border-color: $gray5;	
 					> li{
 						font-size: $fontSize1;
 					}

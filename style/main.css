@@ -117,7 +117,9 @@ html {
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background: #fff;
+  color: #737373; }
 
 h1 {
   font-weight: 800;
@@ -165,18 +167,42 @@ p {
 
 a {
   text-decoration: none; }
-  a:link, a:visited {
-    color: #fb6b31; }
-  a:active, a:hover {
-    color: #f98c46; }
+  a:link, a:visited, a:active, a:hover {
+    color: inherit; }
 
 #header {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  border-bottom: 2px solid; }
+  border-bottom: 2px solid #ccc;
+  background: #fff;
+  color: #333; }
   #header nav {
+    background: #fff;
+    border-color: #ccc;
     font-size: 0.8rem;
     font-weight: 700; }
+    #header nav ul {
+      border-color: #ccc;
+      background: #fff; }
+      #header nav ul li {
+        color: #666; }
+
+#footer {
+  background: #666;
+  padding-bottom: 0; }
+  #footer #main-footer * {
+    color: #fff; }
+  #footer #copyrigth {
+    background: #fff;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    text-align: center; }
+
+section {
+  background-color: #fff;
+  text-align: center; }
+  section.bg-color {
+    background-color: #f6f0ca; }
 
 * {
   margin: 0;
@@ -189,7 +215,7 @@ a {
   margin: 0 auto;
   padding: 0 0.7rem; }
 
-section, article {
+section, article, footer {
   padding: 1.3rem 0 2.6rem 0; }
 
 .row {
@@ -485,52 +511,22 @@ section, article {
   body {
     margin-top: 77px; }
 
-  header {
+  #header {
     height: 77px; }
-    header .container {
+    #header .container {
       position: relative;
       height: 100%; }
-      header .container h1 {
+      #header .container h1 {
         font-size: 1.6rem;
         line-height: 35px;
         width: 180px;
         padding: 2px; }
-      header .container nav {
+      #header .container nav {
         right: 0.7rem; }
-        header .container nav ol > li {
+        #header .container nav ol > li {
           font-size: 1rem; }
-        header .container nav ul {
-          width: 280px; }
-          header .container nav ul > li {
+        #header .container nav ul {
+          width: 280px;
+          border-color: #ccc; }
+          #header .container nav ul > li {
             font-size: 0.8rem; } }
-body {
-  background: #fff;
-  color: #737373; }
-
-a:link, a:visited, a:active, a:hover {
-  color: inherit; }
-
-#header {
-  background: #fff;
-  color: #333;
-  border-color: #ccc; }
-  #header nav {
-    background: #fff;
-    border-color: #ccc; }
-    #header nav ul {
-      border-color: #ccc;
-      background: #fff; }
-      #header nav ul li {
-        color: #666; }
-
-#footer #main-footer {
-  background: #666; }
-  #footer #main-footer * {
-    color: #fff; }
-
-section.bg-color {
-  background-color: #f6f0ca !important; }
-
-@media (min-width: 1024px) {
-  #header .container nav ul {
-    border-color: #ccc; } }
