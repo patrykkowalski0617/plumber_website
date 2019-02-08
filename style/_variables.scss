@@ -27,10 +27,12 @@ $breakS: 320px;		// Breaking points of website
 $breakM: 768px;
 $breakL: 1024px;
 
-// $headerBorder: 2px solid $gray5; 	// Values for borders in heder and navigation
-// $subMenuBorder: 1px solid $gray5; 	// Values for borders in heder and navigation
-
 $transitionMaster: .4s ease-in-out;
 
 $navHMobile: 62px; 		// Height of mobile navigation bar
 $navHDesktop: 77px;		// Height of desktop navigation bar
+
+@mixin scroll-down-icon-size($size) {
+	width: $size;
+	height: $size;
+}

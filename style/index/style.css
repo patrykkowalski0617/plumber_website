@@ -6,13 +6,12 @@
   #welcome-section #scroll-down-icon {
     display: block;
     position: absolute;
+    top: 65vh;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -100%, 0);
+            transform: translate3d(-50%, -100%, 0);
     width: 35px;
-    height: 35px;
-    margin: 0 auto 40px auto;
-    -webkit-transform: translateY(calc(-35px - 40px)) translateX(-50%);
-            transform: translateY(calc(-35px - 40px)) translateX(-50%);
-    top: 70vh;
-    left: 50%; }
+    height: 35px; }
     #welcome-section #scroll-down-icon::before, #welcome-section #scroll-down-icon::after {
       content: '';
       display: block;

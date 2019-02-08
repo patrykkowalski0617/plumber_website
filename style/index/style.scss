@@ -9,12 +9,10 @@
 	#scroll-down-icon{
 		display: block;
 		position: absolute;
-		width: 35px;
-		height: 35px;
-		margin: 0 auto 40px auto;
-		transform: translateY(calc(-35px - 40px)) translateX(-50%);
-		top: 70vh;
+		top: 65vh;
 		left: 50%;
+		transform: translate3d(-50%, -100%, 0);
+		@include scroll-down-icon-size(35px);
 		&::before,
 		&::after{
 			content: '';
