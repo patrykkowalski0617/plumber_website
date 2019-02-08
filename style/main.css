@@ -196,7 +196,8 @@ a {
     background: #fff;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-    text-align: center; }
+    text-align: center;
+    max-width: none; }
 
 section {
   background-color: #fff;
