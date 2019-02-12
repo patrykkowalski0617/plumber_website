@@ -73,6 +73,9 @@
 #wykonamy{
 	h4{
 		margin-bottom: 0;
+		&::after{
+			content: ' +'
+		}
 	}
 	p{
 		margin: $space1 0;

@@ -59,6 +59,8 @@
 
 #wykonamy h4 {
   margin-bottom: 0; }
+  #wykonamy h4::after {
+    content: " +"; }
 #wykonamy p {
   margin: 0.2rem 0; }
 
