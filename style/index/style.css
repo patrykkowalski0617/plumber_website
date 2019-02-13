@@ -92,11 +92,15 @@
   background: url(img/bg-glowna3m.svg) no-repeat;
   padding-top: 10%; }
 
-#porady .aspect-ratio-1-2 {
+#porady .aspect-ratio {
   position: relative;
   padding-top: 43%; }
-  #porady .aspect-ratio-1-2 img {
-    width: 100%; }
+  #porady .aspect-ratio .aspect-ratio-child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 #opinie {
   background: url(img/bg-glowna4m.svg) no-repeat;

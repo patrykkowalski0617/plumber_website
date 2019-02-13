@@ -110,18 +110,6 @@ section{
 	}
 }
 
-.aspect-ratio-1-2{
-		position: relative;
-    	padding-top: 43%;
-    	.aspect-ratio-child{
-    		position: absolute;
-		    top: 0;
-		    bottom: 0;
-		    left: 0;
-		    right: 0;
-    	}
-	}
-
 @import 'main_grid';
 @import 'main_media';
 @import 'main_animation';

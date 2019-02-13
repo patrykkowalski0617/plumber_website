@@ -2,3 +2,17 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin aspect-ratio ($height) {
+	.aspect-ratio{
+		position: relative;
+    	padding-top: $height;
+    	.aspect-ratio-child{
+    		position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+    	}
+	}
+}

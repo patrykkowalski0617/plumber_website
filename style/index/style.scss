@@ -121,13 +121,7 @@
 }
 // PORADY
 #porady{
-	.aspect-ratio-1-2{
-		position: relative;
-    	padding-top: 43%;
-    	img{
-		  	width: 100%
-    	}
-	}
+	@include aspect-ratio(43%);
 }
 
 // OPINIE
