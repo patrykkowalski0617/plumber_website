@@ -101,6 +101,21 @@
     bottom: 0;
     left: 0;
     right: 0; }
+#porady .porady-img {
+  margin-bottom: 0.7rem;
+  height: calc(100% - 0.7rem);
+  overflow: hidden;
+  padding-right: 0; }
+  #porady .porady-img img {
+    width: 100%; }
+#porady .porady-description {
+  margin-top: 0.7rem;
+  height: calc(100% - 0.7rem);
+  padding-left: 0; }
+  #porady .porady-description .porady-description-content {
+    background: #efe4ac;
+    height: 100%;
+    padding: 0.2rem 0.7rem; }
 
 #opinie {
   background: url(img/bg-glowna4m.svg) no-repeat;

@@ -2,12 +2,18 @@
 
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 .container{ max-width: 1100px; margin: 0 auto; padding: 0 $space2;}
+.container-fluid{ max-width: 1100px; margin: 0 auto; padding: $space3 0}
 
 section, article, footer {padding: $space3 0 $space6 0}
 
 .row{ margin-left: (-$space2); margin-right: (-$space2); padding: 0; overflow: hidden;}
 
 *[class*="col-"]{ display: block; float: left; padding: 0 $space2;}
+
+.vertical-space{
+	margin-top: $space3;
+	margin-bottom: $space3;
+}
 
 .col-1{ width: 8.33% }
 .col-2{ width: 16.66% }
