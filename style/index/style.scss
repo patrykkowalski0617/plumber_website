@@ -1,4 +1,5 @@
 @import '../variables';
+@import '../mixins';
 
 // WELCOME SECTION
 #welcome-section{
@@ -71,6 +72,32 @@
 }
 // WYKONAMY
 #wykonamy{
+	h3{
+		&::before{
+			content: '';
+			display: block;
+			height: 100px;
+			width: 100px; 
+			background-size: cover;
+			background-repeat: no-repeat;
+			line-height: normal;
+			vertical-align: middle;
+			@include margin-aling-center;
+			margin-bottom: $space3;
+		}
+		&:nth-of-type(1)::before{
+			background-image: url(img/circle-icon-naprawa.svg);
+		}
+		&:nth-of-type(2)::before{
+			background-image: url(img/circle-icon-montaz.svg);
+		}
+		&:nth-of-type(3)::before{
+			background-image: url(img/circle-icon-podlaczanie.svg);
+		}
+		&:nth-of-type(4)::before{
+			background-image: url(img/circle-icon-modernizacja.svg);
+		}
+	}
 	h4{
 		margin-bottom: 0;
 		&::after{
@@ -93,6 +120,15 @@
 	padding-top: 10%
 }
 // PORADY
+#porady{
+	.aspect-ratio-1-2{
+		position: relative;
+    	padding-top: 43%;
+    	img{
+		  	width: 100%
+    	}
+	}
+}
 
 // OPINIE
 #opinie{

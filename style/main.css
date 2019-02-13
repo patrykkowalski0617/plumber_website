@@ -208,6 +208,16 @@ section {
   section.bg-color {
     background-color: #f6f0ca; }
 
+.aspect-ratio-1-2 {
+  position: relative;
+  padding-top: 43%; }
+  .aspect-ratio-1-2 .aspect-ratio-child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
 * {
   margin: 0;
   padding: 0;
@@ -223,11 +233,12 @@ section, article, footer {
   padding: 1.3rem 0 2.6rem 0; }
 
 .row {
-  margin: 1.3rem -0.7rem;
+  margin-left: -0.7rem;
+  margin-right: -0.7rem;
   padding: 0;
   overflow: hidden; }
 
-*[class^="col-"] {
+*[class*="col-"] {
   display: block;
   float: left;
   padding: 0 0.7rem; }

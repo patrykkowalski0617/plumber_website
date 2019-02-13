@@ -57,6 +57,26 @@
     #jak-pracujemy h3:nth-of-type(4)::before {
       background-image: url(img/nr4.svg); }
 
+#wykonamy h3::before {
+  content: '';
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: normal;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.3rem; }
+#wykonamy h3:nth-of-type(1)::before {
+  background-image: url(img/circle-icon-naprawa.svg); }
+#wykonamy h3:nth-of-type(2)::before {
+  background-image: url(img/circle-icon-montaz.svg); }
+#wykonamy h3:nth-of-type(3)::before {
+  background-image: url(img/circle-icon-podlaczanie.svg); }
+#wykonamy h3:nth-of-type(4)::before {
+  background-image: url(img/circle-icon-modernizacja.svg); }
 #wykonamy h4 {
   margin-bottom: 0; }
   #wykonamy h4::after {
@@ -71,6 +91,12 @@
 #lokalizacje {
   background: url(img/bg-glowna3m.svg) no-repeat;
   padding-top: 10%; }
+
+#porady .aspect-ratio-1-2 {
+  position: relative;
+  padding-top: 43%; }
+  #porady .aspect-ratio-1-2 img {
+    width: 100%; }
 
 #opinie {
   background: url(img/bg-glowna4m.svg) no-repeat;
