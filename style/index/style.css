@@ -124,3 +124,36 @@
 #welcome-section {
   position: relative;
   z-index: -100; }
+
+#scroll-down-icon::before {
+  -webkit-animation: scroll-down-icon linear infinite 2s;
+          animation: scroll-down-icon linear infinite 2s; }
+#scroll-down-icon::after {
+  -webkit-animation: scroll-down-icon 2s linear infinite 1s;
+          animation: scroll-down-icon 2s linear infinite 1s;
+  top: -40%;
+  opacity: 0; }
+
+@-webkit-keyframes scroll-down-icon {
+  0% {
+    top: -40%;
+    opacity: 0; }
+  20% {
+    opacity: 0.9; }
+  80% {
+    opacity: 0.9; }
+  100% {
+    top: 80%;
+    opacity: 0; } }
+
+@keyframes scroll-down-icon {
+  0% {
+    top: -40%;
+    opacity: 0; }
+  20% {
+    opacity: 0.9; }
+  80% {
+    opacity: 0.9; }
+  100% {
+    top: 80%;
+    opacity: 0; } }
