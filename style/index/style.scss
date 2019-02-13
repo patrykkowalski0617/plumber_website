@@ -1,16 +1,20 @@
 @import '../variables';
 @import '../mixins';
 
+
 // WELCOME SECTION
 #welcome-section{
 	background: url(img/hero.jpg) no-repeat;
 	background-size: cover;
 	background-position: left top;
 	height: 70vh;
+}
+main{
+	position: relative;
 	#scroll-down-icon{
 		display: block;
 		position: absolute;
-		top: 65vh;
+		top: -40px;
 		left: 50%;
 		transform: translate3d(-50%, -100%, 0);
 		@include scroll-down-icon-size(35px);
@@ -55,6 +59,7 @@
 			background-repeat: no-repeat;
 			line-height: normal;
 			vertical-align: middle;
+			margin-right: $space2;
 		}
 		&:nth-of-type(1)::before{
 			background-image: url(img/nr1.svg);
