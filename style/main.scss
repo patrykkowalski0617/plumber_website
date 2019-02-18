@@ -94,6 +94,14 @@ address{
 	padding-bottom: 0;
 	#main-footer{
 		*{color: $white3;}
+		h3{
+			position: relative;
+			i {
+				position: absolute;
+				right: 0;
+				font-size: 3.2rem
+			}
+		}
 	}
 	#copyrigth{
 		background: $white3;

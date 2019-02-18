@@ -78,10 +78,6 @@ main{
 // WYKONAMY
 #wykonamy{
 	h3{
-		// &::before{
-		// 	content: '';
-			
-		// }
 		&:nth-of-type(1) .circle-icon{
 			background-image: url(img/circle-icon-naprawa.svg);
 		}
@@ -109,7 +105,17 @@ main{
 // KONTAKT
 #kontakt{
 	background: url(img/bg-glowna2m.svg) no-repeat bottom;
-	padding-bottom: 30%
+	padding-bottom: 30%;
+	.kontakt-item{
+		position: relative;
+		padding-top: 4rem;
+		i{
+			font-size: 3rem;
+			left: 50%;
+			top: 0;
+			@include translate-center(hor);
+		}
+	}
 }
 // LOKALIZACJE
 #lokalizacje{

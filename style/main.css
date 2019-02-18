@@ -195,6 +195,12 @@ address {
   padding-bottom: 0; }
   #footer #main-footer * {
     color: #fff; }
+  #footer #main-footer h3 {
+    position: relative; }
+    #footer #main-footer h3 i {
+      position: absolute;
+      right: 0;
+      font-size: 3.2rem; }
   #footer #copyrigth {
     background: #fff;
     padding-top: 0.7rem;
