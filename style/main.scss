@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 @import 'collapser';
 
 *{
@@ -108,6 +109,18 @@ section{
 	&.bg-color{
 		background-color: $white1;
 	}
+}
+.circle-icon{
+	display: block;
+	height: 100px;
+	width: 100px; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	line-height: normal;
+	vertical-align: middle;
+	@include margin-aling-center;
+	margin-bottom: $space3;
+	margin-top: $space3;
 }
 
 @import 'main_grid';

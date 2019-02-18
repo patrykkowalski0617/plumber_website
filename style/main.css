@@ -208,6 +208,19 @@ section {
   section.bg-color {
     background-color: #f6f0ca; }
 
+.circle-icon {
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: normal;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.3rem;
+  margin-top: 1.3rem; }
+
 * {
   margin: 0;
   padding: 0;

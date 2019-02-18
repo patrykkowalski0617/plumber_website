@@ -78,28 +78,20 @@ main{
 // WYKONAMY
 #wykonamy{
 	h3{
-		&::before{
-			content: '';
-			display: block;
-			height: 100px;
-			width: 100px; 
-			background-size: cover;
-			background-repeat: no-repeat;
-			line-height: normal;
-			vertical-align: middle;
-			@include margin-aling-center;
-			margin-bottom: $space3;
-		}
-		&:nth-of-type(1)::before{
+		// &::before{
+		// 	content: '';
+			
+		// }
+		&:nth-of-type(1) .circle-icon{
 			background-image: url(img/circle-icon-naprawa.svg);
 		}
-		&:nth-of-type(2)::before{
+		&:nth-of-type(2) .circle-icon{
 			background-image: url(img/circle-icon-montaz.svg);
 		}
-		&:nth-of-type(3)::before{
+		&:nth-of-type(3) .circle-icon{
 			background-image: url(img/circle-icon-podlaczanie.svg);
 		}
-		&:nth-of-type(4)::before{
+		&:nth-of-type(4) .circle-icon{
 			background-image: url(img/circle-icon-modernizacja.svg);
 		}
 	}
