@@ -1,0 +1,60 @@
+@media(min-width: $breakS){
+	
+}
+
+@media(min-width: $breakM){
+// JAK PRACUJEMY
+	#jak-pracujemy{
+		background-image: url(img/bg-glowna1.svg);
+		h3{
+			width: 290px;
+			&::before{
+				height: $space4;
+				width: $space4;
+			}
+		}
+	}
+// WYKONAMY
+	#wykonamy{
+		text-align: left;
+		h3{
+			position: relative;
+			.circle-icon{
+				position: absolute;
+				top: 0;
+				left: -50%;
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media(min-width: $breakL){
+
+// WELCOME SECTION
+	#welcome-section{
+		height: calc(100vh - #{$navHDesktop});
+	}
+// WYKONAMY
+	#wykonamy{
+		text-align: left;
+		h3{
+			position: relative;
+			.circle-icon{
+				position: absolute;
+				top: 0;
+				left: -50%;
+				margin: 0;
+			}
+		}
+		.row .wykonamy-content{
+			&:first-of-type{
+				text-align: right;
+				.circle-icon{
+					left: auto;
+					right: -50%;
+				}
+			}
+		}
+	}
+}

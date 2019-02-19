@@ -367,6 +367,9 @@ section, article, footer {
   .col-s-12 {
     width: 100%; }
 
+  .off-s-0 {
+    margin-left: 0; }
+
   .off-s-1 {
     margin-left: 8.33%; }
 
@@ -436,6 +439,9 @@ section, article, footer {
   .col-m-12 {
     width: 100%; }
 
+  .off-m-0 {
+    margin-left: 0; }
+
   .off-m-1 {
     margin-left: 8.33%; }
 
@@ -504,6 +510,9 @@ section, article, footer {
 
   .col-l-12 {
     width: 100%; }
+
+  .off-l-0 {
+    margin-left: 0; }
 
   .off-l-1 {
     margin-left: 8.33%; }

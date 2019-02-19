@@ -83,6 +83,7 @@ main {
     position: relative;
     padding-top: 4rem; }
     #kontakt .kontakt-item i {
+      color: #fb6b31;
       font-size: 3rem;
       left: 50%;
       top: 0;
@@ -160,3 +161,39 @@ main {
   100% {
     top: 80%;
     opacity: 0; } }
+@media (min-width: 768px) {
+  #jak-pracujemy {
+    background-image: url(img/bg-glowna1.svg); }
+    #jak-pracujemy h3 {
+      width: 290px; }
+      #jak-pracujemy h3::before {
+        height: 2rem;
+        width: 2rem; }
+
+  #wykonamy {
+    text-align: left; }
+    #wykonamy h3 {
+      position: relative; }
+      #wykonamy h3 .circle-icon {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        margin: 0; } }
+@media (min-width: 1024px) {
+  #welcome-section {
+    height: calc(100vh - 77px); }
+
+  #wykonamy {
+    text-align: left; }
+    #wykonamy h3 {
+      position: relative; }
+      #wykonamy h3 .circle-icon {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        margin: 0; }
+    #wykonamy .row .wykonamy-content:first-of-type {
+      text-align: right; }
+      #wykonamy .row .wykonamy-content:first-of-type .circle-icon {
+        left: auto;
+        right: -50%; } }

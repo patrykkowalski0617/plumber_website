@@ -110,6 +110,7 @@ main{
 		position: relative;
 		padding-top: 4rem;
 		i{
+			color: $orange1;
 			font-size: 3rem;
 			left: 50%;
 			top: 0;
@@ -120,7 +121,7 @@ main{
 // LOKALIZACJE
 #lokalizacje{
 	background: url(img/bg-glowna3m.svg) no-repeat;
-	padding-top: 10%
+	padding-top: 10%;
 }
 // PORADY
 #porady{
@@ -152,4 +153,5 @@ main{
 	padding-top: 10%
 }
 
-@import 'animations'
+@import 'animations';
+@import 'media';
