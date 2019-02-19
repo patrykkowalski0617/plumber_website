@@ -97,7 +97,7 @@ header {
       border: none;
       display: block; }
       header .container nav ol > li {
-        line-height: 76px;
+        line-height: 75px;
         position: relative;
         display: inline-block;
         margin-left: 0.7rem; }
