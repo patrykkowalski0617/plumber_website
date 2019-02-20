@@ -27,6 +27,27 @@
 			}
 		}
 	}
+// KONTAKT
+	#kontakt{
+		background-image: url(img/bg-glowna2.svg);
+		padding-bottom: 10%;
+		.row .kontakt-item {
+			padding-top: 0;
+			i{
+				position: static;
+				vertical-align: -15%;
+			}
+		}
+	}
+// LOKALIZACJE
+	#lokalizacje{
+		background-image: url(img/bg-glowna3.svg);
+	}
+// PORADY
+	#porady .aspect-ratio {
+	    position: relative;
+	    padding-top: 25%;
+	}
 }
 
 @media(min-width: $breakL){
