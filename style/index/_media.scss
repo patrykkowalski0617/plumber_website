@@ -46,8 +46,12 @@
 	}
 // PORADY
 	#porady .aspect-ratio {
-	    position: relative;
-	    padding-top: 25%;
+		position: relative;
+		padding-top: 25%;
+		.porady-description-content .multi-line-text-overflow{
+			@include multi-line-text-overflow(2, 20px);
+			margin-bottom: 0;
+		}
 	}
 // OPINIE
 	#opinie{
@@ -81,6 +85,12 @@
 					right: -50%;
 				}
 			}
+		}
+	}
+// PORADY
+	#porady .aspect-ratio {
+	    .porady-description-content .multi-line-text-overflow{
+			@include multi-line-text-overflow(6, 20px);
 		}
 	}
 }

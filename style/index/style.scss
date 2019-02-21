@@ -142,6 +142,9 @@ main{
 			background: $white2;
 			height: 100%;
 			padding: $space1 $space2;
+			.multi-line-text-overflow{
+				display: none;
+			}
 		}
 	}
 }
