@@ -256,10 +256,7 @@ section, article, footer {
 *[class*="col-"] {
   display: block;
   float: left;
-  padding: 0 0.7rem; }
-
-.vertical-space {
-  margin-top: 1.3rem;
+  padding: 0 0.7rem;
   margin-bottom: 1.3rem; }
 
 .col-1 {

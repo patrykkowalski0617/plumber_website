@@ -40,8 +40,7 @@ main {
   #jak-pracujemy h3 {
     text-align: left;
     width: 250px;
-    margin-right: auto;
-    margin-left: auto; }
+    margin: 1.3rem auto; }
     #jak-pracujemy h3::before {
       content: '';
       display: inline-block;
@@ -165,7 +164,8 @@ main {
   #jak-pracujemy {
     background-image: url(img/bg-glowna1.svg); }
     #jak-pracujemy h3 {
-      width: 290px; }
+      width: 290px;
+      margin: 1.3rem auto; }
       #jak-pracujemy h3::before {
         height: 2rem;
         width: 2rem; }

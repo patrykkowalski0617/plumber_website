@@ -8,6 +8,7 @@
 		background-image: url(img/bg-glowna1.svg);
 		h3{
 			width: 290px;
+			margin: $space3 auto;
 			&::before{
 				height: $space4;
 				width: $space4;
