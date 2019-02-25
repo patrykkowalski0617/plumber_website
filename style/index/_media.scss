@@ -90,7 +90,7 @@
 // PORADY
 	#porady .aspect-ratio {
 	    .porady-description-content .multi-line-text-overflow{
-			@include multi-line-text-overflow(6, 20px);
+			@include multi-line-text-overflow(5, 20px);
 		}
 	}
 }

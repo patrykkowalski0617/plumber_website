@@ -232,9 +232,9 @@ main {
   #porady .aspect-ratio .porady-description-content .multi-line-text-overflow {
     line-height: 1.3;
     font-size: 20px;
-    height: calc(1.3 * 6 * 20px);
+    height: calc(1.3 * 5 * 20px);
     overflow: hidden;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
     display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical; } }
