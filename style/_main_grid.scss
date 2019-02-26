@@ -1,14 +1,14 @@
 @import 'variables';
 
 *{ margin: 0; padding: 0; box-sizing: border-box;}
-.container{ max-width: 1100px; margin: 0 auto; padding: 0 $space2;}
-.container-fluid{ max-width: 1100px; margin: 0 auto; padding: $space3 0}
+.container{ max-width: 1100px; margin: 0 auto; padding: $space2;}
+.container-fluid{ max-width: 1100px; margin: 0 auto; padding: $space3}
 
 section, article, footer {padding: $space3 0 $space6 0}
 
 .row{ margin-left: (-$space2); margin-right: (-$space2); display: flex; flex-flow: row wrap;}
 
-*[class*="col-"]{ display: block; padding: 0 $space2; margin-bottom: $space3;}
+*[class*="col-"]:not(.container){ display: block; padding: 0 $space2;}
 
 .col-1 {max-width: 8.33%;   flex: 0 0  8.33%}
 .col-2 {max-width: 16.66%;  flex: 0 0  16.66%}

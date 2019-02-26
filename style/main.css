@@ -135,8 +135,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   line-height: 100%;
-  margin: 1.3rem 0;
-  margin-bottom: 2rem; }
+  margin: 0.7rem 0 2rem 0; }
 
 h3 {
   font-size: 1rem;
@@ -144,19 +143,19 @@ h3 {
   line-height: 100%;
   color: #666;
   text-transform: uppercase;
-  margin: 0.7rem 0; }
+  margin: 0 0 0.7rem 0; }
 
 h4 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 100%;
-  margin: 0.2rem 0;
+  margin: 0 0 0.2rem 0;
   text-transform: lowercase; }
   h4:hover {
     color: #fb6b31; }
 
 p {
-  margin: 0.7rem 0; }
+  margin: 0 0 0.7rem 0; }
   p.important {
     margin-top: 0;
     font-size: 1.4rem;
@@ -179,6 +178,9 @@ address {
   border-bottom: 2px solid #ccc;
   background: #fff;
   color: #333; }
+  #header .container {
+    padding-top: 0;
+    padding-bottom: 0; }
   #header nav {
     background: #fff;
     border-color: #ccc;
@@ -208,6 +210,8 @@ address {
     padding-bottom: 0.7rem;
     text-align: center;
     max-width: none; }
+    #footer #copyrigth p {
+      margin: 0; }
 
 section {
   background-color: #fff;
@@ -237,12 +241,12 @@ section {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 0.7rem; }
+  padding: 0.7rem; }
 
 .container-fluid {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1.3rem 0; }
+  padding: 1.3rem; }
 
 section, article, footer {
   padding: 1.3rem 0 2.6rem 0; }
@@ -258,10 +262,9 @@ section, article, footer {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
 
-*[class*="col-"] {
+*[class*="col-"]:not(.container) {
   display: block;
-  padding: 0 0.7rem;
-  margin-bottom: 1.3rem; }
+  padding: 0 0.7rem; }
 
 .col-1 {
   max-width: 8.33%;

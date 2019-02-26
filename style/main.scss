@@ -30,8 +30,7 @@ h2{
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 100%;
-	margin: $space3 0;
-	margin-bottom: $space4;
+	margin: $space2 0 $space4 0;
 }
 h3{
 	font-size: $fontSize2;
@@ -39,18 +38,18 @@ h3{
 	line-height: 100%;
 	color: $gray2;
 	text-transform: uppercase;
-	margin: $space2 0;
+	margin: 0 0 $space2 0;
 }
 h4{
 	font-size: $fontSize2;
 	font-weight: 700;
 	line-height: 100%;
-	margin: $space1 0;
+	margin: 0 0 $space1 0;
 	text-transform: lowercase;
 	&:hover{color: $orange1}
 }
 p{
-	margin: $space2 0;
+	margin: 0 0 $space2 0;
 	&.important{
 		margin-top: 0;
 		font-size: $fontSize3;
@@ -75,6 +74,10 @@ address{
 	border-bottom: 2px solid $gray5;
 	background: $white3;
 	color: $gray1;
+	.container{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	nav{
 		background: $white3;
 		border-color: $gray5;
@@ -110,6 +113,9 @@ address{
 		padding-bottom: $space2;
 		text-align: center;
 		max-width: none;
+		p{
+			margin: 0;
+		}
 	}
 }
 section{

@@ -68,12 +68,8 @@ main {
   background-image: url(img/circle-icon-podlaczanie.svg); }
 #wykonamy h3:nth-of-type(4) .circle-icon {
   background-image: url(img/circle-icon-modernizacja.svg); }
-#wykonamy h4 {
-  margin-bottom: 0; }
-  #wykonamy h4::after {
-    content: " +"; }
-#wykonamy p {
-  margin: 0.2rem 0; }
+#wykonamy h4::after {
+  content: " +"; }
 
 #kontakt {
   background: url(img/bg-glowna2m.svg) no-repeat bottom;
