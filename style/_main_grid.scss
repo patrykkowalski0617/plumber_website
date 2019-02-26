@@ -2,9 +2,9 @@
 
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 .container{ max-width: 1100px; margin: 0 auto; padding: $space2;}
-.container-fluid{ max-width: 1100px; margin: 0 auto; padding: $space3}
+.container-fluid{ margin: 0 auto; padding: $space2 0}
 
-section, article, footer {padding: $space3 0 $space6 0}
+section, article {padding: $space3 0 $space6 0}
 
 .row{ margin-left: (-$space2); margin-right: (-$space2); display: flex; flex-flow: row wrap;}
 
