@@ -6,7 +6,7 @@
 
 section, article, footer {padding: $space3 0 $space6 0}
 
-.row{ margin-left: (-$space2); margin-right: (-$space2); padding: 0; display: flex;}
+.row{ margin-left: (-$space2); margin-right: (-$space2); display: flex; flex-flow: row wrap;}
 
 *[class*="col-"]{ display: block; padding: 0 $space2; margin-bottom: $space3;}
 

@@ -124,27 +124,23 @@ main{
 }
 // PORADY
 #porady{
-	@include aspect-ratio(43%);
+	.porady-item{
+		max-width: 500px;
+		@include margin-aling-center;
+	}
 	.porady-img{
+		padding: 0;
+		margin: $space2 0 0 0;
+		font-size: 0;
 		img{
 			width: 100%;
 		}
-		margin-bottom: $space2;
-		height: calc(100% - #{$space2});
-		overflow: hidden;
-		padding-right: 0;
 	}
 	.porady-description{
-		margin-top: $space2;
-		height: calc(100% - #{$space2});
-		padding-left: 0;
-		.porady-description-content{
-			background: $white2;
-			height: 100%;
-			padding: $space1 $space2;
-			.multi-line-text-overflow{
-				display: none;
-			}
+		background: $white2;
+		margin: 0 0 $space2 0;
+		.multi-line-text-overflow{
+			display: none;
 		}
 	}
 }

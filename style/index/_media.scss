@@ -45,11 +45,9 @@
 		background-image: url(img/bg-glowna3.svg);
 	}
 // PORADY
-	#porady .aspect-ratio {
-		position: relative;
-		padding-top: 25%;
-		.porady-description-content .multi-line-text-overflow{
-			@include multi-line-text-overflow(2, 20px);
+	#porady {
+		.porady-description .multi-line-text-overflow{
+			@include multi-line-text-overflow(1, 20px);
 			margin-bottom: 0;
 		}
 	}
@@ -88,8 +86,8 @@
 		}
 	}
 // PORADY
-	#porady .aspect-ratio {
-	    .porady-description-content .multi-line-text-overflow{
+	#porady{
+	    .porady-description .multi-line-text-overflow{
 			@include multi-line-text-overflow(5, 20px);
 		}
 	}
