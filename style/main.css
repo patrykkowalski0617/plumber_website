@@ -245,7 +245,15 @@ section {
 
 .container-fluid {
   margin: 0 auto;
-  padding: 0.7rem 0; }
+  padding: 0.7rem; }
+
+*[class*="col-"].vertical-padding {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem; }
+
+.row.vertical-padding {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem; }
 
 section, article {
   padding: 1.3rem 0 2.6rem 0; }
@@ -261,7 +269,7 @@ section, article {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
 
-*[class*="col-"]:not(.container) {
+*[class*="col-"] {
   display: block;
   padding: 0 0.7rem; }
 

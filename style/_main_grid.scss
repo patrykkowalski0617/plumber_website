@@ -2,13 +2,16 @@
 
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 .container{ max-width: 1100px; margin: 0 auto; padding: $space2;}
-.container-fluid{ margin: 0 auto; padding: $space2 0}
+.container-fluid{ margin: 0 auto; padding: $space2}
+
+*[class*="col-"].vertical-padding{ padding-top: $space2; padding-bottom: $space2; }
+.row.vertical-padding{ padding-top: $space2; padding-bottom: $space2; }
 
 section, article {padding: $space3 0 $space6 0}
 
 .row{ margin-left: (-$space2); margin-right: (-$space2); display: flex; flex-flow: row wrap;}
 
-*[class*="col-"]:not(.container){ display: block; padding: 0 $space2;}
+*[class*="col-"]{ display: block; padding: 0 $space2;}
 
 .col-1 {max-width: 8.33%;   flex: 0 0  8.33%}
 .col-2 {max-width: 16.66%;  flex: 0 0  16.66%}
