@@ -46,7 +46,6 @@ main {
       display: inline-block;
       height: 1.3rem;
       width: 1.3rem;
-      background-size: cover;
       background-repeat: no-repeat;
       line-height: normal;
       vertical-align: middle;
@@ -109,7 +108,31 @@ main {
 
 #opinie {
   background: url(img/bg-glowna4m.svg) no-repeat;
-  padding-top: 10%; }
+  padding-top: 15%; }
+  #opinie .opinie-content {
+    position: relative; }
+    #opinie .opinie-content::before, #opinie .opinie-content::after {
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      max-height: 80px;
+      max-width: 80px;
+      height: 100%;
+      width: 15vw;
+      position: absolute;
+      z-index: -1; }
+    #opinie .opinie-content::before {
+      background-image: url(img/quote-opinie-top.svg);
+      right: 0;
+      top: 0;
+      -webkit-transform: translate(-10%, -40%);
+              transform: translate(-10%, -40%); }
+    #opinie .opinie-content::after {
+      background-image: url(img/quote-opinie-bottom.svg);
+      left: 0;
+      bottom: 0;
+      -webkit-transform: translate(10%, 70%);
+              transform: translate(10%, 70%); }
 
 #welcome-section {
   position: relative;

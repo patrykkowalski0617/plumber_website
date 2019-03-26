@@ -30,3 +30,8 @@
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 }
+
+@mixin scroll-down-icon-size($size) {
+	width: $size;
+	height: $size;
+}

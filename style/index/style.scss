@@ -53,8 +53,7 @@ main{
 			content: '';
 			display: inline-block;
 			height: $space3;
-			width: $space3; 
-			background-size: cover;
+			width: $space3;
 			background-repeat: no-repeat;
 			line-height: normal;
 			vertical-align: middle;
@@ -144,7 +143,34 @@ main{
 // OPINIE
 #opinie{
 	background: url(img/bg-glowna4m.svg) no-repeat;
-	padding-top: 10%
+	padding-top: 15%;
+	.opinie-content{
+		position: relative;
+		&::before,
+		&::after{
+			content: '';
+			display: block;
+			background-repeat: no-repeat;
+			max-height: 80px;
+			max-width: 80px;
+			height: 100%;
+			width: 15vw;
+			position: absolute;
+			z-index: -1;
+		}
+		&::before{
+		    background-image: url(img/quote-opinie-top.svg);
+		    right: 0;
+		    top: 0;
+			transform: translate(-10%, -40%);
+		}
+		&::after{
+		    background-image: url(img/quote-opinie-bottom.svg);
+		    left: 0;
+		    bottom: 0;
+			transform: translate(10%, 70%);
+		}
+	}
 }
 
 @import 'animations';
