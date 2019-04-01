@@ -20,7 +20,7 @@
 	};
 	parallax(2, document.querySelector('#welcome-section'));
 
-	const smoothScroll = function(buttonsClassName, fixedHeader = null, duration){
+	const smoothScroll = function(buttonsClassName, duration, fixedHeader = null){
 		function scroll(button, fixedHeader, duration){
 			let startTime = null;
 
@@ -64,7 +64,7 @@
 
 	smoothScroll(
 		'smooth-scroll',
-		document.querySelector('#header'),
-		1000
+		1000,
+		document.querySelector('#header')
 	)
 })()
