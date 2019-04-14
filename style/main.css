@@ -26,9 +26,6 @@
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out; }
 
-body {
-  margin-top: 62px; }
-
 #header {
   position: fixed;
   z-index: 1000;
@@ -717,9 +714,6 @@ section, article {
   html {
     font-size: 20px; } }
 @media (min-width: 1024px) {
-  body {
-    margin-top: 77px; }
-
   #header {
     height: 77px; }
     #header .container {

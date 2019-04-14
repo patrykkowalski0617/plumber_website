@@ -1,24 +1,49 @@
-(function() {
+'use strict'
+window.onload = function(){
 	// Parallax effect
-	const parallax = function(speed, element){
-		const 	scrollPosition = function(){
-					return window.pageYOffset;
+	const parallax = function(elementClassName, speed, fixedHeader = null){
+		const 	fixedHeaderHeight = function(){
+					if (fixedHeader) { return fixedHeader.clientHeight }
+					else { return 0 }
 				},
-				transformCss = function(speed, element){
-					const transformValue = function(){
-						return scrollPosition() / speed;
-					},
-					setCss = function(){
-						return 'translateY(' + transformValue(speed) + 'px)'
-					};
-
-					element.style.transform = setCss(speed);
+				elements = document.querySelectorAll('.' + elementClassName),
+				visibleElement = function(el) {
+					const 	winH = window.innerHeight,
+							elementCurrentPosition = function(el){
+								const rect = el.getBoundingClientRect();
+								return {top: rect.top, bottom: rect.bottom}
+							};
+					for (var i = 0; i < el.length; i++) {
+						const pos = elementCurrentPosition(el[i])
+						if (pos.top >= fixedHeaderHeight() && pos.top <= winH
+							|| pos.bottom >= fixedHeaderHeight() && pos.bottom <= winH) {
+							return el[i]
+						}
+					}
+				},
+				translate = function(el) {
+					if(el) {
+						// getBoundingClientRect has delay which cause bugs
+						const 	positionY = function(el) {
+									let y = 0;
+									while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+										y += el.offsetTop - el.scrollTop;
+										el = el.offsetParent;
+									}
+									return y;
+								},
+								translateValue = (positionY(el) - window.pageYOffset + fixedHeaderHeight()) * speed;
+						
+						el.style = 'background-position-y:' + translateValue + 'px; background-attachment: fixed;';
+					}
 				};
+
 				window.addEventListener('scroll', function(){
-					transformCss(speed, element);
+					translate(visibleElement(elements))
 				});
+				translate(visibleElement(elements))
 	};
-	parallax(2, document.querySelector('#welcome-section'));
+	parallax('parallax', 0.6, document.querySelector('#header'));
 
 	const smoothScroll = function(buttonsClassName, duration, fixedHeader = null){
 		function scroll(button, fixedHeader, duration){
@@ -67,4 +92,4 @@
 		1000,
 		document.querySelector('#header')
 	)
-})()
+}

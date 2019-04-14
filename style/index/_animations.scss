@@ -1,8 +1,4 @@
 // Welcome
-#welcome-section{
-	position: relative;
-	z-index: -100;
-}
 #scroll-down-icon{
 	&::before{
 		animation: scroll-down-icon linear infinite 2s;

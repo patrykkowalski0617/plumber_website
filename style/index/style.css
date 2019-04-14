@@ -2,23 +2,17 @@
   background: url(img/hero.jpg) no-repeat;
   background-size: cover;
   background-position: left top;
-  height: 70vh; }
-
-main {
   height: 70vh;
   position: relative; }
-  main #scroll-down-icon {
   #welcome-section #scroll-down-icon {
     display: block;
     position: absolute;
-    top: -40px;
     bottom: 10px;
     left: 50%;
     -webkit-transform: translate3d(-50%, -100%, 0);
             transform: translate3d(-50%, -100%, 0);
     width: 35px;
     height: 35px; }
-    main #scroll-down-icon::before, main #scroll-down-icon::after {
     #welcome-section #scroll-down-icon::before, #welcome-section #scroll-down-icon::after {
       content: '';
       display: block;
@@ -32,10 +26,8 @@ main {
       border-radius: 10% 0 10% 10%;
       -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
               transform: translate3d(-50%, -50%, 0) rotate(-45deg); }
-    main #scroll-down-icon::before {
     #welcome-section #scroll-down-icon::before {
       top: -10%; }
-    main #scroll-down-icon::after {
     #welcome-section #scroll-down-icon::after {
       top: 50%; }
 
