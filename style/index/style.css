@@ -5,17 +5,21 @@
   height: 70vh; }
 
 main {
+  height: 70vh;
   position: relative; }
   main #scroll-down-icon {
+  #welcome-section #scroll-down-icon {
     display: block;
     position: absolute;
     top: -40px;
+    bottom: 10px;
     left: 50%;
     -webkit-transform: translate3d(-50%, -100%, 0);
             transform: translate3d(-50%, -100%, 0);
     width: 35px;
     height: 35px; }
     main #scroll-down-icon::before, main #scroll-down-icon::after {
+    #welcome-section #scroll-down-icon::before, #welcome-section #scroll-down-icon::after {
       content: '';
       display: block;
       width: 100%;
@@ -29,8 +33,10 @@ main {
       -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
               transform: translate3d(-50%, -50%, 0) rotate(-45deg); }
     main #scroll-down-icon::before {
+    #welcome-section #scroll-down-icon::before {
       top: -10%; }
     main #scroll-down-icon::after {
+    #welcome-section #scroll-down-icon::after {
       top: 50%; }
 
 #jak-pracujemy {
@@ -59,13 +65,13 @@ main {
     #jak-pracujemy h3:nth-of-type(4)::before {
       background-image: url(img/nr4.svg); }
 
-#wykonamy h3:nth-of-type(1) .circle-icon {
+#wykonamy .row:nth-of-type(1) .wykonamy-content:nth-of-type(1) .circle-icon {
   background-image: url(img/circle-icon-naprawa.svg); }
-#wykonamy h3:nth-of-type(2) .circle-icon {
+#wykonamy .row:nth-of-type(1) .wykonamy-content:nth-of-type(2) .circle-icon {
   background-image: url(img/circle-icon-montaz.svg); }
-#wykonamy h3:nth-of-type(3) .circle-icon {
+#wykonamy .row:nth-of-type(2) .wykonamy-content:nth-of-type(1) .circle-icon {
   background-image: url(img/circle-icon-podlaczanie.svg); }
-#wykonamy h3:nth-of-type(4) .circle-icon {
+#wykonamy .row:nth-of-type(2) .wykonamy-content:nth-of-type(2) .circle-icon {
   background-image: url(img/circle-icon-modernizacja.svg); }
 #wykonamy h4::after {
   content: " +"; }
@@ -133,10 +139,6 @@ main {
       bottom: 0;
       -webkit-transform: translate(10%, 70%);
               transform: translate(10%, 70%); }
-
-#welcome-section {
-  position: relative;
-  z-index: -100; }
 
 #scroll-down-icon::before {
   -webkit-animation: scroll-down-icon linear infinite 2s;

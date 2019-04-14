@@ -15,6 +15,7 @@ main{
 		display: block;
 		position: absolute;
 		top: -40px;
+		bottom: 10px;
 		left: 50%;
 		transform: translate3d(-50%, -100%, 0);
 		@include scroll-down-icon-size(35px);
@@ -75,18 +76,28 @@ main{
 }
 // WYKONAMY
 #wykonamy{
-	h3{
-		&:nth-of-type(1) .circle-icon{
-			background-image: url(img/circle-icon-naprawa.svg);
+	.row:nth-of-type(1){
+		.wykonamy-content:nth-of-type(1){
+			.circle-icon{
+				background-image: url(img/circle-icon-naprawa.svg);
+			}
 		}
-		&:nth-of-type(2) .circle-icon{
-			background-image: url(img/circle-icon-montaz.svg);
+		.wykonamy-content:nth-of-type(2){
+			.circle-icon{
+				background-image: url(img/circle-icon-montaz.svg);
+			}
 		}
-		&:nth-of-type(3) .circle-icon{
-			background-image: url(img/circle-icon-podlaczanie.svg);
+	}
+	.row:nth-of-type(2){
+		.wykonamy-content:nth-of-type(1){
+			.circle-icon{
+				background-image: url(img/circle-icon-podlaczanie.svg);
+			}
 		}
-		&:nth-of-type(4) .circle-icon{
-			background-image: url(img/circle-icon-modernizacja.svg);
+		.wykonamy-content:nth-of-type(2){
+			.circle-icon{
+				background-image: url(img/circle-icon-modernizacja.svg);
+			}
 		}
 	}
 	h4{
