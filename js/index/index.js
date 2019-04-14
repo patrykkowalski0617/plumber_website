@@ -1,8 +1,8 @@
-(function(){
+window.onload = function(){
 	'use strict'
 
 	// Parallax effect
-	const parallax = function(elementClassName, speed, fixedHeader){
+	const parallax = function(elementClassName, speed, fixedHeader /* optional */){
 		const 	fixedHeaderHeight = function(){
 					if (fixedHeader) { return fixedHeader.clientHeight }
 					else { return 0 }
@@ -24,7 +24,7 @@
 				},
 				translate = function(el) {
 					if(el) {
-						const 	translateValue = (0 - window.pageYOffset + fixedHeaderHeight()) * speed;
+						const 	translateValue = window.pageYOffset * -speed + fixedHeaderHeight();
 						
 						el.style.backgroundPositionY = translateValue + 'px';
 						el.style.backgroundAttachment = 'fixed';
@@ -38,7 +38,8 @@
 	};
 	parallax('parallax', 0.6, document.querySelector('#header'));
 
-	const smoothScroll = function(buttonsClassName, duration, fixedHeader){
+	// smooth scroll
+	const smoothScroll = function(buttonsClassName, duration, fixedHeader /* optional */){
 		function scroll(button, fixedHeader, duration){
 			let startTime = null;
 
@@ -79,10 +80,5 @@
 			}
 		})(document.querySelectorAll('.' + buttonsClassName));
 	};
-
-	smoothScroll(
-		'smooth-scroll',
-		1000,
-		document.querySelector('#header')
-	)
-})()
+	smoothScroll('smooth-scroll', 1000, document.querySelector('#header'))
+}
