@@ -1,7 +1,8 @@
-'use strict'
-window.onload = function(){
+(function(){
+	'use strict'
+
 	// Parallax effect
-	const parallax = function(elementClassName, speed, fixedHeader = null){
+	const parallax = function(elementClassName, speed, fixedHeader){
 		const 	fixedHeaderHeight = function(){
 					if (fixedHeader) { return fixedHeader.clientHeight }
 					else { return 0 }
@@ -23,18 +24,10 @@ window.onload = function(){
 				},
 				translate = function(el) {
 					if(el) {
-						// getBoundingClientRect has delay which cause bugs
-						const 	positionY = function(el) {
-									let y = 0;
-									while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
-										y += el.offsetTop - el.scrollTop;
-										el = el.offsetParent;
-									}
-									return y;
-								},
-								translateValue = (positionY(el) - window.pageYOffset + fixedHeaderHeight()) * speed;
+						const 	translateValue = (0 - window.pageYOffset + fixedHeaderHeight()) * speed;
 						
-						el.style = 'background-position-y:' + translateValue + 'px; background-attachment: fixed;';
+						el.style.backgroundPositionY = translateValue + 'px';
+						el.style.backgroundAttachment = 'fixed';
 					}
 				};
 
@@ -45,7 +38,7 @@ window.onload = function(){
 	};
 	parallax('parallax', 0.6, document.querySelector('#header'));
 
-	const smoothScroll = function(buttonsClassName, duration, fixedHeader = null){
+	const smoothScroll = function(buttonsClassName, duration, fixedHeader){
 		function scroll(button, fixedHeader, duration){
 			let startTime = null;
 
@@ -92,4 +85,4 @@ window.onload = function(){
 		1000,
 		document.querySelector('#header')
 	)
-}
+})()
