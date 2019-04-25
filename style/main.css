@@ -183,6 +183,25 @@ address {
     border-color: #ccc;
     font-size: 0.8rem;
     font-weight: 700; }
+    #header nav ol li a::after {
+      content: '';
+      background: #f13535;
+      position: absolute;
+      height: 2px;
+      width: 60px;
+      -webkit-transform: translate3d(-50%, 0, 0) scaleX(0);
+              transform: translate3d(-50%, 0, 0) scaleX(0);
+      bottom: 15px;
+      left: 50%;
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform; }
+    #header nav ol li a:hover::after, #header nav ol li a.active::after {
+      -webkit-transform: translate3d(-50%, 0, 0) scaleX(1);
+              transform: translate3d(-50%, 0, 0) scaleX(1); }
     #header nav ul {
       border-color: #ccc;
       background: #fff; }
