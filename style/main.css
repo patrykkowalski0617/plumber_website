@@ -183,7 +183,7 @@ address {
     border-color: #ccc;
     font-size: 0.8rem;
     font-weight: 700; }
-    #header nav ol li a::after {
+    #header nav ol > li > a::after {
       content: '';
       background: #f13535;
       position: absolute;
@@ -199,7 +199,7 @@ address {
       transition-property: -webkit-transform;
       transition-property: transform;
       transition-property: transform, -webkit-transform; }
-    #header nav ol li a:hover::after, #header nav ol li a.active::after {
+    #header nav ol > li > a:hover::after, #header nav ol > li > a.active::after {
       -webkit-transform: translate3d(-50%, 0, 0) scaleX(1);
               transform: translate3d(-50%, 0, 0) scaleX(1); }
     #header nav ul {
@@ -207,6 +207,8 @@ address {
       background: #fff; }
       #header nav ul li {
         color: #666; }
+        #header nav ul li a:hover, #header nav ul li a.active {
+          color: #f13535; }
 
 #footer {
   background: #666; }

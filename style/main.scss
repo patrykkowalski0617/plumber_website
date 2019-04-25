@@ -84,7 +84,7 @@ address{
 		font-size: $fontSize1;
 		font-weight: 700;
 		ol{
-			li a{
+			> li > a{
 				&::after{
 					content: '';
 				    background: $red;
@@ -108,6 +108,12 @@ address{
 			background: $white3;
 			li{
 				color: $gray2;
+				a{
+					&:hover,
+					&.active{
+						color: $red;
+					}
+				}
 			}
 		}
 	}
