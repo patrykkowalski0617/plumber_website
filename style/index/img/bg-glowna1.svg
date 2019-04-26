@@ -4,6 +4,7 @@
 	.move-r-3{
 		animation: move-r-3 15s 5s linear infinite;
 	}
+
 	.move-l-1{
 		animation: move-l-1 15s 5s linear infinite;
 	}
@@ -29,6 +30,7 @@
 			transform: translateX(0%);
 		}
 	}
+
 	@keyframes move-l-1{
 		0%{
 			transform: translateX(0%)
@@ -46,6 +48,7 @@
 			transform: translateX(0%)
 		}
 	}
+	
 	@keyframes rotate-l-90{
 		0%{
 			transform: rotate(0deg);
