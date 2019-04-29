@@ -1,5 +1,5 @@
 #welcome-section {
-  background: url(img/hero.jpg) no-repeat;
+  background: url(img/jpg/bg_index_1.jpg) no-repeat;
   background-size: cover;
   background-position: left top;
   height: 70vh;
@@ -32,7 +32,7 @@
       top: 50%; }
 
 #jak-pracujemy {
-  background-image: url(img/bg-glowna1m.svg);
+  background-image: url(img/svg/bg_index_1sm.svg);
   background-repeat: no-repeat;
   padding-top: 10%; }
   #jak-pracujemy h3 {
@@ -49,27 +49,27 @@
       vertical-align: middle;
       margin-right: 0.7rem; }
     #jak-pracujemy h3:nth-of-type(1)::before {
-      background-image: url(img/nr1.svg); }
+      background-image: url(img/svg/nr1.svg); }
     #jak-pracujemy h3:nth-of-type(2)::before {
-      background-image: url(img/nr2.svg); }
+      background-image: url(img/svg/nr2.svg); }
     #jak-pracujemy h3:nth-of-type(3)::before {
-      background-image: url(img/nr3.svg); }
+      background-image: url(img/svg/nr3.svg); }
     #jak-pracujemy h3:nth-of-type(4)::before {
-      background-image: url(img/nr4.svg); }
+      background-image: url(img/svg/nr4.svg); }
 
 #wykonamy .row:nth-of-type(1) .wykonamy-content:nth-of-type(1) .circle-icon {
-  background-image: url(img/circle-icon-naprawa.svg); }
+  background-image: url(img/svg/circle_icon_naprawa.svg); }
 #wykonamy .row:nth-of-type(1) .wykonamy-content:nth-of-type(2) .circle-icon {
-  background-image: url(img/circle-icon-montaz.svg); }
+  background-image: url(img/svg/circle_icon_montaz.svg); }
 #wykonamy .row:nth-of-type(2) .wykonamy-content:nth-of-type(1) .circle-icon {
-  background-image: url(img/circle-icon-podlaczanie.svg); }
+  background-image: url(img/svg/circle_icon_podlaczanie.svg); }
 #wykonamy .row:nth-of-type(2) .wykonamy-content:nth-of-type(2) .circle-icon {
-  background-image: url(img/circle-icon-modernizacja.svg); }
+  background-image: url(img/svg/circle_icon_modernizacja.svg); }
 #wykonamy h4::after {
   content: " +"; }
 
 #kontakt {
-  background: url(img/bg-glowna2m.svg) no-repeat bottom;
+  background: url(img/svg/bg_index_2sm.svg) no-repeat bottom;
   padding-bottom: 30%; }
   #kontakt .kontakt-item {
     position: relative;
@@ -85,7 +85,7 @@
               transform: translate(-50%); }
 
 #lokalizacje {
-  background: url(img/bg-glowna3m.svg) no-repeat;
+  background: url(img/svg/bg_index_3sm.svg) no-repeat;
   padding-top: 10%; }
 
 #porady .porady-item {
@@ -105,7 +105,7 @@
     display: none; }
 
 #opinie {
-  background: url(img/bg-glowna4m.svg) no-repeat;
+  background: url(img/svg/bg_index_4sm.svg) no-repeat;
   padding-top: 15%; }
   #opinie .opinie-content {
     position: relative; }
@@ -120,13 +120,13 @@
       position: absolute;
       z-index: -1; }
     #opinie .opinie-content::before {
-      background-image: url(img/quote-opinie-top.svg);
+      background-image: url(img/svg/quote_opinie_top.svg);
       right: 0;
       top: 0;
       -webkit-transform: translate(-10%, -40%);
               transform: translate(-10%, -40%); }
     #opinie .opinie-content::after {
-      background-image: url(img/quote-opinie-bottom.svg);
+      background-image: url(img/svg/quote_opinie_bottom.svg);
       left: 0;
       bottom: 0;
       -webkit-transform: translate(10%, 70%);
@@ -166,7 +166,7 @@
     opacity: 0; } }
 @media (min-width: 768px) {
   #jak-pracujemy {
-    background-image: url(img/bg-glowna1.svg); }
+    background-image: url(img/svg/bg_index_1.svg); }
     #jak-pracujemy h3 {
       width: 290px;
       margin: 1.3rem auto; }
@@ -185,7 +185,7 @@
         margin: 0; }
 
   #kontakt {
-    background-image: url(img/bg-glowna2.svg);
+    background-image: url(img/svg/bg_index_2.svg);
     padding-bottom: 10%; }
     #kontakt .row .kontakt-item {
       padding-top: 0; }
@@ -194,7 +194,7 @@
         vertical-align: -15%; }
 
   #lokalizacje {
-    background-image: url(img/bg-glowna3.svg); }
+    background-image: url(img/svg/bg_index_3.svg); }
 
   #porady .porady-description .multi-line-text-overflow {
     line-height: 1.3;
@@ -208,7 +208,7 @@
     margin-bottom: 0; }
 
   #opinie {
-    background-image: url(img/bg-glowna4.svg); } }
+    background-image: url(img/svg/bg_index_4.svg); } }
 @media (min-width: 1024px) {
   #welcome-section {
     height: calc(100vh - 77px); }

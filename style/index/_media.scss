@@ -5,7 +5,7 @@
 @media(min-width: $breakM){
 // JAK PRACUJEMY
 	#jak-pracujemy{
-		background-image: url(img/bg-glowna1.svg);
+		background-image: url(img/svg/bg_index_1.svg);
 		h3{
 			width: 290px;
 			margin: $space3 auto;
@@ -30,7 +30,7 @@
 	}
 // KONTAKT
 	#kontakt{
-		background-image: url(img/bg-glowna2.svg);
+		background-image: url(img/svg/bg_index_2.svg);
 		padding-bottom: 10%;
 		.row .kontakt-item {
 			padding-top: 0;
@@ -42,7 +42,7 @@
 	}
 // LOKALIZACJE
 	#lokalizacje{
-		background-image: url(img/bg-glowna3.svg);
+		background-image: url(img/svg/bg_index_3.svg);
 	}
 // PORADY
 	#porady {
@@ -53,7 +53,7 @@
 	}
 // OPINIE
 	#opinie{
-		background-image: url(img/bg-glowna4.svg);
+		background-image: url(img/svg/bg_index_4.svg);
 	}
 }
 
