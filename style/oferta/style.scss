@@ -3,8 +3,49 @@
 
 // BANNER
 .banner{
-	background-image: url(jpg/bg_oferta_1.jpg);
+	background-image: url(img/jpg/bg_oferta_1.jpg);
 }
-
+// USŁUGI
+#uslugi{
+	ul{
+		list-style-type: none;
+		padding: 0;
+	}
+	.row:nth-of-type(1){
+		.uslugi-content:nth-of-type(1){
+			.circle-icon{
+				background-image: url(img/svg/circle_icon_dom.svg);
+			}
+		}
+		.uslugi-content:nth-of-type(2){
+			.circle-icon{
+				background-image: url(img/svg/circle_icon_kuchnia.svg);
+			}
+		}
+	}
+	.row:nth-of-type(2){
+		.uslugi-content:nth-of-type(1){
+			.circle-icon{
+				background-image: url(img/svg/circle_icon_lazienka.svg);
+			}
+		}
+		.uslugi-content:nth-of-type(2){
+			.circle-icon{
+				background-image: url(img/svg/circle_icon_piwnica.svg);
+			}
+		}
+	}
+}
+// POGOTOWIE
+#pogotowie{
+	ul{
+		text-align: left;
+		max-width: 250px;
+		margin: 0 auto;
+	}
+	.circle-icon{
+		background-image: url(img/svg/circle_icon_pogotowie.svg);
+	}
+}
 @import 'animations';
 @import 'media';

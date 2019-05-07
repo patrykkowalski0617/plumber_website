@@ -3,9 +3,42 @@
 }
 
 @media(min-width: $breakM){
-
+	// USŁUGI
+	#uslugi{
+		text-align: left;
+		h3{
+			position: relative;
+			.circle-icon{
+				position: absolute;
+				top: 0;
+				left: -50%;
+				margin: 0;
+			}
+		}
+	}
 }
 
 @media(min-width: $breakL){
-
+// USŁUGI
+	#uslugi{
+		text-align: left;
+		h3{
+			position: relative;
+			.circle-icon{
+				position: absolute;
+				top: 0;
+				left: -50%;
+				margin: 0;
+			}
+		}
+		.row .uslugi-content{
+			&:first-of-type{
+				text-align: right;
+				.circle-icon{
+					left: auto;
+					right: -50%;
+				}
+			}
+		}
+	}
 }

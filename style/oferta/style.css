@@ -1,2 +1,47 @@
 .banner {
-  background-image: url(jpg/bg_oferta_1.jpg); }
+  background-image: url(img/jpg/bg_oferta_1.jpg); }
+
+#uslugi ul {
+  list-style-type: none;
+  padding: 0; }
+#uslugi .row:nth-of-type(1) .uslugi-content:nth-of-type(1) .circle-icon {
+  background-image: url(img/svg/circle_icon_dom.svg); }
+#uslugi .row:nth-of-type(1) .uslugi-content:nth-of-type(2) .circle-icon {
+  background-image: url(img/svg/circle_icon_kuchnia.svg); }
+#uslugi .row:nth-of-type(2) .uslugi-content:nth-of-type(1) .circle-icon {
+  background-image: url(img/svg/circle_icon_lazienka.svg); }
+#uslugi .row:nth-of-type(2) .uslugi-content:nth-of-type(2) .circle-icon {
+  background-image: url(img/svg/circle_icon_piwnica.svg); }
+
+#pogotowie ul {
+  text-align: left;
+  max-width: 250px;
+  margin: 0 auto; }
+#pogotowie .circle-icon {
+  background-image: url(img/svg/circle_icon_pogotowie.svg); }
+
+@media (min-width: 768px) {
+  #uslugi {
+    text-align: left; }
+    #uslugi h3 {
+      position: relative; }
+      #uslugi h3 .circle-icon {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        margin: 0; } }
+@media (min-width: 1024px) {
+  #uslugi {
+    text-align: left; }
+    #uslugi h3 {
+      position: relative; }
+      #uslugi h3 .circle-icon {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        margin: 0; }
+    #uslugi .row .uslugi-content:first-of-type {
+      text-align: right; }
+      #uslugi .row .uslugi-content:first-of-type .circle-icon {
+        left: auto;
+        right: -50%; } }
