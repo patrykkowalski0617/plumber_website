@@ -103,11 +103,15 @@
         border: 1px solid;
         left: 0;
         width: 140px; } }
-* {
+*, nav ul, nav ol {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+ol,
+ul {
+  padding-left: 50px; }
 
 html {
   font-size: 18px; }
@@ -158,8 +162,9 @@ p {
     font-size: 1.4rem;
     font-weight: 700;
     text-align: center; }
-    p.important span {
-      color: #fb6b31; }
+
+strong {
+  color: #fb6b31; }
 
 a {
   text-decoration: none; }
