@@ -253,6 +253,31 @@ section {
   margin-bottom: 1.3rem;
   margin-top: 1.3rem; }
 
+.banner {
+  padding: 50px 0;
+  margin-top: 62px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .banner .banner-description {
+    background: url(img/svg/corners.svg) no-repeat;
+    background-color: rgba(102, 102, 102, 0.9);
+    background-size: 260px;
+    background-position: center;
+    width: 260px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative; }
+    .banner .banner-description p {
+      padding: 30px;
+      margin-top: 0;
+      text-align: center;
+      color: #ccc;
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      top: 50%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -756,4 +781,7 @@ section, article {
           width: 280px;
           border-color: #ccc; }
           #header .container nav ul > li {
-            font-size: 0.8rem; } }
+            font-size: 0.8rem; }
+
+  .banner {
+    margin-top: 77px; } }

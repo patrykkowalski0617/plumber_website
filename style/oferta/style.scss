@@ -1,0 +1,10 @@
+@import '../variables';
+@import '../mixins';
+
+// BANNER
+.banner{
+	background-image: url(jpg/bg_oferta_1.jpg);
+}
+
+@import 'animations';
+@import 'media';
