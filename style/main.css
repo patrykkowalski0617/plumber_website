@@ -169,6 +169,9 @@ a {
 address {
   font-style: normal; }
 
+main {
+  min-height: 100vh; }
+
 #header {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
