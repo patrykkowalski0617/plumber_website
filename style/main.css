@@ -766,7 +766,10 @@ section, article {
     margin-left: 100%; } }
 @media (min-width: 768px) {
   html {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .banner .banner-description {
+    margin-right: 10%; } }
 @media (min-width: 1024px) {
   #header {
     height: 77px; }

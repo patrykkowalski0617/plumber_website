@@ -3,7 +3,7 @@
 }
 
 @media(min-width: $breakM){
-	// USŁUGI
+// USŁUGI
 	#uslugi{
 		text-align: left;
 		h3{
@@ -14,6 +14,20 @@
 				left: -50%;
 				margin: 0;
 			}
+		}
+	}
+// POGOTOWIE
+	#pogotowie{
+		.pogotowie-content:nth-of-type(1){
+			order: 2;
+			ul{
+				max-width: none;
+				column-count: 2;
+				column-gap: $space5;
+			}
+		}
+		.pogotowie-content:nth-of-type(2){
+			order: 1;
 		}
 	}
 }

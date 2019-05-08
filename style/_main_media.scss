@@ -6,6 +6,11 @@
 
 @media(min-width: $breakM){
 	html {font-size: 20px;}
+	.banner{
+		.banner-description{
+		    margin-right: 10%;
+		}
+	}
 }
 
 @media(min-width: $breakL){
