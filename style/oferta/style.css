@@ -27,6 +27,11 @@
     color: #fb6b31;
     display: block; }
 
+#materialy {
+  background-image: url(img/svg/bg_oferta_1sm.svg);
+  background-repeat: no-repeat;
+  padding-top: 15%; }
+
 @media (min-width: 768px) {
   #uslugi {
     text-align: left; }
@@ -66,4 +71,8 @@
       text-align: right; }
       #uslugi .row .uslugi-content:first-of-type .circle-icon {
         left: auto;
-        right: -50%; } }
+        right: -50%; }
+
+  #materialy {
+    background-image: url(img/svg/bg_oferta_1.svg);
+    padding-top: 7%; } }
