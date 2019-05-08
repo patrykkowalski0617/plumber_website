@@ -241,9 +241,16 @@ main {
 
 section {
   background-color: #fff;
+  background-repeat: no-repeat;
   text-align: center; }
   section.bg-color {
     background-color: #f6f0ca; }
+  section.bg-img {
+    background-position: center;
+    background-size: cover; }
+  section.bg-svg {
+    background-position: top;
+    background-size: contain; }
 
 .circle-icon {
   display: block;
@@ -282,11 +289,6 @@ section {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       top: 50%; }
-
-.img-center {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
 
 * {
   margin: 0;

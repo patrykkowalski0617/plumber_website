@@ -29,7 +29,6 @@
 
 #materialy {
   background-image: url(img/svg/bg_oferta_1sm.svg);
-  background-repeat: no-repeat;
   padding-top: 15%; }
 
 @media (min-width: 768px) {
@@ -75,4 +74,5 @@
 
   #materialy {
     background-image: url(img/svg/bg_oferta_1.svg);
+    background-size: cover;
     padding-top: 7%; } }

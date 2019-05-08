@@ -1,6 +1,5 @@
 #welcome-section {
   background: url(img/jpg/bg_index_1.jpg) no-repeat;
-  background-size: cover;
   background-position: left top;
   height: 70vh;
   position: relative; }
@@ -33,7 +32,6 @@
 
 #jak-pracujemy {
   background-image: url(img/svg/bg_index_1sm.svg);
-  background-repeat: no-repeat;
   padding-top: 10%; }
   #jak-pracujemy h3 {
     text-align: left;
@@ -69,7 +67,8 @@
   content: " +"; }
 
 #kontakt {
-  background: url(img/svg/bg_index_2sm.svg) no-repeat bottom;
+  background-image: url(img/svg/bg_index_2sm.svg);
+  background-position: bottom;
   padding-bottom: 30%; }
   #kontakt .kontakt-item {
     position: relative;
@@ -85,7 +84,7 @@
               transform: translate(-50%); }
 
 #lokalizacje {
-  background: url(img/svg/bg_index_3sm.svg) no-repeat;
+  background-image: url(img/svg/bg_index_3sm.svg);
   padding-top: 10%; }
 
 #porady .porady-item {
@@ -99,13 +98,13 @@
   #porady .porady-img img {
     width: 100%; }
 #porady .porady-description {
-  background: #efe4ac;
+  background-color: #efe4ac;
   margin: 0 0 0.7rem 0; }
   #porady .porady-description .multi-line-text-overflow {
     display: none; }
 
 #opinie {
-  background: url(img/svg/bg_index_4sm.svg) no-repeat;
+  background-image: url(img/svg/bg_index_4sm.svg);
   padding-top: 15%; }
   #opinie .opinie-content {
     position: relative; }

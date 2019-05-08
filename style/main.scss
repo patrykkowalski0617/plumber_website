@@ -153,9 +153,18 @@ main{
 }
 section{
 	background-color: $white3;
+    background-repeat: no-repeat;
 	text-align: center;
 	&.bg-color{
 		background-color: $white1;
+	}
+	&.bg-img{
+		background-position: center;
+	    background-size: cover;
+	}
+	&.bg-svg{
+		background-position: top;
+	    background-size: contain;
 	}
 }
 .circle-icon{
@@ -196,11 +205,6 @@ section{
 		    top: 50%;
 	    }
 	}
-}
-.img-center{
-	background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 @import 'main_grid';
