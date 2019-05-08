@@ -61,6 +61,28 @@
 	background-image: url(img/svg/bg_oferta_1sm.svg);
 	padding-top: 15%;
 }
+// GWARANTUJEMY
+#gwarantujemy{
+	background-image: url(img/jpg/bg_oferta_3.jpg);
+	@media(min-width: 360px){
+		p{
+			width: 80%
+		}
+	}
+	@media(min-width: 460px){
+		p{
+			width: 60%
+		}
+	}
+}
+// PRZYCZYNY
+#przyczyny{
+	background-image: url(img/svg/bg_oferta_2sm.svg);
+	padding-top: 15%;
+	ul{
+		text-align: left;
+	}
+}
 
 @import 'animations';
 @import 'media';

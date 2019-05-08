@@ -31,6 +31,21 @@
   background-image: url(img/svg/bg_oferta_1sm.svg);
   padding-top: 15%; }
 
+#gwarantujemy {
+  background-image: url(img/jpg/bg_oferta_3.jpg); }
+  @media (min-width: 360px) {
+    #gwarantujemy p {
+      width: 80%; } }
+  @media (min-width: 460px) {
+    #gwarantujemy p {
+      width: 60%; } }
+
+#przyczyny {
+  background-image: url(img/svg/bg_oferta_2sm.svg);
+  padding-top: 15%; }
+  #przyczyny ul {
+    text-align: left; }
+
 @media (min-width: 768px) {
   #uslugi {
     text-align: left; }
@@ -75,4 +90,8 @@
   #materialy {
     background-image: url(img/svg/bg_oferta_1.svg);
     background-size: cover;
+    padding-top: 7%; }
+
+  #przyczyny {
+    background-image: url(img/svg/bg_oferta_2.svg);
     padding-top: 7%; } }
