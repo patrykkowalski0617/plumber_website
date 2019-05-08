@@ -20,6 +20,13 @@
 #pogotowie .circle-icon {
   background-image: url(img/svg/circle_icon_pogotowie.svg); }
 
+#zadzwon {
+  background-image: url(img/jpg/bg_oferta_2.jpg); }
+  #zadzwon .icon-mobile {
+    font-size: 80px;
+    color: #fb6b31;
+    display: block; }
+
 @media (min-width: 768px) {
   #uslugi {
     text-align: left; }

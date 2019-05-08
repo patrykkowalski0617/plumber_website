@@ -283,6 +283,11 @@ section {
       transform: translateY(-50%);
       top: 50%; }
 
+.img-center {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 * {
   margin: 0;
   padding: 0;

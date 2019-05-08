@@ -197,6 +197,11 @@ section{
 	    }
 	}
 }
+.img-center{
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 @import 'main_grid';
 @import 'main_media';

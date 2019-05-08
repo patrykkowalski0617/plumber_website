@@ -47,5 +47,15 @@
 		background-image: url(img/svg/circle_icon_pogotowie.svg);
 	}
 }
+// ZADZWOŃ
+#zadzwon{
+	background-image: url(img/jpg/bg_oferta_2.jpg);
+	.icon-mobile{
+		font-size: 80px;
+		color: $orange1;
+		display: block;
+	}
+}
+
 @import 'animations';
 @import 'media';
