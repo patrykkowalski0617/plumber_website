@@ -1,0 +1,22 @@
+.blog-banner {
+  margin-top: 62px; }
+  .blog-banner .blog-banner-content {
+    padding: 0;
+    max-height: 490px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden; }
+  .blog-banner .blog-banner-img img {
+    width: 100%; }
+  .blog-banner .blog-banner-description {
+    background-color: #efe4ac; }
+    .blog-banner .blog-banner-description p {
+      width: 70%;
+      text-align: center; }

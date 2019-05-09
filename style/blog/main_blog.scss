@@ -1,0 +1,25 @@
+@import '../variables';
+
+.blog-banner{
+	margin-top: $navHMobile;
+	.blog-banner-content{
+		padding: 0;
+		max-height: 490px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+	}
+	.blog-banner-img{
+		img{
+			width: 100%;
+		}
+	}
+	.blog-banner-description{
+		background-color: $white2;
+		p{
+			width: 70%;
+			text-align: center;
+		}
+	}
+}
