@@ -9,14 +9,26 @@ window.addEventListener('load', function(){
 			return href.substr(index);
 		};
 		const searchedFileName = fileName(location);
+		const parentWithClass = function(element, classname) {
+		    if (element && element.className && element.className.split(' ').indexOf(classname)>=0) return element;
+		    return element.parentNode && parentWithClass(element.parentNode, classname);
+		}
 		const linksLevel1 = document.querySelectorAll('#header nav ol > li > a');
 		const linksLevel2 = document.querySelectorAll('#header nav ul > li > a');
 
-		for (var i = 0; i < linksLevel1.length; i++) {
-			if (fileName(linksLevel1[i]) == searchedFileName) {
-				linksLevel1[i].classList.add('active')
+		const mark = function(links){
+			for (var i = 0; i < links.length; i++) {
+				if (fileName(links[i]) == searchedFileName) {
+					links[i].classList.add('active')
+					const parentLink = parentWithClass(links[i], 'coll-nasted');
+					if(parentLink && parentLink.classList.contains('coll-nasted')){
+						parentLink.querySelector('a').classList.add('active')
+					}
+				}
 			}
 		}
+		mark(linksLevel1)
+		mark(linksLevel2)
 	};
 
 	// create locationMarker for dynamicly added header content

@@ -305,10 +305,10 @@
 		return Navigation;
 	}(Collapser);
 	
-	const collapserHover = new CollapserHover('.coll-btn-hover'),
-				collapserClick = new CollapserClick('.coll-btn-click'),
-				accordionHover = new AccordionHover('.acc-btn-hover'),
-				accordionClick = new AccordionClick('.acc-btn-click');
+	const 	collapserHover = new CollapserHover('.coll-btn-hover'),
+			collapserClick = new CollapserClick('.coll-btn-click'),
+			accordionHover = new AccordionHover('.acc-btn-hover'),
+			accordionClick = new AccordionClick('.acc-btn-click');
 
 	// create navigation object for dynamicly added header content
 	const targetNode = document.getElementById('header');
