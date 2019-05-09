@@ -1,0 +1,23 @@
+@media(min-width: $breakS){
+	
+}
+
+@media(min-width: $breakM){
+// CENNIK
+	#cennik{
+		background-image: url(img/svg/bg_cennik_1.svg);
+		padding-top: 7%;
+	}
+// WYCENA
+	#wycena{
+		text-align: left;
+		ul{
+			max-width: none;
+			margin-left: 0;
+		}
+	}
+}
+
+@media(min-width: $breakL){
+
+}

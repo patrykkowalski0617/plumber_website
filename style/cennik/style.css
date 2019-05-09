@@ -1,0 +1,54 @@
+.banner {
+  background-image: url(img/jpg/bg_cennik_1.jpg); }
+
+#cennik {
+  background-image: url(img/svg/bg_cennik_1sm.svg);
+  padding-top: 15%; }
+  #cennik .price-list {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #fb6b31; }
+    #cennik .price-list tr:nth-child(odd) {
+      background-color: #f6f0ca; }
+    #cennik .price-list tr:nth-child(even) {
+      background-color: #efe4ac; }
+    #cennik .price-list td {
+      text-align: left;
+      padding: 0.7rem; }
+
+#umow {
+  background-image: url(img/jpg/bg_cennik_2.jpg); }
+  @media (max-width: 767px) {
+    #umow {
+      background-position: 60% center; } }
+  #umow .important {
+    width: 60%;
+    margin: 0 20px 0 auto; }
+    @media (min-width: 460px) {
+      #umow .important {
+        width: 50%; } }
+
+#wycena ul {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+
+#zachecamy {
+  background-image: url(img/jpg/bg_cennik_3.jpg); }
+  #zachecamy .important {
+    width: 50%;
+    margin-left: 20px; }
+
+@media (min-width: 768px) {
+  #cennik {
+    background-image: url(img/svg/bg_cennik_1.svg);
+    padding-top: 7%; }
+
+  #wycena {
+    text-align: left; }
+    #wycena ul {
+      max-width: none;
+      margin-left: 0; } }
