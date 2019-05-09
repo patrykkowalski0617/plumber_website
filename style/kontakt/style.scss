@@ -1,0 +1,10 @@
+@import '../variables';
+@import '../mixins';
+
+// BANNER
+.banner{
+	background-image: url(img/jpg/bg_kontakt_1.jpg);
+}
+
+@import 'animations';
+@import 'media';
