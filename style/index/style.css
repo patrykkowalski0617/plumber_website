@@ -1,8 +1,10 @@
 #welcome-section {
-  background: url(img/jpg/bg_index_1.jpg) no-repeat;
-  background-position: left top;
+  background-image: url(img/jpg/bg_index_1.jpg);
   height: 70vh;
   position: relative; }
+  @media (max-width: 768px) {
+    #welcome-section {
+      background-position: -115px top; } }
   #welcome-section #scroll-down-icon {
     display: block;
     position: absolute;
@@ -164,6 +166,9 @@
     top: 80%;
     opacity: 0; } }
 @media (min-width: 768px) {
+  #welcome-section {
+    height: 100vh; }
+
   #jak-pracujemy {
     background-image: url(img/svg/bg_index_1.svg); }
     #jak-pracujemy h3 {
@@ -209,9 +214,6 @@
   #opinie {
     background-image: url(img/svg/bg_index_4.svg); } }
 @media (min-width: 1024px) {
-  #welcome-section {
-    height: calc(100vh - 77px); }
-
   #wykonamy {
     text-align: left; }
     #wykonamy h3 {

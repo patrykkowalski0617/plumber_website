@@ -3,6 +3,10 @@
 }
 
 @media(min-width: $breakM){
+// WELCOME SECTION
+	#welcome-section{
+		height: 100vh;
+	}
 // JAK PRACUJEMY
 	#jak-pracujemy{
 		background-image: url(img/svg/bg_index_1.svg);
@@ -59,10 +63,10 @@
 
 @media(min-width: $breakL){
 
-// WELCOME SECTION
-	#welcome-section{
-		height: calc(100vh - #{$navHDesktop});
-	}
+// // WELCOME SECTION
+// 	#welcome-section{
+// 		height: calc(100vh - #{$navHDesktop});
+// 	}
 // WYKONAMY
 	#wykonamy{
 		text-align: left;

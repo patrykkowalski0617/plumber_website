@@ -4,8 +4,8 @@
 
 // WELCOME SECTION
 #welcome-section{
-	background: url(img/jpg/bg_index_1.jpg) no-repeat;
-	background-position: left top;
+	background-image: url(img/jpg/bg_index_1.jpg);
+	@media (max-width: $breakM) {background-position: -115px top;}
 	height: 70vh;
 	position: relative;
 	#scroll-down-icon{
