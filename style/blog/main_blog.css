@@ -1,5 +1,8 @@
 .blog-banner {
   margin-top: 62px; }
+  .blog-banner .container {
+    padding-top: 0;
+    padding-bottom: 0; }
   .blog-banner .blog-banner-content {
     padding: 0;
     max-height: 490px;
@@ -19,4 +22,15 @@
     background-color: #efe4ac; }
     .blog-banner .blog-banner-description p {
       width: 70%;
-      text-align: center; }
+      text-align: center;
+      font-size: .8rem; }
+      @media (min-width: 400px) {
+        .blog-banner .blog-banner-description p {
+          font-size: 1rem; } }
+
+@media (min-width: 768px) {
+  .blog-banner .blog-banner-description p {
+    font-size: 1.3rem; } }
+@media (min-width: 1024px) {
+  .blog-banner {
+    margin-top: 77px; } }
