@@ -18,13 +18,17 @@ window.addEventListener('load', function(){
 
 		const mark = function(links){
 			for (var i = 0; i < links.length; i++) {
-				if (fileName(links[i]) == searchedFileName) {
+				const parentLink = parentWithClass(links[i], 'coll-nasted');
+
+				if (fileName(links[i]) != '' && fileName(links[i]) == searchedFileName) {
 					links[i].classList.add('active')
-					const parentLink = parentWithClass(links[i], 'coll-nasted');
 					if(parentLink && parentLink.classList.contains('coll-nasted')){
 						parentLink.querySelector('a').classList.add('active')
 					}
 				}
+			}
+			if(!parentWithClass(links[0], 'coll-nasted') && searchedFileName == ''){
+				links[0].classList.add('active')
 			}
 		}
 		mark(linksLevel1)
