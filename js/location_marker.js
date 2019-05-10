@@ -40,17 +40,10 @@ window.addEventListener('load', function(){
 
 	const config = {childList: true};
 
-	// Callback function to execute when mutations are observed
-	const callback = function(mutationsList, observer) {
-		for(const mutation of mutationsList) {
-			if (mutation.type == 'childList') {
-				locationMarker()
-				observer.disconnect();
-			}
-		}
-	};
-
-	const observer = new MutationObserver(callback);
+	const observer = new MutationObserver(function(mutationsList, observer) {
+		locationMarker()
+		observer.disconnect();
+	});
 
 	observer.observe(targetNode, config);	
 })

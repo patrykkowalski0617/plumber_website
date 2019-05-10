@@ -315,6 +315,10 @@
 
 	const config = {childList: true};
 
+	const observer = new MutationObserver(function(mutationsList, observer) {
+		const	navigation = new Navigation('.nav-btn', 1024);
+		observer.disconnect();
+	});
 
 	observer.observe(targetNode, config);		
 })()
