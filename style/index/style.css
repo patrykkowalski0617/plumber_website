@@ -2,9 +2,9 @@
   background-image: url(img/jpg/bg_index_1.jpg);
   height: 70vh;
   position: relative; }
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     #welcome-section {
-      background-position: -115px top; } }
+      background-position: left top; } }
   #welcome-section #scroll-down-icon {
     display: block;
     position: absolute;

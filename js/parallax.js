@@ -24,10 +24,9 @@ window.addEventListener('load', function(){
 				},
 				translate = function(el) {
 					if(el) {
-						const 	translateValue = window.pageYOffset * -speed + fixedHeaderHeight();
-						
-						el.style.backgroundPositionY = translateValue + 'px';
-						el.style.backgroundAttachment = 'fixed';
+						const 	translateValue = (window.pageYOffset / speed) + fixedHeaderHeight();
+						console.log(window.pageYOffset * speed)
+						el.style.backgroundPositionY = '' + translateValue + 'px';
 					}
 				};
 
@@ -39,5 +38,5 @@ window.addEventListener('load', function(){
 				});
 				translate(visibleElement(elements))
 	};
-	parallax('parallax', 0.6, document.querySelector('#header'));
+	parallax('parallax', 2, document.querySelector('#header'));
 })

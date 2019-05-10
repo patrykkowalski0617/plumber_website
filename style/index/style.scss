@@ -5,7 +5,7 @@
 // WELCOME SECTION
 #welcome-section{
 	background-image: url(img/jpg/bg_index_1.jpg);
-	@media (max-width: $breakM - 1) {background-position: -115px top;}
+	@media screen and (max-width: $breakM - 1) {background-position: left top;}
 	height: 70vh;
 	position: relative;
 	#scroll-down-icon{
