@@ -30,5 +30,13 @@
 		}
 	}
 }
+.article{
+	h3{
+		margin-top: $space4;
+	}
+	p{
+		text-indent: $space6;
+	}
+}
 
 @import 'main_blog_media';
