@@ -29,7 +29,7 @@
 					btn = function btn() {
 				var classL = el.classList;
 				for (var i = 0; i < classL.length; i++) {
-					if (classL.item(i).includes('coll-btn') || classL.item(i).includes('acc-btn') || classL.item(i).includes('nav-btn')) {
+					if (classL.item(i).indexOf('coll-btn') || classL.item(i).indexOf('acc-btn') || classL.item(i).indexOf('nav-btn')) {
 						return el;
 					}
 				}
@@ -315,17 +315,6 @@
 
 	const config = {childList: true};
 
-	// Callback function to execute when mutations are observed
-	const callback = function(mutationsList, observer) {
-		for(const mutation of mutationsList) {
-			if (mutation.type == 'childList') {
-				const	navigation = new Navigation('.nav-btn', 1024);
-				observer.disconnect();
-			}
-		}
-	};
-
-	const observer = new MutationObserver(callback);
 
 	observer.observe(targetNode, config);		
 })()
