@@ -28,6 +28,11 @@
         .blog-banner .blog-banner-description p {
           font-size: 1rem; } }
 
+.article h3 {
+  margin-top: 2rem; }
+.article p {
+  text-indent: 2.6rem; }
+
 @media (min-width: 768px) {
   .blog-banner .blog-banner-description p {
     font-size: 1.3rem; } }
