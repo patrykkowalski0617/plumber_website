@@ -1,2 +1,24 @@
 .banner {
   background-image: url(img/jpg/bg_kontakt_1.jpg); }
+
+#kontakt {
+  background-image: url(img/svg/bg_kontakt_1sm.svg);
+  padding-top: 15%; }
+  #kontakt strong {
+    color: #f13535; }
+  #kontakt i {
+    display: none; }
+
+@media (min-width: 1024px) {
+  #kontakt {
+    background-image: url(img/svg/bg_kontakt_1.svg);
+    padding-top: 7%; }
+    #kontakt address .important {
+      text-align: left;
+      padding-left: 120px;
+      position: relative; }
+    #kontakt address i {
+      display: inline-block;
+      position: absolute;
+      left: 20px;
+      font-size: 60px; } }

@@ -5,6 +5,16 @@
 .banner{
 	background-image: url(img/jpg/bg_kontakt_1.jpg);
 }
-
+// KONTAKT
+#kontakt{
+	background-image: url(img/svg/bg_kontakt_1sm.svg);
+	padding-top: 15%;
+	strong{
+		color: $red;
+	}
+	i{
+		display: none;
+	}
+}
 @import 'animations';
 @import 'media';
