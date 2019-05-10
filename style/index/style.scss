@@ -71,6 +71,13 @@
 }
 // WYKONAMY
 #wykonamy{
+	.wykonamy-content{
+		max-width: 400px;
+		@media(max-width: $breakM - 1){
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 	.row:nth-of-type(1){
 		.wykonamy-content:nth-of-type(1){
 			.circle-icon{
@@ -106,7 +113,7 @@
 #kontakt{
 	background-image: url(img/svg/bg_index_2sm.svg);
 	background-position: bottom;
-	padding-bottom: 30%;
+	padding-bottom: 25%;
 	.kontakt-item{
 		position: relative;
 		padding-top: 4rem;
@@ -143,6 +150,12 @@
 		margin: 0 0 $space2 0;
 		.multi-line-text-overflow{
 			display: none;
+			@media(min-width: 380px){
+				@include multi-line-text-overflow(1, 20px);
+			}
+			@media(min-width: 450px){
+				@include multi-line-text-overflow(3, 20px);
+			}
 		}
 	}
 }
@@ -163,7 +176,6 @@
 			height: 100%;
 			width: 15vw;
 			position: absolute;
-			z-index: -1;
 		}
 		&::before{
 		    background-image: url(img/svg/quote_opinie_top.svg);

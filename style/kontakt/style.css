@@ -15,10 +15,10 @@
     padding-top: 7%; }
     #kontakt address .important {
       text-align: left;
-      padding-left: 120px;
+      padding-left: 75px;
       position: relative; }
     #kontakt address i {
       display: inline-block;
       position: absolute;
-      left: 20px;
+      left: -10px;
       font-size: 60px; } }

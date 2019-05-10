@@ -34,6 +34,9 @@ window.addEventListener('load', function(){
 				window.addEventListener('scroll', function(){
 					translate(visibleElement(elements))
 				});
+				window.addEventListener('resize', function(){
+					translate(visibleElement(elements))
+				});
 				translate(visibleElement(elements))
 	};
 	parallax('parallax', 0.6, document.querySelector('#header'));

@@ -234,7 +234,7 @@ section {
     background-size: cover; }
   section.bg-svg {
     background-position: top;
-    background-size: contain; }
+    background-size: 100%; }
 
 .circle-icon {
   display: block;
