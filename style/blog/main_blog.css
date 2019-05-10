@@ -31,7 +31,8 @@
 .article h3 {
   margin-top: 2rem; }
 .article p {
-  text-indent: 2.6rem; }
+  text-indent: 2.6rem;
+  text-align: justify; }
 
 @media (min-width: 768px) {
   .blog-banner .blog-banner-description p {
