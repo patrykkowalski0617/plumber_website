@@ -25,7 +25,6 @@ window.addEventListener('load', function () {
 			translate = function (el) {
 				if (el) {
 					const translateValue = (window.pageYOffset / speed) + fixedHeaderHeight();
-					console.log(window.pageYOffset * speed)
 					el.style.backgroundPositionY = '' + translateValue + 'px';
 				}
 			};
