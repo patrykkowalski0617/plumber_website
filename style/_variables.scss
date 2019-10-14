@@ -11,23 +11,24 @@ $orange2: #f98c46;
 $red: #f13535;
 $brown: #6b4832;
 
-$fontSize1: 0.8rem;		// Sizes of font
+$fontSize1: 0.8rem; // Sizes of font
 $fontSize2: 1rem;
 $fontSize3: 1.4rem;
 $fontSize4: 1.6rem;
 
-$space1: .2rem;			// Common space value for paddings and margins
-$space2: .7rem;
-$space3: 1.3rem;
-$space4: 2rem;
-$space5: 2.2rem;
-$space6: 2.6rem;
+$space1: 0.5rem; // Common space value for paddings and margins
+$space2: 1rem;
+$space3: 1.5rem;
+$space4: 2.2rem;
+$space5: 3rem;
+$space6: 4rem;
+$space7: 5rem;
 
-$breakS: 320px;		// Breaking points of website 
+$breakS: 320px; // Breaking points of website
 $breakM: 768px;
 $breakL: 1024px;
 
-$transitionMaster: .4s ease-in-out;
+$transitionMaster: 0.4s ease-in-out;
 
-$navHMobile: 62px; 		// Height of mobile navigation bar
-$navHDesktop: 77px;		// Height of desktop navigation bar
+$navHMobile: 62px; // Height of mobile navigation bar
+$navHDesktop: 77px; // Height of desktop navigation bar

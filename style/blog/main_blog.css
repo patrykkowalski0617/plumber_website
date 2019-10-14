@@ -29,14 +29,14 @@
           font-size: 1rem; } }
 
 .article h3 {
-  margin-top: 2rem; }
+  margin-top: 2.2rem; }
 .article p {
-  text-indent: 2.6rem;
+  text-indent: 4rem;
   text-align: justify; }
 
 @media (min-width: 768px) {
   .blog-banner .blog-banner-description p {
-    font-size: 1.3rem; } }
+    font-size: 1.5rem; } }
 @media (min-width: 1024px) {
   .blog-banner {
     margin-top: 77px; } }

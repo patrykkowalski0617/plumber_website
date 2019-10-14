@@ -1,196 +1,200 @@
-@import '../variables';
-@import '../mixins';
-
+@import "../variables";
+@import "../mixins";
 
 // WELCOME SECTION
-#welcome-section{
-	background-image: url(img/jpg/bg_index_1.jpg);
-	@media screen and (max-width: $breakM - 1) {background-position: left top;}
-	height: 70vh;
-	position: relative;
-	#scroll-down-icon{
-		display: block;
-		position: absolute;
-		bottom: 10px;
-		left: 50%;
-		transform: translate3d(-50%, -100%, 0);
-		@include scroll-down-icon-size(35px);
-		&::before,
-		&::after{
-			content: '';
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 50%;
-			border-left: 5px solid;
-			border-bottom: 5px solid;
-			border-color: $orange1;
-			border-radius: 10% 0 10% 10%;
-			transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-		}
-		&::before{
-			top: -10%;
-		}
-		&::after{
-			top: 50%;
-		}
-	}
+#welcome-section {
+    background-image: url(img/jpg/bg_index_1.jpg);
+    @media screen and (max-width: $breakM - 1) {
+        background-position: left top;
+    }
+    height: 70vh;
+    position: relative;
+    #scroll-down-icon {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate3d(-50%, -100%, 0);
+        @include scroll-down-icon-size(35px);
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            border-left: 5px solid;
+            border-bottom: 5px solid;
+            border-color: $red;
+            border-radius: 10% 0 10% 10%;
+            transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+        }
+        &::before {
+            top: -10%;
+        }
+        &::after {
+            top: 50%;
+        }
+    }
 }
 // JAK PRACUJEMY
-#jak-pracujemy{
-	background-image: url(img/svg/bg_index_1sm.svg);
-	padding-top: 10%;
-	h3{
-		text-align: left;
-		width: 250px;
-		margin: $space3 auto;
-		&::before{
-			content: '';
-			display: inline-block;
-			height: $space3;
-			width: $space3;
-			background-repeat: no-repeat;
-			line-height: normal;
-			vertical-align: middle;
-			margin-right: $space2;
-		}
-		&:nth-of-type(1)::before{
-			background-image: url(img/svg/nr1.svg);
-		}
-		&:nth-of-type(2)::before{
-			background-image: url(img/svg/nr2.svg);
-		}
-		&:nth-of-type(3)::before{
-			background-image: url(img/svg/nr3.svg);
-		}
-		&:nth-of-type(4)::before{
-			background-image: url(img/svg/nr4.svg);
-		}
-	}
+#jak-pracujemy {
+    background-image: url(img/svg/bg_index_1sm.svg);
+    padding-top: 10%;
+    h3 {
+        text-align: left;
+        width: 255px;
+        margin: $space3 auto;
+        &::before {
+            content: "";
+            display: inline-block;
+            height: $space3;
+            width: $space3;
+            background-repeat: no-repeat;
+            line-height: normal;
+            vertical-align: middle;
+            margin-right: $space2;
+        }
+        &:nth-of-type(1)::before {
+            background-image: url(img/svg/nr1.svg);
+        }
+        &:nth-of-type(2)::before {
+            background-image: url(img/svg/nr2.svg);
+        }
+        &:nth-of-type(3)::before {
+            background-image: url(img/svg/nr3.svg);
+        }
+        &:nth-of-type(4)::before {
+            background-image: url(img/svg/nr4.svg);
+        }
+    }
 }
 // WYKONAMY
-#wykonamy{
-	.wykonamy-content{
-		max-width: 400px;
-		@media(max-width: $breakM - 1){
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-	.row:nth-of-type(1){
-		.wykonamy-content:nth-of-type(1){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_naprawa.svg);
-			}
-		}
-		.wykonamy-content:nth-of-type(2){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_montaz.svg);
-			}
-		}
-	}
-	.row:nth-of-type(2){
-		.wykonamy-content:nth-of-type(1){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_podlaczanie.svg);
-			}
-		}
-		.wykonamy-content:nth-of-type(2){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_modernizacja.svg);
-			}
-		}
-	}
-	h4{
-		&::after{
-			content: ' +'
-		}
-	}
+#wykonamy {
+    .wykonamy-content {
+        max-width: 400px;
+        @media (max-width: $breakM - 1) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .row:nth-of-type(1) {
+        .wykonamy-content:nth-of-type(1) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_naprawa.svg);
+            }
+        }
+        .wykonamy-content:nth-of-type(2) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_montaz.svg);
+            }
+        }
+    }
+    .row:nth-of-type(2) {
+        .wykonamy-content:nth-of-type(1) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_podlaczanie.svg);
+            }
+        }
+        .wykonamy-content:nth-of-type(2) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_modernizacja.svg);
+            }
+        }
+    }
+    h4 {
+        &::after {
+            content: " +";
+        }
+    }
 }
 
 // KONTAKT
-#kontakt{
-	background-image: url(img/svg/bg_index_2sm.svg);
-	background-position: bottom;
-	padding-bottom: 25%;
-	.kontakt-item{
-		position: relative;
-		padding-top: 4rem;
-		i{
-			color: $orange1;
-			font-size: 3rem;
-			left: 50%;
-			top: 0;
-			@include translate-center(hor);
-		}
-	}
+#kontakt {
+    background-image: url(img/svg/bg_index_2sm.svg);
+    background-position: bottom;
+    padding-bottom: 25%;
+    .kontakt-item {
+        position: relative;
+        padding-top: 4rem;
+        i {
+            color: $orange1;
+            font-size: 3rem;
+            left: 50%;
+            top: 0;
+            @include translate-center(hor);
+        }
+    }
 }
 // LOKALIZACJE
-#lokalizacje{
-	background-image: url(img/svg/bg_index_3sm.svg);
-	padding-top: 10%;
+#lokalizacje {
+    background-image: url(img/svg/bg_index_3sm.svg);
+    padding-top: 10%;
+    h2 + .row {
+        align-items: center;
+    }
 }
 // PORADY
-#porady{
-	.porady-item{
-		max-width: 500px;
-		@include margin-aling-center;
-	}
-	.porady-img{
-		padding: 0;
-		margin: $space2 0 0 0;
-		font-size: 0;
-		img{
-			width: 100%;
-		}
-	}
-	.porady-description{
-		background-color: $white2;
-		margin: 0 0 $space2 0;
-		.multi-line-text-overflow{
-			display: none;
-			@media(min-width: 380px){
-				@include multi-line-text-overflow(1, 20px);
-			}
-			@media(min-width: 450px){
-				@include multi-line-text-overflow(3, 20px);
-			}
-		}
-	}
+#porady {
+    .porady-item {
+        max-width: 500px;
+        @include margin-aling-center;
+    }
+    .porady-img {
+        padding: 0;
+        margin: $space2 0 0 0;
+        font-size: 0;
+        img {
+            width: 100%;
+        }
+    }
+    .porady-description {
+        background-color: $white2;
+        margin: 0 0 $space2 0;
+        .multi-line-text-overflow {
+            display: none;
+            @media (min-width: 380px) {
+                @include multi-line-text-overflow(1, 20px);
+            }
+            @media (min-width: 450px) {
+                @include multi-line-text-overflow(3, 20px);
+            }
+        }
+    }
 }
 
 // OPINIE
-#opinie{
-	background-image: url(img/svg/bg_index_4sm.svg);
-	padding-top: 15%;
-	.opinie-content{
-		position: relative;
-		&::before,
-		&::after{
-			content: '';
-			display: block;
-			background-repeat: no-repeat;
-			max-height: 80px;
-			max-width: 80px;
-			height: 100%;
-			width: 15vw;
-			position: absolute;
-		}
-		&::before{
-		    background-image: url(img/svg/quote_opinie_top.svg);
-		    right: 0;
-		    top: 0;
-			transform: translate(-10%, -40%);
-		}
-		&::after{
-		    background-image: url(img/svg/quote_opinie_bottom.svg);
-		    left: 0;
-		    bottom: 0;
-			transform: translate(10%, 70%);
-		}
-	}
+#opinie {
+    background-image: url(img/svg/bg_index_4sm.svg);
+    padding-top: 15%;
+    .opinie-content {
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            background-repeat: no-repeat;
+            max-height: 80px;
+            max-width: 80px;
+            height: 100%;
+            width: 15vw;
+            position: absolute;
+        }
+        &::before {
+            background-image: url(img/svg/quote_opinie_top.svg);
+            right: 0;
+            top: 0;
+            transform: translate(-10%, -40%);
+        }
+        &::after {
+            background-image: url(img/svg/quote_opinie_bottom.svg);
+            left: 0;
+            bottom: 0;
+            transform: translate(10%, 70%);
+        }
+    }
 }
 
-@import 'animations';
-@import 'media';
+@import "animations";
+@import "media";

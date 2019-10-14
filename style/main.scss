@@ -1,201 +1,216 @@
-@import 'variables';
-@import 'mixins';
-@import 'collapser';
+@import "variables";
+@import "mixins";
+@import "collapser";
 
-*, nav ul, nav ol{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+*,
+nav ul,
+nav ol {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 ol,
-ul{
-	padding-left: 50px;
-	margin-bottom: $space2;
+ul {
+    padding-left: 50px;
+    margin-bottom: $space2;
 }
-html{
-	font-size: 18px;
+html {
+    font-size: 18px;
 }
-body{
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 400;
-	background: $white3;
-	color: $gray3;
+body {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 400;
+    background: $white3;
+    color: $gray3;
 }
-h1{
-	font-weight: 800;
-	float: left;
-	font-size: $fontSize3;
-	width: 150px;
-	line-height: 30px;
+h1,
+.h1 {
+    font-weight: 800;
+    float: left;
+    font-size: $fontSize3;
+    width: 150px;
+    line-height: 30px;
 }
-h2{
-	font-size: $fontSize3;
-	font-weight: 700;
-	color: $gray1;
-	text-transform: uppercase;
-	text-align: center;
-	line-height: 100%;
-	margin: $space2 0 $space4 0;
+h2,
+.h2 {
+    font-size: $fontSize3;
+    font-weight: 700;
+    color: $gray1;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    margin: $space2 0 $space6 0;
 }
-h3{
-	font-size: $fontSize2;
-	font-weight: 700;
-	line-height: 100%;
-	color: $gray2;
-	text-transform: uppercase;
-	margin: 0 0 $space2 0;
+h3,
+.h3 {
+    font-size: $fontSize2;
+    font-weight: 700;
+    line-height: 100%;
+    color: $gray2;
+    text-transform: uppercase;
+    margin: 0 0 $space2 0;
 }
-h4{
-	font-size: $fontSize2;
-	font-weight: 700;
-	line-height: 100%;
-	margin: 0 0 $space1 0;
-	text-transform: lowercase;
-	&:hover{color: $orange1}
+h4,
+.h4 {
+    font-size: $fontSize2;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0 0 $space1 0;
+    text-transform: lowercase;
+    &:hover {
+        color: $orange1;
+    }
 }
-p{
-	margin: 0 0 $space2 0;
-	&.important{
-		margin-top: 0;
-		font-size: $fontSize3;
-		font-weight: 700;
-		text-align: center;
-	}
+p {
+    margin: 0 0 $space2 0;
+    &.important {
+        margin-top: 0;
+        font-size: $fontSize3;
+        font-weight: 700;
+        text-align: center;
+    }
 }
-strong{color: $orange1}
-a{
-	text-decoration: none;
-	&:link,
-	&:visited,
-	&:active,
-	&:hover {color: inherit;}
+strong {
+    color: $orange1;
 }
-address{
-	font-style: normal;
+a {
+    text-decoration: none;
+    &:link,
+    &:visited,
+    &:active,
+    &:hover {
+        color: inherit;
+    }
 }
-main{
-	min-height: 100vh;
+address {
+    font-style: normal;
 }
-#header{
-	font-family: 'Open Sans', sans-serif;
-	text-transform: uppercase;
-	border-bottom: 2px solid $gray5;
-	background: $white3;
-	color: $gray1;
-	.container{
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-	nav{
-		background: $white3;
-		border-color: $gray5;
-		font-size: $fontSize1;
-		font-weight: 700;
-		ol{
-			> li > a{
-				&:hover,
-				&.active{
-					color: $red;
-				}
-			}
-		}
-		ul{
-			border-color: $gray5;
-			background: $white3;
-			li{
-				color: $gray2;
-				a{
-					&:hover,
-					&.active{
-						color: $red;
-					}
-				}
-			}
-		}
-	}
+main {
+    min-height: 100vh;
 }
-#footer{
-	background: $gray2;
-	#main-footer{
-		*{color: $white3;}
-		h3{
-			position: relative;
-			max-width: 400px;
-			margin: 0 0 $space3 0;
-			i {
-				position: absolute;
-				right: 0;
-				font-size: 3.2rem
-			}
-		}
-	}
-	#copyrigth{
-		background: $white3;
-		padding-top: $space2;
-		padding-bottom: $space2;
-		text-align: center;
-		max-width: none;
-		p{
-			margin: 0;
-		}
-	}
+#header {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid $gray5;
+    background: $white3;
+    color: $gray1;
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    nav {
+        background: $white3;
+        border-color: $gray5;
+        font-size: $fontSize1;
+        font-weight: 700;
+        ol {
+            > li > a {
+                &:hover,
+                &.active {
+                    color: $red;
+                }
+            }
+        }
+        ul {
+            border-color: $gray5;
+            background: $white3;
+            li {
+                color: $gray2;
+                a {
+                    &:hover,
+                    &.active {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
 }
-section{
-	background-color: $white3;
+#footer {
+    background: $gray2;
+    #main-footer {
+        * {
+            color: $white3;
+        }
+        h3 {
+            position: relative;
+            max-width: 400px;
+            margin: 0 0 $space3 0;
+            i {
+                position: absolute;
+                right: 0;
+                font-size: 3.2rem;
+            }
+        }
+    }
+    #copyrigth {
+        background: $white3;
+        padding-top: $space2;
+        padding-bottom: $space2;
+        text-align: center;
+        max-width: none;
+        p {
+            margin: 0;
+        }
+    }
+}
+section,
+.section {
+    background-color: $white3;
     background-repeat: no-repeat;
-	text-align: center;
-	&.bg-color{
-		background-color: $white1;
-	}
-	&.bg-img{
-		background-position: center;
-	    background-size: cover;
-	}
-	&.bg-svg{
-		background-position: top;
-	    background-size: 100%;
-	}
+    text-align: center;
+    &.bg-color {
+        background-color: $white1;
+    }
+    &.bg-img {
+        background-position: center;
+        background-size: cover;
+    }
+    &.bg-svg {
+        background-position: top;
+        background-size: 100%;
+    }
 }
-.circle-icon{
-	display: block;
-	height: 100px;
-	width: 100px; 
-	background-size: cover;
-	background-repeat: no-repeat;
-	line-height: normal;
-	vertical-align: middle;
-	@include margin-aling-center;
-	margin-bottom: $space3;
-	margin-top: $space3;
-}
-.banner{
-	padding: 50px 0;
-	margin-top: $navHMobile;
-	background-position: center;
+.circle-icon {
+    display: block;
+    height: 100px;
+    width: 100px;
     background-size: cover;
     background-repeat: no-repeat;
-	.banner-description{
-	    background: url(img/svg/corners.svg) no-repeat;
-	    background-color: rgba(102, 102, 102, 0.9);
-	    background-size: 260px;
-	    background-position: center;
-	    width: 260px;
-	    height: 200px;
-	    margin: 0 auto;
-	    position: relative;
-	    p{
-	    	padding: 30px;
-		    margin-top: 0;
-		    text-align: center;
-		    color: $gray5;
-		    position: absolute;
-		    -webkit-transform: translateY(-50%);
-		    transform: translateY(-50%);
-		    top: 50%;
-	    }
-	}
+    line-height: normal;
+    vertical-align: middle;
+    @include margin-aling-center;
+    margin-bottom: $space3;
+    margin-top: $space3;
+}
+.banner {
+    padding: 50px 0;
+    margin-top: $navHMobile;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .banner-description {
+        background: url(img/svg/corners.svg) no-repeat;
+        background-color: rgba(102, 102, 102, 0.9);
+        background-size: 260px;
+        background-position: center;
+        width: 260px;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        p {
+            padding: 30px;
+            margin-top: 0;
+            text-align: center;
+            color: $gray5;
+            position: absolute;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            top: 50%;
+        }
+    }
 }
 
-@import 'main_grid';
-@import 'main_media';
-@import 'main_animation';
+@import "main_grid";
+@import "main_media";
+@import "main_animation";

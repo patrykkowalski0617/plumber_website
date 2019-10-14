@@ -1,97 +1,95 @@
-@media(min-width: $breakS){
-	
+@media (min-width: $breakS) {
 }
 
-@media(min-width: $breakM){
-// WELCOME SECTION
-	#welcome-section{
-		height: 100vh;
-	}
-// JAK PRACUJEMY
-	#jak-pracujemy{
-		background-image: url(img/svg/bg_index_1.svg);
-		h3{
-			width: 290px;
-			margin: $space3 auto;
-			&::before{
-				height: $space4;
-				width: $space4;
-			}
-		}
-	}
-// WYKONAMY
-	#wykonamy{
-		text-align: left;
-		h3{
-			position: relative;
-			.circle-icon{
-				position: absolute;
-				top: 0;
-				left: -50%;
-				margin: 0;
-			}
-		}
-	}
-// KONTAKT
-	#kontakt{
-		background-image: url(img/svg/bg_index_2.svg);
-		padding-bottom: 10%;
-		.row .kontakt-item {
-			padding-top: 0;
-			i{
-				position: static;
-				vertical-align: -15%;
-			}
-		}
-	}
-// LOKALIZACJE
-	#lokalizacje{
-		background-image: url(img/svg/bg_index_3.svg);
-	}
-// PORADY
-	#porady {
-		.porady-description .multi-line-text-overflow{
-			@include multi-line-text-overflow(1, 20px);
-			@media(min-width: 900px){
-				@include multi-line-text-overflow(3, 20px);
-			}
-			margin-bottom: 0;
-		}
-	}
-// OPINIE
-	#opinie{
-		background-image: url(img/svg/bg_index_4.svg);
-	}
+@media (min-width: $breakM) {
+    // WELCOME SECTION
+    #welcome-section {
+        height: 100vh;
+    }
+    // JAK PRACUJEMY
+    #jak-pracujemy {
+        background-image: url(img/svg/bg_index_1.svg);
+        h3 {
+            width: 300px;
+            margin: $space3 auto;
+            &::before {
+                height: $space4;
+                width: $space4;
+            }
+        }
+    }
+    // WYKONAMY
+    #wykonamy {
+        text-align: left;
+        h3 {
+            position: relative;
+            .circle-icon {
+                position: absolute;
+                top: 0;
+                left: -50%;
+                margin: 0;
+            }
+        }
+    }
+    // KONTAKT
+    #kontakt {
+        background-image: url(img/svg/bg_index_2.svg);
+        padding-bottom: 10%;
+        .row .kontakt-item {
+            padding-top: 0;
+            i {
+                position: static;
+                vertical-align: -15%;
+            }
+        }
+    }
+    // LOKALIZACJE
+    #lokalizacje {
+        background-image: url(img/svg/bg_index_3.svg);
+    }
+    // PORADY
+    #porady {
+        .porady-description .multi-line-text-overflow {
+            @include multi-line-text-overflow(1, 20px);
+            @media (min-width: 900px) {
+                @include multi-line-text-overflow(3, 20px);
+            }
+            margin-bottom: 0;
+        }
+    }
+    // OPINIE
+    #opinie {
+        background-image: url(img/svg/bg_index_4.svg);
+    }
 }
 
-@media(min-width: $breakL){
-
-// WYKONAMY
-	#wykonamy{
-		text-align: left;
-		h3{
-			position: relative;
-			.circle-icon{
-				position: absolute;
-				top: 0;
-				left: -50%;
-				margin: 0;
-			}
-		}
-		.row .wykonamy-content{
-			&:first-of-type{
-				text-align: right;
-				.circle-icon{
-					left: auto;
-					right: -50%;
-				}
-			}
-		}
-	}
-// PORADY
-	#porady{
-	    .porady-description .multi-line-text-overflow{
-			@include multi-line-text-overflow(5, 20px);
-		}
-	}
+@media (min-width: $breakL) {
+    // WYKONAMY
+    #wykonamy {
+        text-align: left;
+        h3 {
+            position: relative;
+            .circle-icon {
+                position: absolute;
+                top: 0;
+                left: -50%;
+                margin: 0;
+            }
+        }
+        .row .wykonamy-content {
+            &:first-of-type {
+                text-align: right;
+                .circle-icon {
+                    left: auto;
+                    right: -50%;
+                }
+            }
+        }
+    }
+    // PORADY
+    #porady {
+        .porady-description .multi-line-text-overflow {
+            @include multi-line-text-overflow(5, 20px);
+        }
+    }
 }
