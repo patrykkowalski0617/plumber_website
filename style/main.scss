@@ -77,9 +77,11 @@ a {
     text-decoration: none;
     &:link,
     &:visited,
-    &:active,
-    &:hover {
+    &:active {
         color: inherit;
+    }
+    &:hover {
+        color: $red;
     }
 }
 address {

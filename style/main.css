@@ -176,8 +176,10 @@ strong {
 
 a {
   text-decoration: none; }
-  a:link, a:visited, a:active, a:hover {
+  a:link, a:visited, a:active {
     color: inherit; }
+  a:hover {
+    color: #f13535; }
 
 address {
   font-style: normal; }
