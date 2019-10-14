@@ -1,8 +1,7 @@
 .blog-banner {
   margin-top: 62px; }
   .blog-banner .container {
-    padding-top: 0;
-    padding-bottom: 0; }
+    padding: 0; }
   .blog-banner .blog-banner-content {
     padding: 0;
     max-height: 490px;
@@ -23,7 +22,7 @@
     .blog-banner .blog-banner-description p {
       width: 70%;
       text-align: center;
-      font-size: .8rem; }
+      font-size: 0.8rem; }
       @media (min-width: 400px) {
         .blog-banner .blog-banner-description p {
           font-size: 1rem; } }

@@ -99,6 +99,9 @@
         -ms-flex-align: center;
             align-items: center; }
 
+@media (max-width: 767px) {
+  #porady h3 {
+    margin: 0 0 0.5rem 0; } }
 #porady .porady-item {
   max-width: 500px;
   margin-left: auto;

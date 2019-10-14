@@ -137,6 +137,11 @@
 }
 // PORADY
 #porady {
+    @media (max-width: $breakM - 1) {
+        h3 {
+            margin: 0 0 $space1 0;
+        }
+    }
     .porady-item {
         max-width: 500px;
         @include margin-aling-center;

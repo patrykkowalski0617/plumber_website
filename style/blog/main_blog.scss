@@ -1,43 +1,44 @@
-@import '../variables';
+@import "../variables";
 
 // BANNER
-.blog-banner{
-	margin-top: $navHMobile;
-	.container{
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-	.blog-banner-content{
-		padding: 0;
-		max-height: 490px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		overflow: hidden;
-	}
-	.blog-banner-img{
-		img{
-			width: 100%;
-		}
-	}
-	.blog-banner-description{
-		background-color: $white2;
-		p{
-			width: 70%;
-			text-align: center;
-			font-size: .8rem;
-			@media(min-width: 400px){ font-size: 1rem; }
-		}
-	}
+.blog-banner {
+    margin-top: $navHMobile;
+    .container {
+        padding: 0;
+    }
+    .blog-banner-content {
+        padding: 0;
+        max-height: 490px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .blog-banner-img {
+        img {
+            width: 100%;
+        }
+    }
+    .blog-banner-description {
+        background-color: $white2;
+        p {
+            width: 70%;
+            text-align: center;
+            font-size: 0.8rem;
+            @media (min-width: 400px) {
+                font-size: 1rem;
+            }
+        }
+    }
 }
-.article{
-	h3{
-		margin-top: $space4;
-	}
-	p{
-		text-indent: $space6;
-		text-align: justify;
-	}
+.article {
+    h3 {
+        margin-top: $space4;
+    }
+    p {
+        text-indent: $space6;
+        text-align: justify;
+    }
 }
 
-@import 'main_blog_media';
+@import "main_blog_media";
