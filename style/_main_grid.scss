@@ -25,7 +25,7 @@ section,
 .section,
 article,
 .article {
-    padding: $space7 0 $space7 0;
+    padding: $space5 0 $space5 0;
 }
 
 .row {
@@ -220,6 +220,12 @@ article,
     }
 }
 @media (min-width: $breakM) {
+    section,
+    .section,
+    article,
+    .article {
+        padding: $space7 0 $space7 0;
+    }
     .col-m-1 {
         max-width: 8.33%;
         flex: 0 1 8.33%;

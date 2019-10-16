@@ -1,59 +1,65 @@
-@import '../variables';
-@import '../mixins';
+@import "../variables";
+@import "../mixins";
 
 // BANNER
-.banner{
-	background-image: url(img/jpg/bg_cennik_1.jpg);
+.banner {
+    background-image: url(img/jpg/bg_cennik_1.jpg);
 }
 // CENNIK
-#cennik{
-	background-image: url(img/svg/bg_cennik_1sm.svg);
-	padding-top: 15%;
-	.price-list{
-		margin: 0 auto;
-		border-collapse: collapse;
-		width: 100%;
-		max-width: 600px;
-		border: 1px solid $orange1;
-		tr:nth-child(odd) {
-			background-color: $white1;
-		}
-		tr:nth-child(even) {
-			background-color: $white2;
-		}
-		td{
-			text-align: left;
-			padding: 0.7rem;
-		}
-	}
+#cennik {
+    background-image: url(img/svg/bg_cennik_1sm.svg);
+    > .container {
+        margin-top: 6%;
+    }
+    .price-list {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+        border: 1px solid $orange1;
+        tr:nth-child(odd) {
+            background-color: $white1;
+        }
+        tr:nth-child(even) {
+            background-color: $white2;
+        }
+        td {
+            text-align: left;
+            padding: 0.7rem;
+        }
+    }
 }
 // UMOW
-#umow{
-	background-image: url(img/jpg/bg_cennik_2.jpg);
-	@media (max-width: $breakM - 1) {background-position: 60% center;}
-	.important{
-		width: 60%;
-		@media (min-width: 460px){ width: 50% }
-		margin: 0 20px 0 auto;
-	}
+#umow {
+    background-image: url(img/jpg/bg_cennik_2.jpg);
+    @media (max-width: $breakM - 1) {
+        background-position: 60% center;
+    }
+    .important {
+        width: 60%;
+        @media (min-width: 460px) {
+            width: 50%;
+        }
+        margin: 0 20px 0 auto;
+    }
 }
 // WYCENA
-#wycena{
-	ul{
-		max-width: 360px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: left;
-	}
+#wycena {
+    ul {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
 }
 // ZACHECAMY
-#zachecamy{
-	background-image: url(img/jpg/bg_cennik_3.jpg);
-	.important{
-		width: 50%;
-		margin-left: 20px;
-	}
+#zachecamy {
+    background-image: url(img/jpg/bg_cennik_3.jpg);
+    .important {
+        width: 50%;
+        margin-left: 20px;
+    }
 }
 
-@import 'animations';
-@import 'media';
+@import "animations";
+@import "media";

@@ -1,28 +1,25 @@
-@media(min-width: $breakS){
-	
+@media (min-width: $breakS) {
 }
 
-@media(min-width: $breakM){
-
+@media (min-width: $breakM) {
 }
 
-@media(min-width: $breakL){
-	// KONTAKT
-	#kontakt{
-		background-image: url(img/svg/bg_kontakt_1.svg);
-		padding-top: 7%;
-		address{
-			.important{
-				text-align: left;
-				padding-left: 75px;
-				position: relative;
-			}
-			i{
-				display: inline-block;
-				position: absolute;
-				left: -10px;
-				font-size: 60px;
-			}
-		}
-	}
+@media (min-width: $breakL) {
+    // KONTAKT
+    #kontakt {
+        background-image: url(img/svg/bg_kontakt_1.svg);
+        address {
+            .important {
+                text-align: left;
+                padding-left: 75px;
+                position: relative;
+            }
+            i {
+                display: inline-block;
+                position: absolute;
+                left: -10px;
+                font-size: 60px;
+            }
+        }
+    }
 }

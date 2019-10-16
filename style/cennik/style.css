@@ -2,8 +2,9 @@
   background-image: url(img/jpg/bg_cennik_1.jpg); }
 
 #cennik {
-  background-image: url(img/svg/bg_cennik_1sm.svg);
-  padding-top: 15%; }
+  background-image: url(img/svg/bg_cennik_1sm.svg); }
+  #cennik > .container {
+    margin-top: 6%; }
   #cennik .price-list {
     margin: 0 auto;
     border-collapse: collapse;
@@ -44,8 +45,7 @@
 
 @media (min-width: 768px) {
   #cennik {
-    background-image: url(img/svg/bg_cennik_1.svg);
-    padding-top: 7%; }
+    background-image: url(img/svg/bg_cennik_1.svg); }
 
   #wycena {
     text-align: left; }

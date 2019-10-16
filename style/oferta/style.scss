@@ -1,88 +1,92 @@
-@import '../variables';
-@import '../mixins';
+@import "../variables";
+@import "../mixins";
 
 // BANNER
-.banner{
-	background-image: url(img/jpg/bg_oferta_1.jpg);
+.banner {
+    background-image: url(img/jpg/bg_oferta_1.jpg);
 }
 // USŁUGI
-#uslugi{
-	ul{
-		list-style-type: none;
-		padding: 0;
-	}
-	.row:nth-of-type(1){
-		.uslugi-content:nth-of-type(1){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_dom.svg);
-			}
-		}
-		.uslugi-content:nth-of-type(2){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_kuchnia.svg);
-			}
-		}
-	}
-	.row:nth-of-type(2){
-		.uslugi-content:nth-of-type(1){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_lazienka.svg);
-			}
-		}
-		.uslugi-content:nth-of-type(2){
-			.circle-icon{
-				background-image: url(img/svg/circle_icon_piwnica.svg);
-			}
-		}
-	}
+#uslugi {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .row:nth-of-type(1) {
+        .uslugi-content:nth-of-type(1) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_dom.svg);
+            }
+        }
+        .uslugi-content:nth-of-type(2) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_kuchnia.svg);
+            }
+        }
+    }
+    .row:nth-of-type(2) {
+        .uslugi-content:nth-of-type(1) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_lazienka.svg);
+            }
+        }
+        .uslugi-content:nth-of-type(2) {
+            .circle-icon {
+                background-image: url(img/svg/circle_icon_piwnica.svg);
+            }
+        }
+    }
 }
 // POGOTOWIE
-#pogotowie{
-	ul{
-		text-align: left;
-		max-width: 300px;
-		margin: 0 auto;
-	}
-	.circle-icon{
-		background-image: url(img/svg/circle_icon_pogotowie.svg);
-	}
+#pogotowie {
+    ul {
+        text-align: left;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .circle-icon {
+        background-image: url(img/svg/circle_icon_pogotowie.svg);
+    }
 }
 // ZADZWOŃ
-#zadzwon{
-	background-image: url(img/jpg/bg_oferta_2.jpg);
-	.icon-mobile{
-		font-size: 80px;
-		color: $orange1;
-		display: block;
-	}
+#zadzwon {
+    background-image: url(img/jpg/bg_oferta_2.jpg);
+    .icon-mobile {
+        font-size: 80px;
+        color: $orange1;
+        display: block;
+    }
 }
 // MATERIALY
-#materialy{
-	background-image: url(img/svg/bg_oferta_1sm.svg);
-	padding-top: 15%;
+#materialy {
+    background-image: url(img/svg/bg_oferta_1sm.svg);
+    > .container {
+        margin-top: 6%;
+    }
 }
 // GWARANTUJEMY
-#gwarantujemy{
-	background-image: url(img/jpg/bg_oferta_3.jpg);
-	@media(min-width: 360px){
-		p{
-			width: 80%
-		}
-	}
-	@media(min-width: 460px){
-		p{
-			width: 60%
-		}
-	}
+#gwarantujemy {
+    background-image: url(img/jpg/bg_oferta_3.jpg);
+    @media (min-width: 360px) {
+        p {
+            width: 80%;
+        }
+    }
+    @media (min-width: 460px) {
+        p {
+            width: 60%;
+        }
+    }
 }
 // PRZYCZYNY
-#przyczyny{
-	background-image: url(img/svg/bg_oferta_2sm.svg);
-	padding-top: 15%;
-	ul{
-		text-align: left;
-	}
+#przyczyny {
+    background-image: url(img/svg/bg_oferta_2sm.svg);
+    > .container {
+        margin-top: 6%;
+    }
+    ul {
+        text-align: left;
+    }
 }
 
-@import 'animations';
-@import 'media';
+@import "animations";
+@import "media";

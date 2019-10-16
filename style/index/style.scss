@@ -41,7 +41,9 @@
 // JAK PRACUJEMY
 #jak-pracujemy {
     background-image: url(img/svg/bg_index_1sm.svg);
-    padding-top: 10%;
+    > .container {
+        margin-top: 6%;
+    }
     h3 {
         text-align: left;
         width: 255px;
@@ -114,7 +116,9 @@
 #kontakt {
     background-image: url(img/svg/bg_index_2sm.svg);
     background-position: bottom;
-    padding-bottom: 25%;
+    > .container {
+        margin-bottom: 6%;
+    }
     .kontakt-item {
         position: relative;
         padding-top: 4rem;
@@ -130,7 +134,9 @@
 // LOKALIZACJE
 #lokalizacje {
     background-image: url(img/svg/bg_index_3sm.svg);
-    padding-top: 10%;
+    > .container {
+        margin-top: 6%;
+    }
     h2 + .row {
         align-items: center;
     }
@@ -172,7 +178,9 @@
 // OPINIE
 #opinie {
     background-image: url(img/svg/bg_index_4sm.svg);
-    padding-top: 15%;
+    > .container {
+        margin-top: 6%;
+    }
     .opinie-content {
         position: relative;
         &::before,

@@ -33,8 +33,9 @@
       top: 50%; }
 
 #jak-pracujemy {
-  background-image: url(img/svg/bg_index_1sm.svg);
-  padding-top: 10%; }
+  background-image: url(img/svg/bg_index_1sm.svg); }
+  #jak-pracujemy > .container {
+    margin-top: 6%; }
   #jak-pracujemy h3 {
     text-align: left;
     width: 255px;
@@ -76,8 +77,9 @@
 
 #kontakt {
   background-image: url(img/svg/bg_index_2sm.svg);
-  background-position: bottom;
-  padding-bottom: 25%; }
+  background-position: bottom; }
+  #kontakt > .container {
+    margin-bottom: 6%; }
   #kontakt .kontakt-item {
     position: relative;
     padding-top: 4rem; }
@@ -92,8 +94,9 @@
               transform: translate(-50%); }
 
 #lokalizacje {
-  background-image: url(img/svg/bg_index_3sm.svg);
-  padding-top: 10%; }
+  background-image: url(img/svg/bg_index_3sm.svg); }
+  #lokalizacje > .container {
+    margin-top: 6%; }
   #lokalizacje h2 + .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -139,8 +142,9 @@
         -webkit-box-orient: vertical; } }
 
 #opinie {
-  background-image: url(img/svg/bg_index_4sm.svg);
-  padding-top: 15%; }
+  background-image: url(img/svg/bg_index_4sm.svg); }
+  #opinie > .container {
+    margin-top: 6%; }
   #opinie .opinie-content {
     position: relative; }
     #opinie .opinie-content::before, #opinie .opinie-content::after {
@@ -221,8 +225,7 @@
         margin: 0; }
 
   #kontakt {
-    background-image: url(img/svg/bg_index_2.svg);
-    padding-bottom: 10%; }
+    background-image: url(img/svg/bg_index_2.svg); }
     #kontakt .row .kontakt-item {
       padding-top: 0; }
       #kontakt .row .kontakt-item i {

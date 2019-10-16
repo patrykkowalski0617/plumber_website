@@ -1,68 +1,65 @@
-@media(min-width: $breakS){
-	
+@media (min-width: $breakS) {
 }
 
-@media(min-width: $breakM){
-// USŁUGI
-	#uslugi{
-		text-align: left;
-		h3{
-			position: relative;
-			.circle-icon{
-				position: absolute;
-				top: 0;
-				left: -50%;
-				margin: 0;
-			}
-		}
-	}
-// POGOTOWIE
-	#pogotowie{
-		.pogotowie-content:nth-of-type(1){
-			order: 2;
-			ul{
-				max-width: none;
-				column-count: 2;
-				column-gap: $space5;
-			}
-		}
-		.pogotowie-content:nth-of-type(2){
-			order: 1;
-		}
-	}
+@media (min-width: $breakM) {
+    // USŁUGI
+    #uslugi {
+        text-align: left;
+        h3 {
+            position: relative;
+            .circle-icon {
+                position: absolute;
+                top: 0;
+                left: -50%;
+                margin: 0;
+            }
+        }
+    }
+    // POGOTOWIE
+    #pogotowie {
+        .pogotowie-content:nth-of-type(1) {
+            order: 2;
+            ul {
+                max-width: none;
+                column-count: 2;
+                column-gap: $space5;
+            }
+        }
+        .pogotowie-content:nth-of-type(2) {
+            order: 1;
+        }
+    }
 }
 
-@media(min-width: $breakL){
-// USŁUGI
-	#uslugi{
-		text-align: left;
-		h3{
-			position: relative;
-			.circle-icon{
-				position: absolute;
-				top: 0;
-				left: -50%;
-				margin: 0;
-			}
-		}
-		.row .uslugi-content{
-			&:first-of-type{
-				text-align: right;
-				.circle-icon{
-					left: auto;
-					right: -50%;
-				}
-			}
-		}
-	}
-// MATERIALY
-	#materialy{
-		background-image: url(img/svg/bg_oferta_1.svg);
-		padding-top: 7%;
-	}
-// PRZYCZYNY
-	#przyczyny{
-		background-image: url(img/svg/bg_oferta_2.svg);
-		padding-top: 7%;
-	}
+@media (min-width: $breakL) {
+    // USŁUGI
+    #uslugi {
+        text-align: left;
+        h3 {
+            position: relative;
+            .circle-icon {
+                position: absolute;
+                top: 0;
+                left: -50%;
+                margin: 0;
+            }
+        }
+        .row .uslugi-content {
+            &:first-of-type {
+                text-align: right;
+                .circle-icon {
+                    left: auto;
+                    right: -50%;
+                }
+            }
+        }
+    }
+    // MATERIALY
+    #materialy {
+        background-image: url(img/svg/bg_oferta_1.svg);
+    }
+    // PRZYCZYNY
+    #przyczyny {
+        background-image: url(img/svg/bg_oferta_2.svg);
+    }
 }

@@ -141,7 +141,7 @@ h2,
   text-transform: uppercase;
   text-align: center;
   line-height: 100%;
-  margin: 1rem 0 4rem 0; }
+  margin: 1rem 0 2.2rem 0; }
 
 h3,
 .h3 {
@@ -311,7 +311,7 @@ section,
 .section,
 article,
 .article {
-  padding: 5rem 0 5rem 0; }
+  padding: 3rem 0 3rem 0; }
 
 .row {
   margin-left: -1rem;
@@ -551,6 +551,12 @@ article,
   .off-s-12 {
     margin-left: 100%; } }
 @media (min-width: 768px) {
+  section,
+  .section,
+  article,
+  .article {
+    padding: 5rem 0 5rem 0; }
+
   .col-m-1 {
     max-width: 8.33%;
     -webkit-box-flex: 0;
@@ -777,7 +783,11 @@ article,
     font-size: 20px; }
 
   .banner .banner-description {
-    margin-right: 10%; } }
+    margin-right: 10%; }
+
+  h2,
+  .h2 {
+    margin: 1rem 0 4rem 0; } }
 @media (min-width: 1024px) {
   #header {
     height: 77px; }
@@ -796,7 +806,7 @@ article,
           #header .container nav ol > li > a {
             color: inherit; }
             #header .container nav ol > li > a::after {
-              content: '';
+              content: "";
               background: #f13535;
               position: absolute;
               height: 2px;

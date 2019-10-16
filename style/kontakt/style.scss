@@ -1,20 +1,22 @@
-@import '../variables';
-@import '../mixins';
+@import "../variables";
+@import "../mixins";
 
 // BANNER
-.banner{
-	background-image: url(img/jpg/bg_kontakt_1.jpg);
+.banner {
+    background-image: url(img/jpg/bg_kontakt_1.jpg);
 }
 // KONTAKT
-#kontakt{
-	background-image: url(img/svg/bg_kontakt_1sm.svg);
-	padding-top: 15%;
-	strong{
-		color: $red;
-	}
-	i{
-		display: none;
-	}
+#kontakt {
+    background-image: url(img/svg/bg_kontakt_1sm.svg);
+    > .container {
+        margin-top: 6%;
+    }
+    strong {
+        color: $red;
+    }
+    i {
+        display: none;
+    }
 }
-@import 'animations';
-@import 'media';
+@import "animations";
+@import "media";
