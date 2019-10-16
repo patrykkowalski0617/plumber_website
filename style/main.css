@@ -212,7 +212,8 @@ main {
           color: #f13535; }
 
 #footer {
-  background: #666; }
+  background: #666;
+  padding-top: 3rem; }
   #footer #main-footer * {
     color: #fff; }
   #footer #main-footer h3 {
@@ -787,7 +788,10 @@ article,
 
   h2,
   .h2 {
-    margin: 1rem 0 4rem 0; } }
+    margin: 1rem 0 4rem 0; }
+
+  #footer {
+    padding-top: 5rem; } }
 @media (min-width: 1024px) {
   #header {
     height: 77px; }

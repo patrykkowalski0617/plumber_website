@@ -16,6 +16,9 @@
     .h2 {
         margin: $space2 0 $space6 0;
     }
+    #footer {
+        padding-top: $space7;
+    }
 }
 
 @media (min-width: $breakL) {
