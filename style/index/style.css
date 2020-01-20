@@ -32,31 +32,29 @@
     #welcome-section #scroll-down-icon::after {
       top: 50%; }
 
-#jak-pracujemy {
-  background-image: url(img/svg/bg_index_1sm.svg); }
-  #jak-pracujemy > .container {
-    margin-top: 6%; }
-  #jak-pracujemy h3 {
-    text-align: left;
-    width: 255px;
-    margin: 1.5rem auto; }
-    #jak-pracujemy h3::before {
-      content: "";
-      display: inline-block;
-      height: 1.5rem;
-      width: 1.5rem;
-      background-repeat: no-repeat;
-      line-height: normal;
-      vertical-align: middle;
-      margin-right: 1rem; }
-    #jak-pracujemy h3:nth-of-type(1)::before {
-      background-image: url(img/svg/nr1.svg); }
-    #jak-pracujemy h3:nth-of-type(2)::before {
-      background-image: url(img/svg/nr2.svg); }
-    #jak-pracujemy h3:nth-of-type(3)::before {
-      background-image: url(img/svg/nr3.svg); }
-    #jak-pracujemy h3:nth-of-type(4)::before {
-      background-image: url(img/svg/nr4.svg); }
+#jak-pracujemy > .container {
+  margin-top: 6%; }
+#jak-pracujemy h3 {
+  text-align: left;
+  width: 255px;
+  margin: 1.5rem auto; }
+  #jak-pracujemy h3::before {
+    content: "";
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-repeat: no-repeat;
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 1rem; }
+  #jak-pracujemy h3:nth-of-type(1)::before {
+    background-image: url(img/svg/nr1.svg); }
+  #jak-pracujemy h3:nth-of-type(2)::before {
+    background-image: url(img/svg/nr2.svg); }
+  #jak-pracujemy h3:nth-of-type(3)::before {
+    background-image: url(img/svg/nr3.svg); }
+  #jak-pracujemy h3:nth-of-type(4)::before {
+    background-image: url(img/svg/nr4.svg); }
 
 #wykonamy .wykonamy-content {
   max-width: 400px; }
@@ -76,7 +74,6 @@
   content: " +"; }
 
 #kontakt {
-  background-image: url(img/svg/bg_index_2sm.svg);
   background-position: bottom; }
   #kontakt > .container {
     margin-bottom: 6%; }
@@ -93,14 +90,12 @@
       -webkit-transform: translate(-50%);
               transform: translate(-50%); }
 
-#lokalizacje {
-  background-image: url(img/svg/bg_index_3sm.svg); }
-  #lokalizacje > .container {
-    margin-top: 6%; }
-  #lokalizacje h2 + .row {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+#lokalizacje > .container {
+  margin-top: 6%; }
+#lokalizacje h2 + .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 @media (max-width: 767px) {
   #porady h3 {
@@ -141,33 +136,31 @@
         display: -webkit-box;
         -webkit-box-orient: vertical; } }
 
-#opinie {
-  background-image: url(img/svg/bg_index_4sm.svg); }
-  #opinie > .container {
-    margin-top: 6%; }
-  #opinie .opinie-content {
-    position: relative; }
-    #opinie .opinie-content::before, #opinie .opinie-content::after {
-      content: "";
-      display: block;
-      background-repeat: no-repeat;
-      max-height: 80px;
-      max-width: 80px;
-      height: 100%;
-      width: 15vw;
-      position: absolute; }
-    #opinie .opinie-content::before {
-      background-image: url(img/svg/quote_opinie_top.svg);
-      right: 0;
-      top: 0;
-      -webkit-transform: translate(-10%, -40%);
-              transform: translate(-10%, -40%); }
-    #opinie .opinie-content::after {
-      background-image: url(img/svg/quote_opinie_bottom.svg);
-      left: 0;
-      bottom: 0;
-      -webkit-transform: translate(10%, 70%);
-              transform: translate(10%, 70%); }
+#opinie > .container {
+  margin-top: 6%; }
+#opinie .opinie-content {
+  position: relative; }
+  #opinie .opinie-content::before, #opinie .opinie-content::after {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    max-height: 80px;
+    max-width: 80px;
+    height: 100%;
+    width: 15vw;
+    position: absolute; }
+  #opinie .opinie-content::before {
+    background-image: url(img/svg/quote_opinie_top.svg);
+    right: 0;
+    top: 0;
+    -webkit-transform: translate(-10%, -40%);
+            transform: translate(-10%, -40%); }
+  #opinie .opinie-content::after {
+    background-image: url(img/svg/quote_opinie_bottom.svg);
+    left: 0;
+    bottom: 0;
+    -webkit-transform: translate(10%, 70%);
+            transform: translate(10%, 70%); }
 
 #scroll-down-icon::before {
   -webkit-animation: scroll-down-icon linear infinite 2s;
@@ -205,14 +198,14 @@
   #welcome-section {
     height: 100vh; }
 
-  #jak-pracujemy {
-    background-image: url(img/svg/bg_index_1.svg); }
-    #jak-pracujemy h3 {
-      width: 300px;
-      margin: 1.5rem auto; }
-      #jak-pracujemy h3::before {
-        height: 2.2rem;
-        width: 2.2rem; }
+  #jak-pracujemy .bg-part {
+    background-image: url(img/svg/bg-glowna1.svg); }
+  #jak-pracujemy h3 {
+    width: 300px;
+    margin: 1.5rem auto; }
+    #jak-pracujemy h3::before {
+      height: 2.2rem;
+      width: 2.2rem; }
 
   #wykonamy {
     text-align: left; }
@@ -224,16 +217,16 @@
         left: -50%;
         margin: 0; }
 
-  #kontakt {
-    background-image: url(img/svg/bg_index_2.svg); }
-    #kontakt .row .kontakt-item {
-      padding-top: 0; }
-      #kontakt .row .kontakt-item i {
-        position: static;
-        vertical-align: -15%; }
+  #kontakt .bg-part {
+    background-image: url(img/svg/bg-glowna2.svg); }
+  #kontakt .row .kontakt-item {
+    padding-top: 0; }
+    #kontakt .row .kontakt-item i {
+      position: static;
+      vertical-align: -15%; }
 
-  #lokalizacje {
-    background-image: url(img/svg/bg_index_3.svg); }
+  #lokalizacje .bg-part {
+    background-image: url(img/svg/bg-glowna3.svg); }
 
   #porady .porady-description .multi-line-text-overflow {
     line-height: 1.3;
@@ -257,8 +250,8 @@
       -webkit-box-orient: vertical; } }
 
 @media (min-width: 768px) {
-  #opinie {
-    background-image: url(img/svg/bg_index_4.svg); } }
+  #opinie .bg-part {
+    background-image: url(img/svg/bg-glowna4.svg); } }
 @media (min-width: 1024px) {
   #wykonamy {
     text-align: left; }

@@ -1,75 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640" preserveAspectRatio="xMinYMin"><defs><style>.cls-1{fill:#f6f0ca;}.cls-2{fill:#fb6b31;}.cls-3{fill:#6b4832;}.cls-4{fill:#999;}.cls-5{fill:#ccc;}.cls-6{fill:#666;}</style></defs><title>bg-glowna1</title><g id="Warstwa_2" data-name="Warstwa 2"><g id="Warstwa_1-2" data-name="Warstwa 1"><path class="cls-1" d="M79.48,15.5,64,0h64V64L80.36,16.34C80.09,16,79.75,15.8,79.48,15.5Z"/><path class="cls-1" d="M0,128H0V0H32V32l0,0H64V64l0,0H96V96l0,0h32v32H0Z"/><g class="rotate-l-90"><polygon class="cls-2" points="1888 256 1856 256 1856 288 1888 288 1888 320 1920 320 1920 288 1920 256 1888 256"/><polygon class="cls-2" points="1888 352 1888 320 1856 320 1856 288 1824 288 1824 256 1792 256 1792 288 1792 384 1888 384 1920 384 1920 352 1888 352"/></g><polygon class="cls-3" points="1856 0 1824 0 1824 32 1792 32 1792 64 1856 64 1856 0"/><polygon class="cls-3" points="1856 128 1888 128 1888 96 1920 96 1920 64 1856 64 1856 128"/><path class="cls-4" d="M256,192V160l-32-32H192Z"/><path class="cls-4" d="M256,256V224c-.25-.19-96-96-96-96H128Z"/><path class="cls-4" d="M128,160v32l64,64h32Z"/><path class="cls-4" d="M128,224v32l0,0h32C159.9,255.85,128.09,224.08,128,224Z"/><path class="cls-5" d="M1664,32V64l64,64h32Z"/><path class="cls-5" d="M1664,96v32l0,0h32C1695.9,127.85,1664.09,96.08,1664,96Z"/><polygon class="cls-5" points="1664 0 1792 0 1792 128 1664 0"/><path class="cls-1" d="M1024,96V0L928,0V32h32V64h32V96ZM992,32l0,0h0Z"/><path class="cls-1" d="M960,96H928v0l0,0h0V64H896l0,0v64h64Z"/><path class="cls-2" d="M864,0H768l0,96h32V64h32V32h32ZM800,32l0,0v0Z"/><path class="cls-2" d="M864,64V96h0l0,0v0H832v32l0,0h64V64Z"/><g class="move-r-3"><path class="cls-5" d="M320,0H256V64Z"/><path class="cls-5" d="M384,128V0h0c-.84.85-125.8,125.79-128,128H384Z"/></g><polygon class="cls-5" points="1536 0 1408 0 1408 128 1472 64 1536 128 1536 0"/><path class="cls-6" d="M1536,32V0l0,0h32C1567.9.15,1536.09,31.92,1536,32Z"/><polygon class="cls-6" points="1536 128 1664 128 1664 0 1536 128"/><g class="move-l-1"><polygon class="cls-4" points="448 128 384 128 384 64 448 128"/><polygon class="cls-4" points="448 0 512 0 512 64 448 0"/><rect class="cls-4" x="416" y="32" width="64" height="64" transform="translate(512 -384) rotate(90)"/></g><polygon class="cls-6" points="32 288 32 320 64 320 64 352 96 352 96 384 128 384 128 352 128 256 32 256 0 256 0 288 32 288"/></g></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640" preserveAspectRatio="xMinYMin">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #f6f0ca;
+            }
+            
+            .cls-2 {
+                fill: #fb6b31;
+            }
+            
+            .cls-3 {
+                fill: #6b4832;
+            }
+            
+            .cls-4 {
+                fill: #999;
+            }
+            
+            .cls-5 {
+                fill: #ccc;
+            }
+            
+            .cls-6 {
+                fill: #666;
+            }
+        </style>
+    </defs>
+    <title>bg-glowna1</title>
+    <g id="Warstwa_2" data-name="Warstwa 2">
+        <g id="Warstwa_1-2" data-name="Warstwa 1">
+            <path class="cls-1" d="M79.48,15.5,64,0h64V64L80.36,16.34C80.09,16,79.75,15.8,79.48,15.5Z" />
+            <path class="cls-1" d="M0,128H0V0H32V32l0,0H64V64l0,0H96V96l0,0h32v32H0Z" />
+            <g>
+                <polygon class="cls-2" points="1888 256 1856 256 1856 288 1888 288 1888 320 1920 320 1920 288 1920 256 1888 256" />
+                <polygon class="cls-2" points="1888 352 1888 320 1856 320 1856 288 1824 288 1824 256 1792 256 1792 288 1792 384 1888 384 1920 384 1920 352 1888 352" />
+            </g>
+            <polygon class="cls-3" points="1856 0 1824 0 1824 32 1792 32 1792 64 1856 64 1856 0" />
+            <polygon class="cls-3" points="1856 128 1888 128 1888 96 1920 96 1920 64 1856 64 1856 128" />
+            <path class="cls-4" d="M256,192V160l-32-32H192Z" />
+            <path class="cls-4" d="M256,256V224c-.25-.19-96-96-96-96H128Z" />
+            <path class="cls-4" d="M128,160v32l64,64h32Z" />
+            <path class="cls-4" d="M128,224v32l0,0h32C159.9,255.85,128.09,224.08,128,224Z" />
+            <path class="cls-5" d="M1664,32V64l64,64h32Z" />
+            <path class="cls-5" d="M1664,96v32l0,0h32C1695.9,127.85,1664.09,96.08,1664,96Z" />
+            <polygon class="cls-5" points="1664 0 1792 0 1792 128 1664 0" />
+            <path class="cls-1" d="M1024,96V0L928,0V32h32V64h32V96ZM992,32l0,0h0Z" />
+            <path class="cls-1" d="M960,96H928v0l0,0h0V64H896l0,0v64h64Z" />
+			<g class="flip-horizontal-bottom">
+				<path class="cls-2" d="M864,0H768l0,96h32V64h32V32h32ZM800,32l0,0v0Z" />
+				<path class="cls-2" d="M864,64V96h0l0,0v0H832v32l0,0h64V64Z" />
+			</g>
+            <g>
+                <path class="cls-5" d="M320,0H256V64Z" />
+                <path class="cls-5" d="M384,128V0h0c-.84.85-125.8,125.79-128,128H384Z" />
+            </g>
+            <polygon class="cls-5" points="1536 0 1408 0 1408 128 1472 64 1536 128 1536 0" />
+            <path class="cls-6" d="M1536,32V0l0,0h32C1567.9.15,1536.09,31.92,1536,32Z" />
+            <polygon class="cls-6" points="1536 128 1664 128 1664 0 1536 128" />
+            <g>
+                <polygon class="cls-4" points="448 128 384 128 384 64 448 128" />
+                <polygon class="cls-4" points="448 0 512 0 512 64 448 0" />
+                <rect class="cls-4" x="416" y="32" width="64" height="64" transform="translate(512 -384) rotate(90)" />
+            </g>
+            <polygon class="cls-6" points="32 288 32 320 64 320 64 352 96 352 96 384 128 384 128 352 128 256 32 256 0 256 0 288 32 288" />
+        </g>
+    </g>
 
-<style>
-	.move-r-3{
-		animation: move-r-3 15s 5s linear infinite;
-	}
+    <style>
+.flip-horizontal-bottom {
+	transform-origin: 0 10%;
+	-webkit-animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+	        animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+}
 
-	.move-l-1{
-		animation: move-l-1 15s 5s linear infinite;
-	}
+/* ----------------------------------------------
+ * Generated by Animista on 2020-1-14 5:36:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
 
-	.rotate-l-90{
-		animation: rotate-l-90 15s 0s linear infinite;
-	}
+/**
+ * ----------------------------------------
+ * animation flip-horizontal-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: perspective(500px) rotateX(0);
+            transform: perspective(500px) rotateX(0);
+  }
+  100% {
+    -webkit-transform: perspective(500px) rotateX(-180deg);
+            transform: perspective(500px) rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: perspective(500px) rotateX(0);
+            transform: perspective(500px) rotateX(0);
+  }
+  100% {
+    -webkit-transform: perspective(500px) rotateX(-180deg);
+            transform: perspective(500px) rotateX(-180deg);
+  }
+}
 
-	@keyframes move-r-3{
-		0%{
-			transform: translateX(0%);
-		}
-		5%{
-			transform: translateX(19.98%);
-		}
-		50%{
-			transform: translateX(19.98%);
-		}
-		55%{
-			transform: translateX(0%);
-		}
-		100%{
-			transform: translateX(0%);
-		}
-	}
-
-	@keyframes move-l-1{
-		0%{
-			transform: translateX(0%)
-		}
-		5%{
-			transform: translateX(-6.66%)
-		}
-		50%{
-			transform: translateX(-6.66%)
-		}
-		55%{
-			transform: translateX(0%)
-		}
-		100%{
-			transform: translateX(0%)
-		}
-	}
-	
-	@keyframes rotate-l-90{
-		0%{
-			transform: rotate(0deg);
-    		transform-origin: 96.65% 50%;
-		}
-		5%{
-			transform: rotate(-90deg);
-    		transform-origin: 96.65% 50%;
-		}
-		50%{
-			transform: rotate(-90deg);
-    		transform-origin: 96.65% 50%;
-		}
-		55%{
-			transform: rotate(0deg);
-    		transform-origin: 96.65% 50%;
-		}
-		100%{
-			transform: rotate(0deg);
-    		transform-origin: 96.65% 50%;
-		}
-	}
-</style>
+    </style>
 </svg>

@@ -2,9 +2,7 @@
 @import "mixins";
 @import "collapser";
 
-*,
-nav ul,
-nav ol {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -170,8 +168,13 @@ section,
         background-size: cover;
     }
     &.bg-svg {
-        background-position: top;
-        background-size: 100%;
+        position: relative;
+    }
+    .bg-part {
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: #fff inset 0px 0px 0px 1px;
     }
 }
 .circle-icon {
