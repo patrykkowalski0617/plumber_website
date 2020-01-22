@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1664 128" style="enable-background:new 0 0 1664 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#999999;}
+	.st1{fill:#333333;}
+	.st2{fill:#FB6B31;}
+	.st3{fill:#CCCCCC;}
+	.st4{fill:#F6F0CA;}
+	.st5{fill:#666666;}
+	.st6{fill:#EFE4AC;}
+	.st7{fill:#6B4832;}
+</style>
+<title>bg-cennik1</title>
+<path class="st0" d="M128,128h128V0H128V128z M208,16h32v32h-32V16z M208,80h32v32h-32V80z M144,16h32v32h-32V16z M144,80h32v32h-32
+	V80z"/>
+<path class="st1" d="M384,0H256v128h128V0z M304,48h-32V16h32V48z M368,112h-32V80h32V112z M368,48h-32V16h32V48z"/>
+<path class="st2" d="M768,128h128V0H768V128z M848,80h32v32h-32V80z M784,16h32v32h-32V16z"/>
+<path class="st0" d="M1536,128h128V0h-128V128z M1616,80h32v32h-32V80z M1552,16h32v32h-32V16z"/>
+<path class="st3" d="M1024,128h128V0h-128V128z M1104,80h32v32h-32V80z M1040,16h32v32h-32V16z"/>
+<path class="st4" d="M384,0v128h128V0H384z M416,96V32h32v32h32v32H416z"/>
+<path class="st5" d="M1536,0h-128v128h128V0z M1440,64h32V32h32v32h-32v32h-32V64z"/>
+<path class="st3" d="M1280,0v128h128V0H1280z M1312,96V32h64v64H1312z"/>
+<path class="st6" d="M1152,0v128h128V0H1152z M1184,96V32h64v64H1184z"/>
+<path class="st6" d="M0,0v128h128V0H0z M64,98.6L29.4,64L64,29.4L98.6,64L64,98.6z"/>
+<path class="st7" d="M1024,128V0H896v128H1024z M928,32h64v64h-32V64h-32V32z"/>
+<path class="st3" d="M640,0v128h128V0H640z M704,96V64h-32V32h32v32h32v32H704z"/>
+<path class="st5" d="M512,0v128h128V0H512z M576,98.6L541.4,64L576,29.4L610.6,64L576,98.6z"/>
+</svg>

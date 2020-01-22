@@ -27,10 +27,8 @@
     color: #fb6b31;
     display: block; }
 
-#materialy {
-  background-image: url(img/svg/bg_oferta_1sm.svg); }
-  #materialy > .container {
-    margin-top: 6%; }
+#materialy > .container {
+  margin-top: 6%; }
 
 #gwarantujemy {
   background-image: url(img/jpg/bg_oferta_3.jpg); }
@@ -41,12 +39,10 @@
     #gwarantujemy p {
       width: 60%; } }
 
-#przyczyny {
-  background-image: url(img/svg/bg_oferta_2sm.svg); }
-  #przyczyny > .container {
-    margin-top: 6%; }
-  #przyczyny ul {
-    text-align: left; }
+#przyczyny > .container {
+  margin-top: 6%; }
+#przyczyny ul {
+  text-align: left; }
 
 @media (min-width: 768px) {
   #uslugi {
@@ -89,8 +85,8 @@
         left: auto;
         right: -50%; }
 
-  #materialy {
-    background-image: url(img/svg/bg_oferta_1.svg); }
+  #materialy .bg-part {
+    background-image: url(img/svg/bg-oferta1.svg); }
 
-  #przyczyny {
-    background-image: url(img/svg/bg_oferta_2.svg); } }
+  #przyczyny .bg-part {
+    background-image: url(img/svg/bg-oferta2.svg); } }

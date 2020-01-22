@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1664 128" style="enable-background:new 0 0 1664 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CCCCCC;}
+	.st1{fill:#EFE4AC;}
+	.st2{fill:#FB6B31;}
+	.st3{fill:#F6F0CA;}
+	.st4{fill:#666666;}
+	.st5{fill:#999999;}
+</style>
+<title>bg-cennik2</title>
+<g>
+	<rect x="348.2" class="st0" width="35.8" height="128"/>
+	<rect x="256" class="st0" width="64" height="128"/>
+</g>
+<g>
+	<rect x="1244.2" class="st0" width="35.8" height="128"/>
+	<rect x="1152" class="st0" width="64" height="128"/>
+</g>
+<g>
+	<rect x="768" class="st1" width="35.8" height="128"/>
+	<rect x="832" class="st1" width="64" height="128"/>
+</g>
+<g>
+	<polygon class="st0" points="96,0 64,0 32,0 0,0 0,32 0,64 0,96 0,128 32,128 32,96 32,64 32,32 64,32 96,32 128,32 128,0 	"/>
+	<rect x="64" y="64" class="st0" width="64" height="64"/>
+</g>
+<g>
+	<polygon class="st2" points="1568,64 1536,64 1536,96 1536,128 1568,128 1600,128 1600,96 1568,96 	"/>
+	<rect x="1600" class="st2" width="64" height="64"/>
+</g>
+<g>
+	<rect x="224" y="96" class="st3" width="32" height="32"/>
+	<rect x="128" class="st3" width="32" height="32"/>
+	<polygon class="st3" points="160,64 128,64 128,96 128,128 160,128 192,128 192,96 160,96 	"/>
+	<rect x="192" class="st3" width="64" height="64"/>
+</g>
+<g>
+	<rect x="384" y="96" class="st1" width="32" height="32"/>
+	<rect x="480" class="st1" width="32" height="32"/>
+	<polygon class="st1" points="448,0 416,0 384,0 384,32 384,64 416,64 448,64 448,32 	"/>
+	<rect x="448" y="64" class="st1" width="64" height="64"/>
+</g>
+<g>
+	<rect x="1504" class="st4" width="32" height="32"/>
+	<rect x="1408" y="64" class="st4" width="64" height="64"/>
+</g>
+<g>
+	<polygon class="st5" points="768,64 768,32 768,32 768,0 736,0 736,32 736,32 736,64 	"/>
+	<polygon class="st5" points="672,0 640,0 640,32 672,32 704,32 704,0 	"/>
+	<rect x="736" y="96" class="st5" width="32" height="32"/>
+	<rect x="640" y="64" class="st5" width="64" height="64"/>
+</g>
+<g>
+	<rect x="576" y="96" class="st0" width="64" height="32"/>
+	<rect x="512" class="st0" width="32" height="64"/>
+	<rect x="576" class="st0" width="32" height="64"/>
+</g>
+<g>
+	<rect x="1120" y="96" class="st2" width="32" height="32"/>
+	<rect x="1024" class="st2" width="32" height="32"/>
+	<rect x="1024" y="96" class="st2" width="32" height="32"/>
+	<polygon class="st2" points="1120,32 1088,32 1056,32 1056,64 1056,96 1088,96 1120,96 1120,64 	"/>
+	<rect x="1120" class="st2" width="32" height="32"/>
+</g>
+<g>
+	<polygon class="st5" points="1344,0 1312,0 1312,32 1280,32 1280,64 1344,64 	"/>
+	<rect x="1376" class="st5" width="32" height="64"/>
+	<rect x="1344" y="96" class="st5" width="32" height="32"/>
+</g>
+<g>
+	<rect x="992" y="96" class="st5" width="32" height="32"/>
+	<rect x="960" y="64" class="st5" width="32" height="32"/>
+	<rect x="896" class="st5" width="64" height="64"/>
+</g>
+</svg>

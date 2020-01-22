@@ -1,24 +1,22 @@
 .banner {
   background-image: url(img/jpg/bg_kontakt_1.jpg); }
 
-#kontakt {
-  background-image: url(img/svg/bg_kontakt_1sm.svg); }
-  #kontakt > .container {
-    margin-top: 6%; }
-  #kontakt strong {
-    color: #f13535; }
-  #kontakt i {
-    display: none; }
+#kontakt > .container {
+  margin-top: 6%; }
+#kontakt strong {
+  color: #f13535; }
+#kontakt i {
+  display: none; }
 
 @media (min-width: 1024px) {
-  #kontakt {
-    background-image: url(img/svg/bg_kontakt_1.svg); }
-    #kontakt address .important {
-      text-align: left;
-      padding-left: 75px;
-      position: relative; }
-    #kontakt address i {
-      display: inline-block;
-      position: absolute;
-      left: -10px;
-      font-size: 60px; } }
+  #kontakt .bg-part {
+    background-image: url(img/svg/bg-kontakt1.svg); }
+  #kontakt address .important {
+    text-align: left;
+    padding-left: 75px;
+    position: relative; }
+  #kontakt address i {
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+    font-size: 60px; } }

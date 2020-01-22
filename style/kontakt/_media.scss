@@ -7,7 +7,9 @@
 @media (min-width: $breakL) {
     // KONTAKT
     #kontakt {
-        background-image: url(img/svg/bg_kontakt_1.svg);
+        .bg-part {
+            background-image: url(img/svg/bg-kontakt1.svg);
+        }
         address {
             .important {
                 text-align: left;

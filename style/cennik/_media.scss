@@ -4,10 +4,15 @@
 @media (min-width: $breakM) {
     // CENNIK
     #cennik {
-        background-image: url(img/svg/bg_cennik_1.svg);
+        .bg-part {
+            background-image: url(img/svg/bg-cennik1.svg);
+        }
     }
     // WYCENA
     #wycena {
+        .bg-part {
+            background-image: url(img/svg/bg-cennik2.svg);
+        }
         text-align: left;
         ul {
             max-width: none;
