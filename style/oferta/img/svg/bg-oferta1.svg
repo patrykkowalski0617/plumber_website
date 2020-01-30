@@ -5,11 +5,10 @@
 <style type="text/css">
 	.st0{fill:#999999;}
 	.st1{fill:#FB6B31;}
-	.st2{fill:#F6F0CA;}
+	.st2{fill:#EFE4AC;}
 	.st3{fill:#CCCCCC;}
 	.st4{fill:#333333;}
-	.st5{fill:#EFE4AC;}
-	.st6{fill:#6B4832;}
+	.st5{fill:#6B4832;}
 </style>
 <title>bg-oferta1</title>
 <g>
@@ -37,18 +36,18 @@
 	<rect x="640" y="96" class="st3" width="32" height="32"/>
 </g>
 <g>
-	<polygon class="st5" points="1152,128 1184,96 1184,32 1248,32 1280,0 1152,0 	"/>
-	<polygon class="st5" points="1248,64 1248,96 1216,96 1216,128 1248,128 1280,128 1280,96 1280,64 	"/>
+	<polygon class="st2" points="1024,128 1056,96 1056,32 1120,32 1152,0 1024,0 	"/>
+	<polygon class="st2" points="1120,64 1120,96 1088,96 1088,128 1120,128 1152,128 1152,96 1152,64 	"/>
 </g>
 <g>
-	<rect x="1120" y="96" class="st1" width="32" height="32"/>
-	<rect x="1024" y="96" class="st1" width="32" height="32"/>
-	<rect x="1024" class="st1" width="32" height="32"/>
-	<rect x="1088" class="st1" width="64" height="64"/>
+	<rect x="1248" y="96" class="st1" width="32" height="32"/>
+	<rect x="1152" y="96" class="st1" width="32" height="32"/>
+	<rect x="1152" class="st1" width="32" height="32"/>
+	<rect x="1216" class="st1" width="64" height="64"/>
 </g>
 <g>
-	<polygon class="st6" points="1408,128 1376,96 1312,96 1312,32 1280,0 1280,128 	"/>
-	<rect x="1376" class="st6" width="32" height="32"/>
+	<polygon class="st5" points="1408,128 1376,96 1312,96 1312,32 1280,0 1280,128 	"/>
+	<rect x="1376" class="st5" width="32" height="32"/>
 </g>
 <g>
 	<rect x="480" y="96" class="st3" width="32" height="32"/>

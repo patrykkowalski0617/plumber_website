@@ -6,9 +6,8 @@
 	.st0{fill:#CCCCCC;}
 	.st1{fill:#EFE4AC;}
 	.st2{fill:#FB6B31;}
-	.st3{fill:#F6F0CA;}
-	.st4{fill:#666666;}
-	.st5{fill:#999999;}
+	.st3{fill:#666666;}
+	.st4{fill:#999999;}
 </style>
 <title>bg-cennik2</title>
 <g>
@@ -32,10 +31,10 @@
 	<rect x="1600" class="st2" width="64" height="64"/>
 </g>
 <g>
-	<rect x="224" y="96" class="st3" width="32" height="32"/>
-	<rect x="128" class="st3" width="32" height="32"/>
-	<polygon class="st3" points="160,64 128,64 128,96 128,128 160,128 192,128 192,96 160,96 	"/>
-	<rect x="192" class="st3" width="64" height="64"/>
+	<rect x="224" y="96" class="st1" width="32" height="32"/>
+	<rect x="128" class="st1" width="32" height="32"/>
+	<polygon class="st1" points="160,64 128,64 128,96 128,128 160,128 192,128 192,96 160,96 	"/>
+	<rect x="192" class="st1" width="64" height="64"/>
 </g>
 <g>
 	<rect x="384" y="96" class="st1" width="32" height="32"/>
@@ -44,14 +43,14 @@
 	<rect x="448" y="64" class="st1" width="64" height="64"/>
 </g>
 <g>
-	<rect x="1504" class="st4" width="32" height="32"/>
-	<rect x="1408" y="64" class="st4" width="64" height="64"/>
+	<rect x="1504" class="st3" width="32" height="32"/>
+	<rect x="1408" y="64" class="st3" width="64" height="64"/>
 </g>
 <g>
-	<polygon class="st5" points="768,64 768,32 768,32 768,0 736,0 736,32 736,32 736,64 	"/>
-	<polygon class="st5" points="672,0 640,0 640,32 672,32 704,32 704,0 	"/>
-	<rect x="736" y="96" class="st5" width="32" height="32"/>
-	<rect x="640" y="64" class="st5" width="64" height="64"/>
+	<polygon class="st4" points="768,64 768,32 768,32 768,0 736,0 736,32 736,32 736,64 	"/>
+	<polygon class="st4" points="672,0 640,0 640,32 672,32 704,32 704,0 	"/>
+	<rect x="736" y="96" class="st4" width="32" height="32"/>
+	<rect x="640" y="64" class="st4" width="64" height="64"/>
 </g>
 <g>
 	<rect x="576" y="96" class="st0" width="64" height="32"/>
@@ -66,13 +65,13 @@
 	<rect x="1120" class="st2" width="32" height="32"/>
 </g>
 <g>
-	<polygon class="st5" points="1344,0 1312,0 1312,32 1280,32 1280,64 1344,64 	"/>
-	<rect x="1376" class="st5" width="32" height="64"/>
-	<rect x="1344" y="96" class="st5" width="32" height="32"/>
+	<polygon class="st4" points="1344,0 1312,0 1312,32 1280,32 1280,64 1344,64 	"/>
+	<rect x="1376" class="st4" width="32" height="64"/>
+	<rect x="1344" y="96" class="st4" width="32" height="32"/>
 </g>
 <g>
-	<rect x="992" y="96" class="st5" width="32" height="32"/>
-	<rect x="960" y="64" class="st5" width="32" height="32"/>
-	<rect x="896" class="st5" width="64" height="64"/>
+	<rect x="992" y="96" class="st4" width="32" height="32"/>
+	<rect x="960" y="64" class="st4" width="32" height="32"/>
+	<rect x="896" class="st4" width="64" height="64"/>
 </g>
 </svg>

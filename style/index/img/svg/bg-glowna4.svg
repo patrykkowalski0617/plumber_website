@@ -19,8 +19,8 @@
 	<path class="st0" d="M480,128h32l0,0V96C511.8,96.1,480.1,127.9,480,128z"/>
 </g>
 <g>
-	<path class="st1" d="M1408,32V0l0,0h-32C1376.1,0.1,1407.9,31.9,1408,32z"/>
-	<polygon class="st1" points="1408,128 1280,128 1280,0 	"/>
+	<path class="st1" d="M1280,32V0l0,0h-32C1248.1,0.1,1279.9,31.9,1280,32z"/>
+	<polygon class="st1" points="1280,128 1152,128 1152,0 	"/>
 </g>
 <polygon class="st2" points="352,0 256,0 256,96 256,128 288,128 288,96 320,96 320,64 352,64 352,32 384,32 384,0 "/>
 <g>
@@ -28,8 +28,8 @@
 	<polygon class="st3" points="576,0 512,0 512,64 	"/>
 </g>
 <g>
-	<polygon class="st4" points="1184,64 1184,96 1216,96 1216,128 1184,128 1152,128 1152,96 1152,64 	"/>
-	<polygon class="st4" points="1248,0 1280,0 1280,32 1280,64 1248,64 1248,32 1216,32 1216,0 	"/>
+	<polygon class="st4" points="1440,64 1440,96 1472,96 1472,128 1440,128 1408,128 1408,96 1408,64 	"/>
+	<polygon class="st4" points="1504,0 1536,0 1536,32 1536,64 1504,64 1504,32 1472,32 1472,0 	"/>
 </g>
 <g>
 	<polygon class="st1" points="768,64 768,128 832,128 	"/>
@@ -44,8 +44,8 @@
 	<rect x="928" y="32" class="st5" width="64" height="64"/>
 </g>
 <g>
-	<rect x="1408" y="96" class="st5" width="32" height="32"/>
-	<rect x="1472" class="st5" width="64" height="64"/>
+	<rect x="1280" y="96" class="st5" width="32" height="32"/>
+	<rect x="1344" class="st5" width="64" height="64"/>
 </g>
 <g>
 	<rect x="1024" y="96" class="st6" width="32" height="32"/>

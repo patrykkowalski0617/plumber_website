@@ -23,7 +23,6 @@
   height: 0;
   overflow: hidden;
   display: block;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out; }
 
 #header {
@@ -54,11 +53,9 @@
         height: 4px;
         background-color: #333;
         border-radius: 2px;
-        -webkit-box-shadow: 0px 10px, 0px -10px;
-                box-shadow: 0px 10px, 0px -10px;
+        box-shadow: 0px 10px, 0px -10px;
         top: 50%;
-        -webkit-transform: translate(0, -50%);
-                transform: translate(0, -50%); }
+        transform: translate(0, -50%); }
   #header nav {
     text-align: center;
     border-bottom: 2px solid;
@@ -108,8 +105,7 @@ nav ul,
 nav ol {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 ol,
 ul {
@@ -247,14 +243,14 @@ section,
     background-size: cover; }
   section.bg-svg,
   .section.bg-svg {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   section .bg-part,
   .section .bg-part {
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-box-shadow: #fff inset 0px 0px 0px 1px;
-            box-shadow: #fff inset 0px 0px 0px 1px; }
+    box-shadow: #fff inset 0px 0px 0px 1px; }
 
 .circle-icon {
   display: block;
@@ -297,8 +293,7 @@ section,
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .container {
   max-width: 1100px;
@@ -323,13 +318,8 @@ article,
 .row {
   margin-left: -1rem;
   margin-right: -1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
+  flex-flow: row wrap; }
 
 *[class*="col-"] {
   display: block;
@@ -337,75 +327,51 @@ article,
 
 .col-1 {
   max-width: 8.33%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 8.33%;
-          flex: 0 1 8.33%; }
+  flex: 0 1 8.33%; }
 
 .col-2 {
   max-width: 16.66%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 16.66%;
-          flex: 0 1 16.66%; }
+  flex: 0 1 16.66%; }
 
 .col-3 {
   max-width: 25%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%; }
+  flex: 0 1 25%; }
 
 .col-4 {
   max-width: 33.33%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.33%;
-          flex: 0 1 33.33%; }
+  flex: 0 1 33.33%; }
 
 .col-5 {
   max-width: 41.66%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 41.66%;
-          flex: 0 1 41.66%; }
+  flex: 0 1 41.66%; }
 
 .col-6 {
   max-width: 50%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%; }
+  flex: 0 1 50%; }
 
 .col-7 {
   max-width: 58.33%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 58.33%;
-          flex: 0 1 58.33%; }
+  flex: 0 1 58.33%; }
 
 .col-8 {
   max-width: 66.66%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 66.66%;
-          flex: 0 1 66.66%; }
+  flex: 0 1 66.66%; }
 
 .col-9 {
   max-width: 75%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 75%;
-          flex: 0 1 75%; }
+  flex: 0 1 75%; }
 
 .col-10 {
   max-width: 83.33%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 83.33%;
-          flex: 0 1 83.33%; }
+  flex: 0 1 83.33%; }
 
 .col-11 {
   max-width: 91.66%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 91.66%;
-          flex: 0 1 91.66%; }
+  flex: 0 1 91.66%; }
 
 .col-12 {
   max-width: 100%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%; }
+  flex: 0 1 100%; }
 
 .off-0 {
   margin-left: 0; }
@@ -449,75 +415,51 @@ article,
 @media (min-width: 320px) {
   .col-s-1 {
     max-width: 8.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 8.33%;
-            flex: 0 1 8.33%; }
+    flex: 0 1 8.33%; }
 
   .col-s-2 {
     max-width: 16.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 16.66%;
-            flex: 0 1 16.66%; }
+    flex: 0 1 16.66%; }
 
   .col-s-3 {
     max-width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%; }
+    flex: 0 1 25%; }
 
   .col-s-4 {
     max-width: 33.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 33.33%;
-            flex: 0 1 33.33%; }
+    flex: 0 1 33.33%; }
 
   .col-s-5 {
     max-width: 41.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 41.66%;
-            flex: 0 1 41.66%; }
+    flex: 0 1 41.66%; }
 
   .col-s-6 {
     max-width: 50%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%; }
+    flex: 0 1 50%; }
 
   .col-s-7 {
     max-width: 58.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 58.33%;
-            flex: 0 1 58.33%; }
+    flex: 0 1 58.33%; }
 
   .col-s-8 {
     max-width: 66.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 66.66%;
-            flex: 0 1 66.66%; }
+    flex: 0 1 66.66%; }
 
   .col-s-9 {
     max-width: 75%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 75%;
-            flex: 0 1 75%; }
+    flex: 0 1 75%; }
 
   .col-s-10 {
     max-width: 83.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 83.33%;
-            flex: 0 1 83.33%; }
+    flex: 0 1 83.33%; }
 
   .col-s-11 {
     max-width: 91.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 91.66%;
-            flex: 0 1 91.66%; }
+    flex: 0 1 91.66%; }
 
   .col-s-12 {
     max-width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+    flex: 0 1 100%; }
 
   .off-s-0 {
     margin-left: 0; }
@@ -566,75 +508,51 @@ article,
 
   .col-m-1 {
     max-width: 8.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 8.33%;
-            flex: 0 1 8.33%; }
+    flex: 0 1 8.33%; }
 
   .col-m-2 {
     max-width: 16.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 16.66%;
-            flex: 0 1 16.66%; }
+    flex: 0 1 16.66%; }
 
   .col-m-3 {
     max-width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%; }
+    flex: 0 1 25%; }
 
   .col-m-4 {
     max-width: 33.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 33.33%;
-            flex: 0 1 33.33%; }
+    flex: 0 1 33.33%; }
 
   .col-m-5 {
     max-width: 41.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 41.66%;
-            flex: 0 1 41.66%; }
+    flex: 0 1 41.66%; }
 
   .col-m-6 {
     max-width: 50%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%; }
+    flex: 0 1 50%; }
 
   .col-m-7 {
     max-width: 58.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 58.33%;
-            flex: 0 1 58.33%; }
+    flex: 0 1 58.33%; }
 
   .col-m-8 {
     max-width: 66.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 66.66%;
-            flex: 0 1 66.66%; }
+    flex: 0 1 66.66%; }
 
   .col-m-9 {
     max-width: 75%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 75%;
-            flex: 0 1 75%; }
+    flex: 0 1 75%; }
 
   .col-m-10 {
     max-width: 83.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 83.33%;
-            flex: 0 1 83.33%; }
+    flex: 0 1 83.33%; }
 
   .col-m-11 {
     max-width: 91.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 91.66%;
-            flex: 0 1 91.66%; }
+    flex: 0 1 91.66%; }
 
   .col-m-12 {
     max-width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+    flex: 0 1 100%; }
 
   .off-m-0 {
     margin-left: 0; }
@@ -677,75 +595,51 @@ article,
 @media (min-width: 1024px) {
   .col-l-1 {
     max-width: 8.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 8.33%;
-            flex: 0 1 8.33%; }
+    flex: 0 1 8.33%; }
 
   .col-l-2 {
     max-width: 16.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 16.66%;
-            flex: 0 1 16.66%; }
+    flex: 0 1 16.66%; }
 
   .col-l-3 {
     max-width: 25%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%; }
+    flex: 0 1 25%; }
 
   .col-l-4 {
     max-width: 33.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 33.33%;
-            flex: 0 1 33.33%; }
+    flex: 0 1 33.33%; }
 
   .col-l-5 {
     max-width: 41.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 41.66%;
-            flex: 0 1 41.66%; }
+    flex: 0 1 41.66%; }
 
   .col-l-6 {
     max-width: 50%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 50%;
-            flex: 0 1 50%; }
+    flex: 0 1 50%; }
 
   .col-l-7 {
     max-width: 58.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 58.33%;
-            flex: 0 1 58.33%; }
+    flex: 0 1 58.33%; }
 
   .col-l-8 {
     max-width: 66.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 66.66%;
-            flex: 0 1 66.66%; }
+    flex: 0 1 66.66%; }
 
   .col-l-9 {
     max-width: 75%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 75%;
-            flex: 0 1 75%; }
+    flex: 0 1 75%; }
 
   .col-l-10 {
     max-width: 83.33%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 83.33%;
-            flex: 0 1 83.33%; }
+    flex: 0 1 83.33%; }
 
   .col-l-11 {
     max-width: 91.66%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 91.66%;
-            flex: 0 1 91.66%; }
+    flex: 0 1 91.66%; }
 
   .col-l-12 {
     max-width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+    flex: 0 1 100%; }
 
   .off-l-0 {
     margin-left: 0; }
@@ -821,19 +715,13 @@ article,
               position: absolute;
               height: 2px;
               width: 60px;
-              -webkit-transform: translate3d(-50%, 0, 0) scaleX(0);
-                      transform: translate3d(-50%, 0, 0) scaleX(0);
+              transform: translate3d(-50%, 0, 0) scaleX(0);
               bottom: 15px;
               left: 50%;
-              -webkit-transition: 0.4s ease-in-out;
               transition: 0.4s ease-in-out;
-              -webkit-transition-property: -webkit-transform;
-              transition-property: -webkit-transform;
-              transition-property: transform;
-              transition-property: transform, -webkit-transform; }
+              transition-property: transform; }
             #header .container nav ol > li > a:hover::after, #header .container nav ol > li > a.active::after {
-              -webkit-transform: translate3d(-50%, 0, 0) scaleX(1);
-                      transform: translate3d(-50%, 0, 0) scaleX(1); }
+              transform: translate3d(-50%, 0, 0) scaleX(1); }
         #header .container nav ul {
           width: 280px;
           border-color: #ccc; }

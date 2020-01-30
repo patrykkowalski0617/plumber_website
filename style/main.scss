@@ -171,6 +171,7 @@ section,
     }
     &.bg-svg {
         position: relative;
+        overflow: hidden;
     }
     .bg-part {
         position: absolute;
